@@ -103,11 +103,20 @@ generated and proved the levels, and `test/core/reference_test.dart`
 requires the Dart engine to reproduce the model's recorded games turn by
 turn (board, pieces, score, bot choices, power-ups).
 
-### CI status
+### CI status (15 November 2026)
 
-Every push to `main` runs the CI workflow; the on-device tests run when
-`main` is pushed to the branch `run-device-tests` (or by hand from Actions →
-Device tests). See the `ci-logs-*` branches for the latest results.
+- Commit `439829f`: packages install, `dart format` clean, `flutter analyze`
+  clean, **all unit and widget tests pass** (including the Python reference
+  vectors and the replay of all 100 level proofs), release APK and App
+  Bundle build (`com.sandburstmagic`, versionCode 1). Host-rendered store
+  screenshots: all 8 captioned images made; one check failed on a pending
+  save timer, fixed in the next commit.
+- Commits after `439829f` (denser sand grains, burst screenshot, play time
+  saved with other changes, docs, notification icon) have **not** been run:
+  GitHub refused every job with "account is locked due to a billing issue".
+- The on-device emulator tests have **not run yet** for the same reason.
+  Once Actions works again, push `main` to `run-device-tests` (or start
+  Actions → Device tests) and check the `ci-logs-device-*` branches.
 
 ---
 
