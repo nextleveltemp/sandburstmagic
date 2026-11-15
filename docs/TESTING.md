@@ -6,26 +6,25 @@ Run everything with `flutter test`. The suites:
 
 | File | Covers |
 | --- | --- |
-| `test/core/board_test.dart` | Valid pours (empty tube, same colour, the design example, contiguous runs, partial fill, order kept); invalid pours (other colour, full, from empty, same tube, out of range) change nothing; completion (solved, initially solved, partly solved, one colour but not full, empty tubes, several completed tubes); encoding and validation of malformed positions; canonical keys; useful pours |
-| `test/core/engine_test.dart` | Selection rules (select, ignore empty, deselect, attempt pour); engine pours, history, invalid pours; winning; undo once and several times with exact boards and counts; undo limits; restart; move limits (failure); history cap; extra tube (once, undo still works); hints spent/granted; stuck detection; hints are legal, don't modify the board, solve levels when followed, work off the stored path; proven dead end vs search timeout; tutorial script |
-| `test/core/levels_test.dart` | 300 levels: valid positions, none starts solved, **every stored solution replays to a solved board**, no duplicates (levels and challenges), difficulty order, colour growth; Dart exact A* re-proves par on a sample; fast solver on the largest levels; star thresholds; ≥ 30 challenges, every objective met by its solution |
-| `test/core/reference_test.dart` | Against `test/fixtures/reference_vectors.json` from the Python model: random numbers, hash, deals, pours, useful pours, solver (same status, solution and effort), Daily and Relax puzzles, star thresholds |
-| `test/core/progression_test.dart` | Player level curve, XP rules, level records never get worse, every achievement condition, no double awards, daily streaks, once-per-date rewards, clock rollback, date keys, theme unlocks |
-| `test/core/engagement_test.dart` | Rating prompt rules, reminder times, share-text helpers, interstitial frequency (not after the first puzzle, then every puzzle, 60 s apart) |
-| `test/data/persistence_test.dart` | DocStore: save/restore, missing data, malformed data → backup, garbage → defaults, migration, newer-version data never overwritten, invalid values never saved. Models: tolerant settings, progress round trip, interrupted puzzle resumes exactly (with undo), corrupt and mismatched saves rejected, finished puzzles not resumed, cached daily checked |
-| `test/state/controllers_test.dart` | Taps through the controller; rapid taps never pour twice; level unlocks, records, replays never lower results; saving and resuming; replays don't replace the current save; hints; rewards only when the ad reports them; failed ads don't block; double XP; challenge failure and unlocking; undo limits; daily rewarded once, cache, clock rollback; Relax; reset; sessions |
-| `test/app_info_test.dart` | Version matches `pubspec.yaml`; application ID and name the same everywhere; all assets exist; Play icon is 512 × 512 |
-| `test/widget/app_flow_test.dart` | Home and settings persistence; tutorial skip and full walkthrough; level 1 by taps (select, deselect, refused pour with explanation, pour, undo, solve, results, next level); restart confirmation; back keeps the puzzle; hint; themes; daily; challenges; locked levels; small phone with large text; result card PNG shared |
+| `test/core/reference_test.dart` | Against `test/fixtures/reference_vectors.json` from the Python model: random numbers, string hash, generated layouts, four whole bot games turn by turn (bot's choice, points, rows, animation phases, mystery reveals, full state), every power-up |
+| `test/core/rules_test.dart` | Placement (sand falls, invalid and restricted placements change nothing, new set only after three pieces), sand movement (fall, diagonal slide, heavy, frozen, sticky, traps, nothing lost), row detection, single and multi-row clears and their points, sand settling after a clear, incomplete rows never clear, combo and chain scoring, explosive / stone / ice / lock rules, game over (no room, move limit, time), objectives, "Keep playing", every power-up and power-ups with nothing to do, fair dealing, save and restore |
+| `test/core/levels_test.dart` | 100 levels in six worlds; every starting board settled with no complete row; goals and stars sane; **every stored solution replays to a win within its move limit**; mechanics introduced once each; daily puzzles deterministic and won by the bot |
+| `test/core/progression_test.dart` | Coins, prices, cosmetics, missions, daily streak and clock protection, achievements, stars |
+| `test/core/engagement_test.dart` | Rating prompt rules, reminder times, share-text helpers, interstitial frequency (every 2nd finished game, 60 s apart) |
+| `test/data/persistence_test.dart` | Progress and saved games round-trip, broken data falls back to defaults, a restored level plays on to the same win |
+| `test/state/game_controller_test.dart` | Winning level 1 pays coins and unlocks level 2; saving and resuming; free and rewarded hints and undo; power-ups from the inventory; Time Challenge clock; "Keep playing?" once; double coins once; cosmetics; the daily puzzle and its streak |
+| `test/widget/app_flow_test.dart` | Welcome card; tutorial to home; Classic by taps (preview, then confirm), pause, home, Continue; drag a piece onto the board; level 1 intro card; buying in the shop |
+| `test/app_info_test.dart` | Version, application ID and name the same everywhere; every declared asset exists; Play icon size |
 
 ## On-device tests (CI: `.github/workflows/device.yml`)
 
-Run on Android 14 emulators on every push to `main`:
+Run on Android 14 emulators when `main` is pushed to `run-device-tests` (or from Actions → Device tests):
 
 | Job | What runs |
 | --- | --- |
-| phone | `device_smoke.sh`: the **release** APK with Google's test ads, driven with real Android touch input (launch, tutorial, Skip survives a restart, banner, two taps that pour in level 1, Android's own audio and vibration logs, launcher label). Then `device_check_test.dart`. |
+| phone | `device_smoke.sh`: the **release** APK with Google's test ads, driven with real Android touch input (launch, tutorial, Skip survives a restart, banner, a piece placed in Classic with real taps, Android's own audio and vibration logs, launcher label). Then `device_check_test.dart`. |
 | small | `device_check_test.dart` on a 360 × 640 dp screen with three-button navigation |
-| play | `playthrough_test.dart`: tutorial, levels 1–8, a hint and an undo, the Daily Puzzle, a Relax puzzle, challenge 1, a theme change, interstitials only at natural breaks |
+| play | `playthrough_test.dart`: welcome card, tutorial, 25 Classic moves by taps, levels 1–3, Time Challenge, buying in the shop, interstitials only at natural breaks |
 | store | `store_screens_test.dart`: raw screens for the Play listing (ads off, staged progress, clean status bar set once) |
 
 `device_check_test.dart` uses real storage, real audio and Google's test
@@ -56,35 +55,32 @@ Google's test ad units and never affects real builds.
 
 `test/fixtures/reference_vectors.json` is produced by the Python model in
 `tool/reference_model/` (`python3 gen_vectors.py` there). If you change the
-rules, the solver or the generator, change both implementations and
+rules, the bot or the level content, change both implementations and
 regenerate the vectors and the levels.
 
 ## Manual checklist (do on real phones)
 
-- [ ] First launch: splash with the icon (~1.5 s), tutorial appears; Skip
-      works; every step can be followed; "Start playing" leads home.
-- [ ] Tap a tube: it lifts with an outline and a chevron. Tap it again: it
-      drops. Tap an empty tube with nothing selected: nothing happens.
-- [ ] Pour onto the same colour and into an empty tube; watch the tilt,
-      stream and levels. Tap quickly between tubes: nothing breaks.
-- [ ] Refused pour: target shakes gently, source stays selected.
-- [ ] Undo several times; Restart asks first; Hint shows an arrow.
-- [ ] Finish a level: stars, pours, best, XP; Next level, Replay, Home.
-- [ ] Leave mid-level with Back, kill the app, reopen: "Continue level N".
-- [ ] Daily: play, solve once (reward), replay (no reward), streak display.
-- [ ] Challenges: lock/unlock, pour limit failure, undo limit, no hints.
-- [ ] Relax: calm music, no stars, "Another puzzle".
-- [ ] Settings: each switch works and survives a restart; light theme
-      readable; Reduce motion removes tilting and sparkles; Colour symbols
-      show shapes; Reset requires typing RESET.
-- [ ] Sound and vibration off → game fully playable.
-- [ ] TalkBack on: tubes are announced with their contents; taps work.
-- [ ] Largest system font size: no clipped essential text.
-- [ ] Airplane mode: everything except ads works.
-- [ ] Ads: banner only at the bottom of the puzzle screen; interstitial
-      about 1 s after a puzzle ends (not after the very first), once per
-      puzzle, never on Restart; rewarded only after tapping, reward only after
-      finishing the ad; consent form in an EEA region (VPN or UMP debug
-      geography).
-- [ ] Small phone (≈ 5″), tall phone, tablet; gesture and 3-button navigation.
-- [ ] `flutter run --profile` and check frame times while pouring.
+- [ ] First launch: splash (~1.5 s), welcome card, tutorial with live demo
+      boards; Skip works; "Start playing" leads home.
+- [ ] Drag a piece: it floats above your finger, the preview shows green
+      cells (or red where it can't go), it snaps on release.
+- [ ] Tap a piece, tap the board: preview; tap again: placed. Tap elsewhere
+      to move the preview first.
+- [ ] Watch the block dissolve into grains that fall and slide; rows glow
+      and burst; two rows at once shake the board and say "Double Burst!".
+- [ ] Special sands and obstacles behave as their intro cards say (levels
+      18, 20, 21, 24, 35, 37, 39, 40, 52, 54, 55, 56, 69–73, 85, 86).
+- [ ] Power-ups: each one with and without stock (buy sheet, rewarded ad).
+- [ ] Hint and undo: first free, then "Watch an ad".
+- [ ] "Keep playing?" after running out of room in Classic, once.
+- [ ] Results: score, best, rows, combo, coins, double coins, share, next.
+- [ ] Time Challenge stops while paused; Limited Moves counts down.
+- [ ] Daily Puzzle: same for two phones on the same date; streak.
+- [ ] Shop: buy and use a board, sand colours, grains, bursts, pieces.
+- [ ] Settings: sound, music, vibration, reduce motion, reminders, links.
+- [ ] Close the app mid-game (swipe away): Continue resumes exactly.
+- [ ] TalkBack: pieces, board and buttons are announced.
+- [ ] Ads: banner only at the bottom of the game screen with a gap;
+      interstitial about 1 s after every 2nd finished game, 60 s apart;
+      rewarded only after tapping, reward only after watching.
+- [ ] `flutter run --profile` on a low-end phone during big bursts.

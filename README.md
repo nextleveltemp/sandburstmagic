@@ -1,8 +1,9 @@
 # Sand Burst Magic
 
-An original water-sorting puzzle game for Android (iOS-ready), built with
-Flutter by Magivix Studio. Pour coloured liquids between glass tubes until
-every tube holds a single colour.
+An original block-and-sand puzzle game for Android (iOS-ready), built with
+Flutter by Magivix Studio. Place colourful pieces on a 10 × 10 board; they
+dissolve into grains of sand that fall, slide and settle. Fill a whole row
+and it bursts.
 
 Everything works offline. There is no account, no server and no analytics SDK.
 Ads (Google AdMob) are optional and only appear at natural breaks.
@@ -27,8 +28,8 @@ More detail lives in `docs/`:
 
 | File | What it covers |
 | --- | --- |
-| `docs/ARCHITECTURE.md` | How the code is organised: rules, solver, levels, saves, animation |
-| `docs/LEVELS.md` | The 300 levels and 36 challenges: difficulty curve and proofs (generated) |
+| `docs/ARCHITECTURE.md` | How the code is organised: rules, sand simulation, levels, saves, rendering |
+| `docs/LEVELS.md` | The 100 campaign levels: goals, move limits and proofs (generated) |
 | `docs/ADMOB.md` | Ads, consent, frequency caps, test vs production IDs |
 | `docs/PUBLISHING.md` | Signing, App Bundles, Play Console steps, Data safety answers to verify |
 | `docs/PRIVACY_POLICY_TEMPLATE.md` | A starting point for your privacy policy (needs your review) |
@@ -39,95 +40,74 @@ More detail lives in `docs/`:
 
 ## What's in the game
 
-- **Levels** – 300 levels in four groups (Easy, Medium, Hard, Expert), from
-  2 colours up to 10 colours, with a few "one spare tube" levels mixed in.
-  Every level was solved by a computer search when it was made, and its
-  shortest solution is stored and replayed by the tests. Stars for solving
-  within a target number of pours; best results are kept.
-- **Daily Puzzle** – the same puzzle for everyone on the same date, playable
-  offline, with streaks and a once-per-day reward. Protected against
-  changing the device clock to farm rewards.
-- **Challenges** – 36 challenges in four tiers: pour limits, undo limits,
-  no hints, one spare tube, and expert puzzles. Each is proven winnable.
-- **Relax** – roomy puzzles (three spare tubes), no target, calm music.
-- **Rules** – tap a tube to pick it up, tap another to pour. All matching
-  liquid on top pours together, as much as fits; only onto the same colour
-  or into an empty tube. Unlimited free undo (except in undo-limit
-  challenges), restart with confirmation, and hints computed by the solver.
-- **Feel** – glass tubes with liquid drawn by area (levels stay true even
-  in the rounded bottom and while a tube tilts), a tilt-and-pour animation
-  with a liquid stream, a stopper on completed tubes, gentle shake for a
-  refused pour, original synthesised sounds and music, light haptics.
-- **Progression** – player level and XP, 17 achievements, eight visual
-  themes (Moonlit Potion and Clear Crystal free; Mermaid Lagoon, Fairy
-  Spring, Golden Elixir, Bubblegum Fizz, Frozen Spell and Ruby Ember
-  unlocked by playing), two bottle shapes earned by playing, lifetime
-  statistics.
-- **Accessibility** – dark/light/system themes, reduce-motion switch (also
-  follows the system setting), optional colour symbols on every liquid,
-  large touch targets, screen-reader labels for every tube ("Tube 2 of 7,
-  3 of 4 full, bottom to top: red, blue, blue"), selection shown by lift,
-  outline and a chevron (not colour alone).
-- **Sharing** – a result card image (drawn by the game, with the solved
-  tubes) plus the link; the Daily Puzzle shares a spoiler-free text.
-- **Ads** – banner at the very bottom of the puzzle screen only (space
-  reserved, 24 dp gap above it, never over the tubes or controls);
-  full-screen ads only between puzzles, as in Block Burst Magic: one a
-  moment (1 s) after every 2nd finished puzzle (the first after the 2nd),
-  at most one per puzzle, never two within 60 s and never within 60 s
-  after a rewarded ad; rewarded ads only when the player asks, with
-  the reward stated first: an extra hint, an extra empty tube (once per
-  attempt, not in challenges), "Keep playing?" with 5 more pours when a
-  challenge's pour limit runs out (once per attempt), or double XP on the
-  results card. Details in `docs/ADMOB.md`.
-- **Rating** – Google Play's in-app review card, only after a three-star
-  solve, a solved daily or a first challenge win, after at least 8 solved
-  puzzles, at most 3 times, 45+ days apart.
-- **Daily reminder** – opt-in, time of your choice, skips days you already
-  solved, local notification only.
-- **First launch** – a 2-second launch screen with the icon, then a
-  welcome card asking the player to accept the Terms of Use (links to the
-  Terms and the Privacy Policy; ads and Google's consent form start only
-  after Accept), then the 30-second interactive tutorial (skippable,
-  replayable from Settings → How to play), then home.
-- **Remove ads** – one-time Google Play purchase (Settings → Ads), with
-  Restore purchase. Rewarded ads stay available.
-- **Settings extras** – Privacy policy and Terms of Use (open the
-  magivix.com pages; the in-app text if no browser), Send feedback
-  (support@magivix.com), Follow us (Facebook, TikTok, Instagram, YouTube
-  and X icons under the website link, opening the Magivix Studio pages
-  shared with Block Burst Magic), Magivix Studio website.
-- **Bottle shapes** – Tube, Bottle, Flask, Jar and Potion from the start;
-  Vial at player level 8 and Teardrop after winning 24 challenges (chosen
-  on the Themes screen; a new shape is announced on the results card).
-  Every shape holds the same four pours.
-
----
+- **The core** – a 10 × 10 board and a tray of three pieces (15 shapes in 30
+  orientations: singles, lines of 2–5, square, L, reverse L, T, small
+  corner, zigzags). Drag a piece onto the board, or tap it and tap a cell to
+  see a preview, then tap again to confirm. Placed blocks become sand: each
+  grain falls, slides diagonally off slopes and settles. A full row bursts
+  (colours never need to match); two or more at once score much more. A new
+  set of three is dealt only when all three are used, and never a set where
+  nothing fits if something could. The game ends when no piece fits.
+- **The logical grid is the truth.** The rules simulate sand cell by cell
+  in plain Dart; the screen replays exactly what the rules did (every grain
+  move, burst and trap), then snaps to the real board, so the picture can
+  never create or remove a row.
+- **Scoring** – 1 point per placed block; 100 / 250 / 450 / 700 for 1–4
+  rows at once, plus 10 per cleared grain, combo multipliers for
+  consecutive bursts, chain-reaction bonuses, +40 per crystal grain, +100 per
+  crystal wall and +1,000 for clearing the whole board.
+- **Special sand** (introduced level by level): heavy, sticky, explosive,
+  rainbow, frozen, crystal, golden (coins), magnetic, volcanic, mystery.
+- **Obstacles**: stone (two bursts), wooden barriers, frozen cells, locked
+  cells (open after N rows), unbreakable blocks, sand traps (swallow three
+  grains), crystal walls, moving barriers, and restricted cells where pieces
+  can't be placed.
+- **Power-ups**: Sand Sweep, Colour Blast, Sand Shaker, Row Clear, Block
+  Crusher, Gravity Shift, Sand Bomb, Extra Move. Bought with coins, given
+  for finishing worlds, or used once for free after an optional rewarded ad.
+  Never needed: every level is proven winnable without them.
+- **Modes**: Classic (endless, frozen and sticky sand appear as the score
+  grows), Campaign (100 levels in six worlds: Candy Dunes, Crystal Desert,
+  Ocean Sands, Sunset Valley, Mystic Forest, Cosmic Sands), Time Challenge
+  (2 minutes, +4 s per row), Limited Moves (30 pieces to reach a target that
+  rises as you win), Daily Puzzle (same for everyone on a date, streaks) and
+  Endless Sand (special sands join as the score climbs).
+- **Proven levels** – every campaign level was won by a bot when it was
+  generated; its winning moves are stored and replayed by the tests.
+  Daily puzzles are proven by the same bot on the phone before they are
+  offered.
+- **Rewards** – coins for rows, golden sand, levels (more for stars),
+  daily wins and streaks, three daily missions and 22 achievements. The shop
+  sells power-ups and looks only (8 board themes, 4 sand palettes, 4 grain
+  styles, 4 burst effects, 3 piece styles); looks never change the game.
+- **Help** – one free hint and one free undo per game, more with an
+  optional rewarded ad; "Keep playing?" (clear the bottom three rows) once
+  per game with an ad; double coins on the results with an ad.
+- **Extras** (as in Block Burst Magic): splash screen held 1.5 s, welcome
+  card with terms and privacy, tutorial with live demo boards, share a
+  result card plus link, Google Play in-app rating at happy moments only,
+  opt-in daily reminder, statistics, Settings with a Magivix Studio section,
+  a privacy screen, and "Remove ads" (Google Play in-app purchase).
 
 ## Important: what has and hasn't been verified
 
 This project was written in an environment that cannot run Flutter, so it is
-compiled, analysed, tested and built by GitHub Actions (Flutter 3.47.7),
-including on Android 14 emulators. Results, logs and screenshots are saved
-to the branches `ci-logs-test`, `ci-logs-build` (also holds the test APK
-`sand-burst-magic-release-test.apk`, which shows Google's test ads),
+compiled, analysed, tested and built by GitHub Actions, including on Android
+emulators. Results, logs and screenshots are saved to the branches
+`ci-logs-test`, `ci-logs-build`, `ci-logs-store-shots`,
 `ci-logs-device-phone`, `ci-logs-device-small`, `ci-logs-device-play` and
 `ci-logs-device-store`.
 
-The level bank itself was checked outside Flutter: the Python reference
-model (`tool/reference_model/`) found a proven-shortest solution for all 300
-levels and 36 challenges and replayed each one (see `docs/LEVELS.md`).
-
-The status of each CI check is recorded in the section below as runs
-complete.
+The rules exist twice: the Python reference model (`tool/reference_model/`)
+generated and proved the levels, and `test/core/reference_test.dart`
+requires the Dart engine to reproduce the model's recorded games turn by
+turn (board, pieces, score, bot choices, power-ups).
 
 ### CI status
 
-Every push to `main` runs the CI workflow. As of November 2026: packages
-install, `dart format` is clean, `flutter analyze` reports no issues, all
-widget and unit tests pass, and the release APK and App Bundle build. Store
-screenshots are rendered on every push to `ci-logs-store-shots`. The
-on-device tests (Actions → Device tests) are started by hand.
+Every push to `main` runs the CI workflow; the on-device tests run when
+`main` is pushed to the branch `run-device-tests` (or by hand from Actions →
+Device tests). See the `ci-logs-*` branches for the latest results.
 
 ---
 
@@ -206,18 +186,21 @@ phone and open it. The CI test APK is on the `ci-logs-build` branch.
 
 ```
 lib/
-  core/        Pure Dart rules (no Flutter): board and pours, engine (undo,
-               restart, limits), A* solver and hints, generator, levels and
-               challenges (level_data.dart is generated), daily, progression
+  core/        Pure Dart rules (no Flutter): sand.dart (board, cells, shapes,
+               settling, row bursts, layouts), engine.dart (config, dealing,
+               turns, power-ups, bot), levels.dart (worlds, modes, daily;
+               level_data.dart is generated), progression.dart (coins, shop,
+               missions, achievements)
   data/        Versioned local saves (shared_preferences), models
   services/    Audio, haptics, ads (AdMob + consent), share, rating,
                reminders – all fail-safe
   state/       Controllers that connect rules, saves and UI
-  ui/          Theme, tube painter, board and pour animation, screens
+  ui/          Theme, sand renderer (game/board_fx.dart, sand_painter.dart),
+               screens, share card
   l10n/        All user-facing text (ready for more languages)
 test/          Unit, widget and reference-vector tests
 integration_test/  On-device tests (device check, play session, store shots)
-tool/          Level generator and Python reference model, asset generators
+tool/          Python reference model and level generator, asset generators
 android/       Android project (Gradle Kotlin DSL)
 assets/        Fonts, sound effects, music
 store/         Play icon (512×512), feature graphic (1024×500), screenshots
@@ -289,19 +272,22 @@ A full checklist is in `docs/PUBLISHING.md`. The essentials:
 
 - Not yet tested on a real phone; emulators only (see above).
 - No cloud save or cross-device sync; progress lives on the device (Android
-  system backup can restore it). Statistics are personal and local – there
-  are no global leaderboards.
-- Daily puzzles follow the device's local date. Without a server the game
-  cannot verify the true date; moving the clock back pauses rewards instead.
-- One puzzle in progress is kept per mode. Replaying an already solved level
-  is not saved, so it never replaces the level you are working on.
+  system backup can restore it). No global leaderboards.
+- Daily puzzles and missions follow the device's local date. Without a
+  server the game cannot verify the true date; moving the clock back pauses
+  rewards instead.
+- One game in progress is kept per mode. A Time Challenge clock is saved
+  with the game but does not run while the app is closed.
 - Only English text is included (the text system is ready for translations).
 - iOS: the code is cross-platform, but the `ios/` folder is not included.
   Create it with `flutter create --platforms=ios .` and add your AdMob iOS
-  App ID to `ios/Runner/Info.plist` (`GADApplicationIdentifier`) before
-  building for iPhone.
-- Performance targets (60 FPS) have not been measured on a device yet.
-- Sounds and music are simple synthesised originals; you may want to replace
-  them with professionally produced, licensed audio (same file names).
-- Undo is free and unlimited in levels, so there is no "watch an ad for an
-  undo"; the rewarded "continue" is the extra empty tube.
+  App ID to `ios/Runner/Info.plist` (`GADApplicationIdentifier`).
+- Frame times have not been measured on a low-end phone yet. The sand is
+  drawn in a few batched calls per frame (about 2,500 grains at most) and
+  burst particles use a fixed pool of 700, so it should hold up, but please
+  check with `flutter run --profile`.
+- Sounds and music are simple synthesised originals (the music loops are
+  shared with Water Sort Magic); replace them with professionally produced,
+  licensed audio if you like (same file names).
+- Flame was not needed: the board is one CustomPainter fed by a small
+  animation timeline and a particle pool.

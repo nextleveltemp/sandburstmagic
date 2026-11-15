@@ -7,18 +7,19 @@ disabled, not consented to, or fail to load, nothing changes for the player.
 
 ## Where ads can appear
 
-The same final settings as Block Burst Magic: no ad near the tubes or
-controls, none at launch or exit, none during a puzzle, and every rewarded
+The same final settings as Block Burst Magic: no ad near the board or
+controls, none at launch or exit, none during a game, and every rewarded
 ad is the player's choice with the reward stated first.
 
 | Format | Where | Rules |
 | --- | --- | --- |
-| Banner (anchored adaptive) | At the very bottom of the puzzle screen, below the controls, full screen width (about 56–64 dp tall on phones) | Space reserved before the ad loads (the tubes never jump); a 24 dp gap keeps the Undo/Hint/Extra tube buttons away from the ad; never over the tubes or controls; none on the home screen or menus; none in the tutorial. A failed load leaves the slot empty and retries a minute later. Hidden after "Remove ads". |
-| Interstitial | About 1 second after a puzzle ends (solved, or a challenge that ran out after "No thanks" on "Keep playing?"), once the results card is up; if the player leaves the results sooner (Next level, Replay, Home, or the phone's back button), as they leave. Never on Restart from the pause menu | Same rules as Block Burst Magic. Never after "Remove ads". Never during a puzzle, never at launch or exit, never in the tutorial. One after every 2nd finished puzzle (the first after the 2nd puzzle), never two within 60 seconds, and never within 60 seconds after a rewarded ad. Failed loads retry with backoff (1, 2, 4… up to 30 minutes) and are never shown repeatedly. Loaded ads older than 50 minutes are discarded (Google expires them after an hour). The limits live in `InterstitialPolicy` (`lib/services/ads/ad_config.dart`); the game engine is not involved. |
-| Rewarded: hint | Hint button when no hints are left → "Watch an ad for 1 hint" | The reward is explained before the ad and the player must tap Watch. The hint is granted only in the SDK's `onUserEarnedReward` callback. If no ad is ready, one is requested at once ("Loading an ad…"), with "Try again" if none comes. |
-| Rewarded: extra tube | "Extra tube" button (and the "No pours left" banner) | Adds one empty tube, once per attempt; not in challenges. Granted only after the reward callback. |
-| Rewarded: "Keep playing?" | A challenge's pour limit runs out → "Out of pours. Keep playing?" | Watch an ad for 5 more pours, once per attempt (a restart is a new attempt). The attempt is recorded only once it really ends: "No thanks", Back or leaving the screen record it as not solved and show the results. If the ad is not confirmed, nothing is granted and the offer stays. |
-| Rewarded: double XP | Results card → "Watch ad: double XP (+N)" | Once per puzzle, only when it earned XP and an ad is ready. Bonus capped at 300 XP. |
+| Banner (anchored adaptive) | At the very bottom of the game screen, below the tray and power-up bar, full screen width (about 56–64 dp tall on phones) | Space reserved before the ad loads (the board never jumps); a 16 dp gap keeps the controls away from the ad; none on the home screen or menus; none in the tutorial. Hidden after "Remove ads". |
+| Interstitial | About 1 second after a game ends (level won or lost, game over, time up, or "No thanks" on "Keep playing?"), once the results are up. Never on Restart | Never after "Remove ads". Never during play, never at launch or exit. One after every 2nd finished game (the first after the 2nd game), never two within 60 seconds, and never within 60 seconds after a rewarded ad. |
+| Rewarded: hint / undo | Hint and Undo buttons after the free one of the game is used (the badge shows ▶) | The player must tap. Granted only in the reward callback. If no ad is ready, one is requested ("Loading an ad…"). |
+| Rewarded: power-up | Tapping a power-up with none left → "Watch an ad: use one free" | One use, granted only after the reward. Buying with coins is offered next to it. |
+| Rewarded: free coins | Shop → "Watch an ad: +40 coins" | Only when tapped. |
+| Rewarded: "Keep playing?" | When no piece fits | Once per game: clears the bottom three rows and deals new pieces, stated before the ad. "No thanks" is always there and shows the results. |
+| Rewarded: double coins | Results → "Watch ad: double coins (+N)" | Once per game, only when the game earned coins and an ad is ready. |
 
 Implementation: `lib/services/ads/` (`ad_service.dart` interface,
 `admob_ad_service.dart` implementation, `ad_config.dart` IDs and frequency
@@ -33,7 +34,7 @@ From Google's documentation (Android:
 | --- | --- |
 | App ID (sample) | `ca-app-pub-3940256099942544~3347511713` |
 | Adaptive banner | `ca-app-pub-3940256099942544/9214589741` |
-| Interstitial | `ca-app-pub-3940256099942544/1033173712` |
+| Interstitial | About 1 second after a game ends (level won or lost, game over, time up, or "No thanks" on "Keep playing?"), once the results are up. Never on Restart | Never after "Remove ads". Never during play, never at launch or exit. One after every 2nd finished game (the first after the 2nd game), never two within 60 seconds, and never within 60 seconds after a rewarded ad. |
 | Rewarded | `ca-app-pub-3940256099942544/5224354917` |
 
 Never click your own live ads, and never ship test IDs.
