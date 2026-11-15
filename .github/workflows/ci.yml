@@ -1,0 +1,141 @@
+# Continuous integration: formats, analyses, tests and builds Sand Burst Magic.
+# Push to GitHub and open the "Actions" tab to see results and download the
+# APKs and release App Bundle produced by the build job.
+#
+# Each job also saves its full console output to a branch named
+# ci-logs-<job> (one commit, replaced on every run), so the results can be
+# read with plain git as well as in the Actions tab.
+name: CI
+
+on:
+  push:
+    branches-ignore: ['ci-logs-*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: 3.47.7
+          cache: true
+      - name: Check, analyse and test
+        run: |
+          mkdir -p ci-out
+          set +e
+          { flutter --version; dart --version; } > ci-out/00-versions.txt 2>&1
+          flutter pub get > ci-out/01-pub-get.txt 2>&1; pub=$?
+          dart format . > ci-out/02-format.txt 2>&1
+          git diff > ci-out/format.patch; [ -s ci-out/format.patch ] && fmt=1 || fmt=0
+          flutter analyze > ci-out/03-analyze.txt 2>&1; ana=$?
+          flutter test --reporter expanded > ci-out/04-test.txt 2>&1; tst=$?
+          printf 'pub_get=%s format=%s analyze=%s test=%s\n' $pub $fmt $ana $tst | tee ci-out/RESULT.txt
+          cat ci-out/03-analyze.txt
+          tail -n 60 ci-out/04-test.txt
+          [ $pub -eq 0 ] && [ $ana -eq 0 ] && [ $tst -eq 0 ]
+      - name: Save logs to ci-logs-test branch
+        if: always()
+        run: bash .github/scripts/save_logs.sh ci-logs-test
+
+  build-android:
+    runs-on: ubuntu-24.04
+    steps:
+      # Hosted runners have limited disk; an Android release build needs
+      # several GB, so remove large preinstalled toolchains this job never uses
+      # (the Android SDK itself is kept).
+      - name: Free disk space
+        run: |
+          df -h /
+          sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/.ghcup /usr/share/swift \
+            /usr/local/share/boost /opt/hostedtoolcache/CodeQL /usr/local/julia* \
+            /usr/local/share/powershell /usr/local/share/chromium /opt/microsoft || true
+          sudo docker image prune --all --force > /dev/null 2>&1 || true
+          df -h /
+      - uses: actions/checkout@v5
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: 3.47.7
+          cache: true
+      # Without android/key.properties the release builds are signed with the
+      # debug key: fine for installing on a phone to test, NOT uploadable to
+      # Google Play. (Debug APKs are skipped: they are large and slow.)
+      - name: Build
+        run: |
+          mkdir -p ci-out
+          set +e
+          set -o pipefail
+          df -h / > ci-out/00-disk.txt
+          flutter pub get > ci-out/01-pub-get.txt 2>&1
+          # The test APK shows Google's TEST ads; the App Bundle below does not.
+          flutter build apk --release --dart-define=ADMOB_USE_TEST_IDS=true 2>&1 | tail -n 4000 > ci-out/02-apk-release.txt; rel=${PIPESTATUS[0]}
+          df -h / >> ci-out/00-disk.txt
+          flutter build appbundle --release 2>&1 | tail -n 4000 > ci-out/03-aab-release.txt; aab=${PIPESTATUS[0]}
+          df -h / >> ci-out/00-disk.txt
+          printf 'apk_release=%s aab_release=%s\n' $rel $aab | tee ci-out/RESULT.txt
+          ls -la build/app/outputs/flutter-apk build/app/outputs/bundle/release >> ci-out/RESULT.txt 2>&1
+          # The application ID and label actually inside the builds.
+          AAPT2="$(ls -d "$ANDROID_HOME"/build-tools/*/ | sort -V | tail -n1)aapt2"
+          "$AAPT2" dump badging build/app/outputs/flutter-apk/app-release.apk 2>/dev/null |
+            grep -E "^package:|^application-label:|^sdkVersion:|^targetSdkVersion:" | sed 's/^/apk /' >> ci-out/RESULT.txt
+          unzip -p build/app/outputs/bundle/release/app-release.aab base/manifest/AndroidManifest.xml 2>/dev/null |
+            strings | grep -m1 -E "^com\.[a-z.]+$" | sed 's/^/aab package: /' >> ci-out/RESULT.txt
+          for f in ci-out/0*.txt; do echo "== $f"; tail -n 40 "$f"; done
+          # Also surface the key error lines as annotations.
+          for f in ci-out/0*.txt; do
+            msg="$(grep -E -i -A3 'error|what went wrong|exception|failed' "$f" | head -n 60 | cut -c1-300)"
+            [ -n "$msg" ] && echo "::error title=$(basename "$f")::$(printf '%s' "$msg" | sed ':a;N;$!ba;s/%/%25/g;s/\r/%0D/g;s/\n/%0A/g')"
+          done
+          [ $rel -eq 0 ] && [ $aab -eq 0 ]
+      - name: Save logs to ci-logs-build branch
+        if: always()
+        run: |
+          cp build/app/outputs/flutter-apk/app-release.apk ci-out/sand-burst-magic-release-test.apk 2>/dev/null || true
+          bash .github/scripts/save_logs.sh ci-logs-build
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: sand-burst-magic-builds
+          path: |
+            build/app/outputs/flutter-apk/app-release.apk
+            build/app/outputs/bundle/release/app-release.aab
+
+  # The Play Store screenshots, rendered on this machine with the app's own
+  # fonts (no emulator), then captioned. Saved to branch ci-logs-store-shots.
+  store-shots:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: 3.47.7
+          cache: true
+      - name: Render and caption the store screenshots
+        run: |
+          mkdir -p ci-out
+          set +e
+          export FLUTTER_ROOT="$(dirname "$(dirname "$(readlink -f "$(which flutter)")")")"
+          flutter pub get > ci-out/01-pub-get.txt 2>&1
+          flutter test store_shots/store_shots_test.dart --reporter expanded > ci-out/10-render.txt 2>&1; ren=$?
+          pip install --quiet pillow > /dev/null 2>&1
+          python3 tool/store_screenshots.py build/store_raw ci-out/screenshots > ci-out/20-captions.txt 2>&1; cap=$?
+          mkdir -p ci-out/raw && cp build/store_raw/*.png ci-out/raw/ 2>/dev/null
+          printf 'render=%s captions=%s shots=%s\n' $ren $cap "$(ls ci-out/screenshots 2>/dev/null | wc -l)" | tee ci-out/RESULT.txt
+          tail -n 40 ci-out/10-render.txt
+          cat ci-out/20-captions.txt
+          [ $ren -eq 0 ] && [ $cap -eq 0 ]
+      - name: Save to ci-logs-store-shots branch
+        if: always()
+        run: bash .github/scripts/save_logs.sh ci-logs-store-shots

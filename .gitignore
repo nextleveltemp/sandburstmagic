@@ -1,0 +1,24 @@
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+coverage/
+*.iml
+.idea/
+.vscode/
+.DS_Store
+
+# Secrets and production configuration - never commit
+config/ads.prod.json
+android/key.properties
+android/admob.properties
+*.jks
+*.keystore
+
+# Python caches (tool/)
+__pycache__/
+*.pyc

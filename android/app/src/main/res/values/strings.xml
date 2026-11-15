@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Full name: app info, recent apps, Play listing. -->
+    <string name="app_name">Sand Burst Magic</string>
+    <!-- Label under the launcher icon. Some launchers shorten long labels. -->
+    <string name="launcher_name">Sand Burst Magic</string>
+</resources>

@@ -1,0 +1,3 @@
+# Copy to android/admob.properties (git-ignored) and set your AdMob App ID.
+# Find it in AdMob: Apps > (your app) > App settings > App ID.
+admob.appId=ca-app-pub-XXXXXXXXXXXXXXXX~YYYYYYYYYY

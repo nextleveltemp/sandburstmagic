@@ -1,0 +1,164 @@
+# On-device checks on Android emulators (a regular phone and a small one):
+#  * phone: the release APK (with Google's test ads) is launched and driven
+#    with real touch input, then the full on-device Dart test runs;
+#  * small: the full on-device Dart test on a 360x640 dp screen.
+# Results, screenshots and logs go to the ci-logs-device-<name> branches.
+name: Device tests
+
+# Started by hand (Actions → Device tests → Run workflow), not on every push:
+# a full run takes several hours of runner time (as in Block Burst Magic).
+on:
+  # Also started by pushing to branch run-device-tests (for runs started
+  # from a session without access to the Actions API).
+  push:
+    branches: ['run-device-tests']
+  workflow_dispatch:
+    inputs:
+      only:
+        description: 'Run only these jobs (e.g. "small,store"); empty = all'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  emulator:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: phone
+            profile: pixel_6
+            smoke: true
+            test: integration_test/device_check_test.dart
+          - name: small
+            profile: Nexus 5
+            smoke: false
+            test: integration_test/device_check_test.dart
+          # A full play session like a real player (tutorial, games,
+          # challenge, daily, Zen, themes, ads at natural breaks).
+          - name: play
+            profile: pixel_6
+            smoke: false
+            test: integration_test/playthrough_test.dart
+          # Raw screens for the Play Store listing (clean status bar, no
+          # ads); tool/store_screenshots.py adds the captions.
+          - name: store
+            profile: pixel_6
+            smoke: false
+            test: integration_test/store_screens_test.dart
+    steps:
+      - name: Free disk space
+        if: ${{ inputs.only == '' || inputs.only == null || contains(inputs.only, matrix.name) }}
+        run: |
+          sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/.ghcup /usr/share/swift \
+            /usr/local/share/boost /opt/hostedtoolcache/CodeQL /usr/local/julia* \
+            /usr/local/share/powershell /usr/local/share/chromium /opt/microsoft || true
+          sudo docker image prune --all --force > /dev/null 2>&1 || true
+      - name: Enable KVM
+        if: ${{ inputs.only == '' || inputs.only == null || contains(inputs.only, matrix.name) }}
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - uses: actions/checkout@v5
+        if: ${{ inputs.only == '' || inputs.only == null || contains(inputs.only, matrix.name) }}
+      - uses: actions/setup-java@v5
+        if: ${{ inputs.only == '' || inputs.only == null || contains(inputs.only, matrix.name) }}
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: subosito/flutter-action@v2
+        if: ${{ inputs.only == '' || inputs.only == null || contains(inputs.only, matrix.name) }}
+        with:
+          channel: stable
+          flutter-version: 3.47.7
+          cache: true
+      - name: Build
+        if: ${{ inputs.only == '' || inputs.only == null || contains(inputs.only, matrix.name) }}
+        run: |
+          mkdir -p ci-out
+          set +e
+          set -o pipefail
+          flutter pub get > ci-out/01-pub-get.txt 2>&1
+          if [ "${{ matrix.smoke }}" = "true" ]; then
+            # Release build that shows Google's TEST ads (for testing only).
+            flutter build apk --release --dart-define=ADMOB_USE_TEST_IDS=true 2>&1 |
+              tail -n 4000 > ci-out/02-apk-release.txt
+            echo "build=${PIPESTATUS[0]}" > ci-out/BUILD.txt
+          fi
+          # Free the Gradle daemon's memory before the emulator starts.
+          (cd android && ./gradlew --stop > /dev/null 2>&1) || true
+          # The test build runs while the emulator is up: keep Gradle small and
+          # make it exit afterwards, so the emulator keeps enough memory.
+          mkdir -p ~/.gradle
+          printf '%s\n' 'org.gradle.jvmargs=-Xmx3g -XX:MaxMetaspaceSize=1g' \
+            'org.gradle.daemon=false' 'kotlin.compiler.execution.strategy=in-process' \
+            >> ~/.gradle/gradle.properties
+      - name: Run on emulator
+        id: emu1
+        continue-on-error: true
+        if: ${{ inputs.only == '' || inputs.only == null || contains(inputs.only, matrix.name) }}
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 34
+          target: google_apis
+          arch: x86_64
+          profile: ${{ matrix.profile }}
+          disable-animations: true
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -no-boot-anim
+          script: bash .github/scripts/device_run.sh ${{ matrix.name }} ${{ matrix.smoke }} ${{ matrix.test }} || true
+      # The emulator sometimes fails to start on GitHub's machines (before
+      # the game is installed). Try once more in that case.
+      - name: Run on emulator (retry)
+        if: ${{ steps.emu1.outcome == 'failure' }}
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 34
+          target: google_apis
+          arch: x86_64
+          profile: ${{ matrix.profile }}
+          disable-animations: true
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -no-boot-anim
+          script: bash .github/scripts/device_run.sh ${{ matrix.name }} ${{ matrix.smoke }} ${{ matrix.test }} || true
+      - name: Save logs to ci-logs-device-${{ matrix.name }} branch
+        if: ${{ always() && (inputs.only == '' || inputs.only == null || contains(inputs.only, matrix.name)) }}
+        run: bash .github/scripts/save_logs.sh ci-logs-device-${{ matrix.name }}
+      - name: Verdict
+        if: ${{ inputs.only == '' || inputs.only == null || contains(inputs.only, matrix.name) }}
+        run: |
+          cat ci-out/RESULT.txt
+          grep -qE "integration_test_[a-z]+=0" ci-out/RESULT.txt
+          if [ "${{ matrix.smoke }}" = "true" ]; then grep -q "app_ok=1" ci-out/RESULT.txt; fi
+
+  # The emulator jobs' own console output (the emulator's messages are only
+  # there), filtered and saved to branch ci-logs-device-console.
+  console:
+    needs: emulator
+    if: ${{ always() }}
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - name: Collect the emulator jobs' console output
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p ci-out
+          repo="${{ github.repository }}"
+          gh api "repos/$repo/actions/runs/${{ github.run_id }}/jobs" \
+            -q '.jobs[] | select(.name | startswith("emulator")) | "\(.id) \(.name)"' |
+          while read -r id name; do
+            n="$(echo "$name" | sed -E 's/^emulator \(([a-z]+).*/\1/')"
+            curl -sSL -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/$repo/actions/jobs/$id/logs" | tr -d '\033' > "ci-out/.full-$n.txt" 2>&1 || true
+            grep -iE "emulator:|qemu|fatal|crash|offline|vulkan|gfxstream|swiftshader|killed|segfault|abort|ERROR \||WARNING \|" "ci-out/.full-$n.txt" |
+              grep -viE "Downloading|Unzipping" | tail -n 400 > "ci-out/emulator-$n.txt"
+            tail -n 500 "ci-out/.full-$n.txt" > "ci-out/tail-$n.txt"
+            rm -f "ci-out/.full-$n.txt"
+          done
+          ls -la ci-out
+          bash .github/scripts/save_logs.sh ci-logs-device-console

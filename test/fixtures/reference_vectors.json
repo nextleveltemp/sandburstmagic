@@ -1,0 +1,7086 @@
+{
+ "rng": {
+  "seed": 12345,
+  "u32": [
+   4207900869,
+   1317490944,
+   2079646450,
+   3513001552,
+   2187978186,
+   1492380277,
+   316786230,
+   3291647763
+  ],
+  "int100": [
+   26
+  ],
+  "int10": [
+   0,
+   0,
+   9,
+   6,
+   5,
+   4,
+   4,
+   2,
+   5,
+   7,
+   2,
+   1,
+   7,
+   5,
+   1,
+   3,
+   2,
+   5,
+   2,
+   9
+  ]
+ },
+ "hash": {
+  "": 2166136261,
+  "a": 3826002220,
+  "sbm-daily-2026-11-15": 4004435526,
+  "sbm-level-1-0": 1636847155
+ },
+ "layouts": [
+  {
+   "seed": 1,
+   "fill": 3,
+   "density": 78,
+   "palette": null,
+   "obstacles": [],
+   "specials": [],
+   "blocked": [],
+   "lockRows": 4,
+   "rows": [
+    "..........",
+    "..........",
+    "..........",
+    "..........",
+    "..........",
+    "..........",
+    "..........",
+    "....0.....",
+    "3217289...",
+    "71764514.4"
+   ],
+   "encoded": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s0k0t0,,,,,,s3k0t0,s2k0t0,s1k0t0,s7k0t0,s2k0t0,s8k0t0,s9k0t0,,,,s7k0t0,s1k0t0,s7k0t0,s6k0t0,s4k0t0,s5k0t0,s1k0t0,s4k0t0,,s4k0t0"
+  },
+  {
+   "seed": 2,
+   "fill": 4,
+   "density": 70,
+   "palette": [
+    6,
+    9,
+    2
+   ],
+   "obstacles": [
+    [
+     0,
+     3,
+     5,
+     9
+    ]
+   ],
+   "specials": [
+    [
+     6,
+     2
+    ]
+   ],
+   "blocked": [],
+   "lockRows": 4,
+   "rows": [
+    "..........",
+    "..........",
+    "..........",
+    "..........",
+    "..........",
+    "..........",
+    ".....S....",
+    "...62...9.",
+    ".29S669622",
+    "962.9cSc62"
+   ],
+   "encoded": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o0h2t0,,,,,,,,s6k0t0,s2k0t0,,,,s9k0t0,,,s2k0t0,s9k0t0,o0h2t0,s6k0t0,s6k0t0,s9k0t0,s6k0t0,s2k0t0,s2k0t0,s9k0t0,s6k0t0,s2k0t0,,s9k0t0,s9k6t0,o0h2t0,s3k6t0,s6k0t0,s2k0t0"
+  },
+  {
+   "seed": 3,
+   "fill": 5,
+   "density": 86,
+   "palette": null,
+   "obstacles": [
+    [
+     2,
+     2,
+     4,
+     9
+    ],
+    [
+     1,
+     2,
+     4,
+     9
+    ]
+   ],
+   "specials": [
+    [
+     5,
+     4
+    ]
+   ],
+   "blocked": [],
+   "lockRows": 4,
+   "rows": [
+    "..........",
+    "..........",
+    "..........",
+    "..........",
+    "..........",
+    "f.........",
+    "IW.1......",
+    "5.f06.....",
+    "I4f7W5964.",
+    ".04f645059"
+   ],
+   "encoded": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s5k5t0,,,,,,,,,,o2h1t0,o1h1t0,,s1k0t0,,,,,,,s5k0t0,,s1k5t0,s0k0t0,s6k0t0,,,,,,o2h1t0,s4k0t0,s2k5t0,s7k0t0,o1h1t0,s5k0t0,s9k0t0,s6k0t0,s4k0t0,,,s0k0t0,s4k0t0,s5k5t0,s6k0t0,s4k0t0,s5k0t0,s0k0t0,s5k0t0,s9k0t0"
+  },
+  {
+   "seed": 4,
+   "fill": 4,
+   "density": 72,
+   "palette": null,
+   "obstacles": [
+    [
+     5,
+     2,
+     5,
+     9
+    ],
+    [
+     3,
+     1,
+     5,
+     9
+    ]
+   ],
+   "specials": [
+    [
+     2,
+     2
+    ]
+   ],
+   "blocked": [],
+   "lockRows": 4,
+   "rows": [
+    "..........",
+    "..........",
+    "..........",
+    "..........",
+    "..........",
+    "..........",
+    "T....L....",
+    "..........",
+    ".2...1....",
+    "064.50k07k"
+   ],
+   "encoded": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o5h3t0,,,,,o3h4t0,,,,,,,,,,,,,,,,s2k0t0,,,,s1k0t0,,,,,s0k0t0,s6k0t0,s4k0t0,,s5k0t0,s0k0t0,s1k2t3,s0k0t0,s7k0t0,s7k2t3"
+  },
+  {
+   "seed": 5,
+   "fill": 3,
+   "density": 74,
+   "palette": null,
+   "obstacles": [
+    [
+     7,
+     2,
+     4,
+     7
+    ],
+    [
+     4,
+     1,
+     6,
+     9
+    ],
+    [
+     6,
+     1,
+     6,
+     9
+    ]
+   ],
+   "specials": [
+    [
+     8,
+     1
+    ]
+   ],
+   "blocked": [
+    0,
+    1,
+    8,
+    9,
+    10,
+    19
+   ],
+   "lockRows": 4,
+   "rows": [
+    "xx......xx",
+    "x........x",
+    "..........",
+    "..........",
+    "..........",
+    "..........",
+    "N......M..",
+    "..........",
+    ".1.7U03381",
+    "80C0.4m278"
+   ],
+   "encoded": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o7h1t-1,,,,,,,o7h1t1,,,,,,,,,,,,,,s1k0t0,,s7k0t0,o4h0t0,s0k0t0,s3k0t0,s3k0t0,s8k0t0,s1k0t0,s8k0t0,s0k0t0,o6h3t0,s0k0t0,,s4k0t0,s1k8t0,s2k0t0,s7k0t0,s8k0t0"
+  },
+  {
+   "seed": 6,
+   "fill": 6,
+   "density": 80,
+   "palette": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "obstacles": [],
+   "specials": [
+    [
+     3,
+     1
+    ],
+    [
+     9,
+     1
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     7,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "blocked": [],
+   "lockRows": 4,
+   "rows": [
+    "..........",
+    "..........",
+    "..........",
+    "..........",
+    "..........",
+    "..........",
+    "..........",
+    "..........",
+    "...g435..7",
+    "1.v07e00hr"
+   ],
+   "encoded": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s4k7t0,s4k0t0,s3k0t0,s5k0t0,,,s7k0t0,s1k0t0,,s3k9t0,s0k0t0,s7k0t0,s9k3t0,s0k0t0,s0k0t0,s5k1t0,s7k4t0"
+  }
+ ],
+ "games": [
+  {
+   "name": "classic",
+   "config": {
+    "seed": 2024,
+    "layout": null,
+    "lockRows": 3,
+    "objectives": [],
+    "moveLimit": 0,
+    "weights": "default",
+    "palette": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "specials": {},
+    "schedule": "classic"
+   },
+   "start": {
+    "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,",
+    "tray": [
+     "23:5:0",
+     "17:5:0",
+     "11:5:0"
+    ],
+    "bonus": null,
+    "rng": 2399462310,
+    "score": 0,
+    "combo": 0,
+    "bestCombo": 0,
+    "rows": 0,
+    "multi": 0,
+    "bestWave": 0,
+    "moves": 0,
+    "sets": 1,
+    "sand": 0,
+    "obstacles": 0,
+    "golden": 0,
+    "perfect": 0,
+    "kinds": {},
+    "status": "playing",
+    "reason": ""
+   },
+   "turns": [
+    {
+     "move": [
+      0,
+      0,
+      1
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s5k0t0,s5k0t0,s5k0t0,,,,,,,",
+      "tray": [
+       null,
+       "17:5:0",
+       "11:5:0"
+      ],
+      "bonus": null,
+      "rng": 2399462310,
+      "score": 3,
+      "combo": 0,
+      "bestCombo": 0,
+      "rows": 0,
+      "multi": 0,
+      "bestWave": 0,
+      "moves": 1,
+      "sets": 1,
+      "sand": 0,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {},
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      3
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s5k0t0,s5k0t0,s5k0t0,s5k0t0,s5k0t0,s5k0t0,s5k0t0,,,",
+      "tray": [
+       null,
+       "17:5:0",
+       null
+      ],
+      "bonus": null,
+      "rng": 2399462310,
+      "score": 7,
+      "combo": 0,
+      "bestCombo": 0,
+      "rows": 0,
+      "multi": 0,
+      "bestWave": 0,
+      "moves": 2,
+      "sets": 1,
+      "sand": 0,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {},
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      7
+     ],
+     "points": 204,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s5k0t0,,",
+      "tray": [
+       "6:1:0",
+       "8:5:0",
+       "17:6:0"
+      ],
+      "bonus": null,
+      "rng": 503955300,
+      "score": 211,
+      "combo": 1,
+      "bestCombo": 1,
+      "rows": 1,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 3,
+      "sets": 2,
+      "sand": 10,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 10
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      0
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s1k0t0,,,,,,,,,,s1k0t0,s1k0t0,s1k0t0,,,,,s5k0t0,,",
+      "tray": [
+       null,
+       "8:5:0",
+       "17:6:0"
+      ],
+      "bonus": null,
+      "rng": 503955300,
+      "score": 215,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 1,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 4,
+      "sets": 2,
+      "sand": 10,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 10
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      2
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s1k0t0,s5k0t0,s5k0t0,,,,,,,,s1k0t0,s1k0t0,s1k0t0,s5k0t0,s5k0t0,,,s5k0t0,,",
+      "tray": [
+       null,
+       null,
+       "17:6:0"
+      ],
+      "bonus": null,
+      "rng": 503955300,
+      "score": 219,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 1,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 5,
+      "sets": 2,
+      "sand": 10,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 10
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      4
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s1k0t0,s5k0t0,s5k0t0,s6k0t0,s6k0t0,,,,,,s1k0t0,s1k0t0,s1k0t0,s5k0t0,s5k0t0,s6k0t0,s6k0t0,s5k0t0,,",
+      "tray": [
+       "9:0:0",
+       "9:3:0",
+       "27:1:0"
+      ],
+      "bonus": null,
+      "rng": 2903415586,
+      "score": 223,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 1,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 6,
+      "sets": 3,
+      "sand": 10,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 10
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      7
+     ],
+     "points": 204,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s1k0t0,s5k0t0,s5k0t0,s6k0t0,s6k0t0,,,s0k0t0,s0k0t0,",
+      "tray": [
+       null,
+       "9:3:0",
+       "27:1:0"
+      ],
+      "bonus": null,
+      "rng": 2903415586,
+      "score": 427,
+      "combo": 1,
+      "bestCombo": 1,
+      "rows": 2,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 7,
+      "sets": 3,
+      "sand": 20,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 20
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      6
+     ],
+     "points": 229,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s3k0t0,,",
+      "tray": [
+       null,
+       null,
+       "27:1:0"
+      ],
+      "bonus": null,
+      "rng": 2903415586,
+      "score": 656,
+      "combo": 2,
+      "bestCombo": 2,
+      "rows": 3,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 8,
+      "sets": 3,
+      "sand": 30,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 30
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      1
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s1k0t0,s1k0t0,s1k0t0,s1k0t0,,,,s3k0t0,,",
+      "tray": [
+       "0:4:0",
+       "29:7:0",
+       "4:7:0"
+      ],
+      "bonus": null,
+      "rng": 1007908576,
+      "score": 660,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 3,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 9,
+      "sets": 4,
+      "sand": 30,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 30
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      3
+     ],
+     "points": 1,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s1k0t0,s1k0t0,s1k0t0,s1k0t0,s4k0t0,,,s3k0t0,,",
+      "tray": [
+       null,
+       "29:7:0",
+       "4:7:0"
+      ],
+      "bonus": null,
+      "rng": 1007908576,
+      "score": 661,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 3,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 10,
+      "sets": 4,
+      "sand": 30,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 30
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      7
+     ],
+     "points": 205,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s7k0t0,,",
+      "tray": [
+       null,
+       null,
+       "4:7:0"
+      ],
+      "bonus": null,
+      "rng": 1007908576,
+      "score": 866,
+      "combo": 1,
+      "bestCombo": 2,
+      "rows": 4,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 11,
+      "sets": 4,
+      "sand": 40,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 40
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      1
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s7k0t0,s7k0t0,s7k0t0,,,,,s7k0t0,,",
+      "tray": [
+       "0:2:0",
+       "6:4:0",
+       "6:5:0"
+      ],
+      "bonus": null,
+      "rng": 3407368862,
+      "score": 869,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 4,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 12,
+      "sets": 5,
+      "sand": 40,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 40
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      2
+     ],
+     "points": 1,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s7k0t0,s7k0t0,s7k0t0,s2k0t0,,,,s7k0t0,,",
+      "tray": [
+       null,
+       "6:4:0",
+       "6:5:0"
+      ],
+      "bonus": null,
+      "rng": 3407368862,
+      "score": 870,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 4,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 13,
+      "sets": 5,
+      "sand": 40,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 40
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      2
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s4k0t0,s4k0t0,s4k0t0,,,,,,,s7k0t0,s7k0t0,s7k0t0,s2k0t0,s4k0t0,,,s7k0t0,,",
+      "tray": [
+       null,
+       null,
+       "6:5:0"
+      ],
+      "bonus": null,
+      "rng": 3407368862,
+      "score": 874,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 4,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 14,
+      "sets": 5,
+      "sand": 40,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 40
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      4
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s4k0t0,s4k0t0,s4k0t0,s5k0t0,s5k0t0,,,,,s7k0t0,s7k0t0,s7k0t0,s2k0t0,s4k0t0,s5k0t0,s5k0t0,s7k0t0,,",
+      "tray": [
+       "1:5:0",
+       "18:5:0",
+       "5:1:0"
+      ],
+      "bonus": null,
+      "rng": 1511861852,
+      "score": 878,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 4,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 15,
+      "sets": 6,
+      "sand": 40,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 40
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      8
+     ],
+     "points": 202,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s4k0t0,s4k0t0,s4k0t0,s5k0t0,s5k0t0,,,,",
+      "tray": [
+       null,
+       "18:5:0",
+       "5:1:0"
+      ],
+      "bonus": null,
+      "rng": 1511861852,
+      "score": 1080,
+      "combo": 1,
+      "bestCombo": 2,
+      "rows": 5,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 16,
+      "sets": 6,
+      "sand": 50,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 50
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      6
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s4k0t0,s4k0t0,s4k0t0,s5k0t0,s5k0t0,s1k0t0,s1k0t0,s1k0t0,s1k0t0",
+      "tray": [
+       null,
+       "18:5:0",
+       null
+      ],
+      "bonus": null,
+      "rng": 1511861852,
+      "score": 1084,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 5,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 17,
+      "sets": 6,
+      "sand": 50,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 50
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      0
+     ],
+     "points": 204,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s5k0t0,s5k0t0,s5k0t0,,,,,,,",
+      "tray": [
+       "4:3:0",
+       "12:3:0",
+       "3:3:0"
+      ],
+      "bonus": null,
+      "rng": 816084985,
+      "score": 1288,
+      "combo": 1,
+      "bestCombo": 2,
+      "rows": 6,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 18,
+      "sets": 7,
+      "sand": 60,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 60
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      4
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s5k0t0,s5k0t0,s5k0t0,s3k0t0,s3k0t0,s3k0t0,,,,",
+      "tray": [
+       null,
+       "12:3:0",
+       "3:3:0"
+      ],
+      "bonus": null,
+      "rng": 816084985,
+      "score": 1291,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 6,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 19,
+      "sets": 7,
+      "sand": 60,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 60
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      6
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s5k0t0,s5k0t0,s5k0t0,s3k0t0,s3k0t0,s3k0t0,s3k0t0,s3k0t0,s3k0t0,",
+      "tray": [
+       null,
+       "12:3:0",
+       null
+      ],
+      "bonus": null,
+      "rng": 816084985,
+      "score": 1294,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 6,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 20,
+      "sets": 7,
+      "sand": 60,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 60
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      6
+     ],
+     "points": 204,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s3k0t0,s3k0t0,s3k0t0,",
+      "tray": [
+       "23:2:0",
+       "27:0:0",
+       "2:1:0"
+      ],
+      "bonus": null,
+      "rng": 120308118,
+      "score": 1498,
+      "combo": 1,
+      "bestCombo": 2,
+      "rows": 7,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 21,
+      "sets": 8,
+      "sand": 70,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 70
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      0
+     ],
+     "points": 2,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s1k0t0,s1k0t0,,,,,s3k0t0,s3k0t0,s3k0t0,",
+      "tray": [
+       "23:2:0",
+       "27:0:0",
+       null
+      ],
+      "bonus": null,
+      "rng": 120308118,
+      "score": 1500,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 7,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 22,
+      "sets": 8,
+      "sand": 70,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 70
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      3
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s1k0t0,s1k0t0,s2k0t0,s2k0t0,s2k0t0,,s3k0t0,s3k0t0,s3k0t0,",
+      "tray": [
+       null,
+       "27:0:0",
+       null
+      ],
+      "bonus": null,
+      "rng": 120308118,
+      "score": 1503,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 7,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 23,
+      "sets": 8,
+      "sand": 70,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 70
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      6
+     ],
+     "points": 204,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s0k0t0,s0k0t0,,",
+      "tray": [
+       "25:7:0",
+       "6:5:5",
+       "9:4:0"
+      ],
+      "bonus": null,
+      "rng": 3719498547,
+      "score": 1707,
+      "combo": 1,
+      "bestCombo": 2,
+      "rows": 8,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 24,
+      "sets": 9,
+      "sand": 80,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 80
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      1
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s7k0t0,s7k0t0,s7k0t0,s7k0t0,,,s0k0t0,s0k0t0,,",
+      "tray": [
+       null,
+       "6:5:5",
+       "9:4:0"
+      ],
+      "bonus": null,
+      "rng": 3719498547,
+      "score": 1711,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 8,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 25,
+      "sets": 9,
+      "sand": 80,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 80
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      1
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s4k0t0,s4k0t0,s4k0t0,,,,,,,,s7k0t0,s7k0t0,s7k0t0,s7k0t0,s4k0t0,,s0k0t0,s0k0t0,,",
+      "tray": [
+       null,
+       "6:5:5",
+       null
+      ],
+      "bonus": null,
+      "rng": 3719498547,
+      "score": 1715,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 8,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 26,
+      "sets": 9,
+      "sand": 80,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 80
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      6,
+      5
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s5k5t0,,,,,,,,,,s5k5t0,,,,,s4k0t0,s4k0t0,s4k0t0,,,s5k5t0,,,,,s7k0t0,s7k0t0,s7k0t0,s7k0t0,s4k0t0,s5k5t0,s0k0t0,s0k0t0,,",
+      "tray": [
+       "6:1:0",
+       "5:5:0",
+       "15:6:0"
+      ],
+      "bonus": null,
+      "rng": 3023721680,
+      "score": 1719,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 8,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 27,
+      "sets": 10,
+      "sand": 80,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 80
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      7
+     ],
+     "points": 204,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s5k5t0,,,,,,,,,,s5k5t0,,,,,,,,,,,,,,,s4k0t0,s4k0t0,s4k0t0,,,s5k0t0,s1k0t0,s1k0t0,,",
+      "tray": [
+       null,
+       "5:5:0",
+       "15:6:0"
+      ],
+      "bonus": null,
+      "rng": 3023721680,
+      "score": 1923,
+      "combo": 1,
+      "bestCombo": 2,
+      "rows": 9,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 28,
+      "sets": 10,
+      "sand": 90,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 89,
+       "5": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      8,
+      2
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s5k5t0,,,,,,,,,,s5k5t0,,,,,,,s5k0t0,,,s5k0t0,,,,,s4k0t0,s4k0t0,s4k0t0,s5k0t0,s5k0t0,s5k0t0,s1k0t0,s1k0t0,,",
+      "tray": [
+       null,
+       null,
+       "15:6:0"
+      ],
+      "bonus": null,
+      "rng": 3023721680,
+      "score": 1927,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 9,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 29,
+      "sets": 10,
+      "sand": 90,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 89,
+       "5": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      6
+     ],
+     "points": 204,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s5k5t0,,,,,,,,,,s5k5t0,,,,,,,,,,,,,,,,,s5k0t0,,,s5k0t0,s6k0t0,s6k0t0,,",
+      "tray": [
+       "3:5:0",
+       "14:4:0",
+       "4:3:0"
+      ],
+      "bonus": null,
+      "rng": 2327944813,
+      "score": 2131,
+      "combo": 1,
+      "bestCombo": 2,
+      "rows": 10,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 30,
+      "sets": 11,
+      "sand": 100,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 99,
+       "5": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      8,
+      3
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s5k5t0,,,,,,,,,,s5k5t0,,,,,,,,,,s5k0t0,,,,,,,s5k0t0,s5k0t0,s5k0t0,s5k0t0,s6k0t0,s6k0t0,,",
+      "tray": [
+       null,
+       "14:4:0",
+       "4:3:0"
+      ],
+      "bonus": null,
+      "rng": 2327944813,
+      "score": 2134,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 10,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 31,
+      "sets": 11,
+      "sand": 100,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 99,
+       "5": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      0
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s5k5t0,,,,,,,,,,s5k5t0,,,,,s3k0t0,,,,,s5k0t0,,,,,s3k0t0,s3k0t0,s5k0t0,s5k0t0,s5k0t0,s5k0t0,s6k0t0,s6k0t0,,",
+      "tray": [
+       null,
+       "14:4:0",
+       null
+      ],
+      "bonus": null,
+      "rng": 2327944813,
+      "score": 2137,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 10,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 32,
+      "sets": 11,
+      "sand": 100,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 99,
+       "5": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      7
+     ],
+     "points": 204,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s5k5t0,,,,,,,,,,s5k5t0,,,,,,,,,,,,,,,s3k0t0,,,,,s5k0t0,s4k0t0,s4k0t0,,",
+      "tray": [
+       "2:7:0",
+       "21:5:0",
+       "1:6:0"
+      ],
+      "bonus": null,
+      "rng": 1632167946,
+      "score": 2341,
+      "combo": 1,
+      "bestCombo": 2,
+      "rows": 11,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 33,
+      "sets": 12,
+      "sand": 110,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 109,
+       "5": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      8,
+      4
+     ],
+     "points": 2,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s5k5t0,,,,,,,,,,s5k5t0,,,,,,,,,,s6k0t0,,,,,s3k0t0,,,,s6k0t0,s5k0t0,s4k0t0,s4k0t0,,",
+      "tray": [
+       "2:7:0",
+       "21:5:0",
+       null
+      ],
+      "bonus": null,
+      "rng": 1632167946,
+      "score": 2343,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 11,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 34,
+      "sets": 12,
+      "sand": 110,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 109,
+       "5": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      0
+     ],
+     "points": 2,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s5k5t0,,,,,,,,,,s5k5t0,,,,,s7k0t0,,,,,s6k0t0,,,,,s3k0t0,s7k0t0,,,s6k0t0,s5k0t0,s4k0t0,s4k0t0,,",
+      "tray": [
+       null,
+       "21:5:0",
+       null
+      ],
+      "bonus": null,
+      "rng": 1632167946,
+      "score": 2345,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 11,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 35,
+      "sets": 12,
+      "sand": 110,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 109,
+       "5": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      0
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s5k5t0,,,,,s5k0t0,,,,,s5k5t0,,,,,s7k0t0,s5k0t0,,,,s6k0t0,,,,,s3k0t0,s7k0t0,s5k0t0,,s6k0t0,s5k0t0,s4k0t0,s4k0t0,,",
+      "tray": [
+       "20:4:0",
+       "0:1:0",
+       "24:0:0"
+      ],
+      "bonus": null,
+      "rng": 936391079,
+      "score": 2348,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 11,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 36,
+      "sets": 13,
+      "sand": 110,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 109,
+       "5": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      0
+     ],
+     "points": 1,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s5k5t0,,,,,s5k0t0,,,,,s5k5t0,,,,,s7k0t0,s5k0t0,,,,s6k0t0,,,,,s3k0t0,s7k0t0,s5k0t0,s1k0t0,s6k0t0,s5k0t0,s4k0t0,s4k0t0,,",
+      "tray": [
+       "20:4:0",
+       null,
+       "24:0:0"
+      ],
+      "bonus": null,
+      "rng": 936391079,
+      "score": 2349,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 11,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 37,
+      "sets": 13,
+      "sand": 110,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 109,
+       "5": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      7
+     ],
+     "points": 203,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s5k5t0,,,,,,,,,,s5k5t0,,,,,s5k0t0,,,,,,,,,,s7k0t0,s5k0t0,,,,s6k0t0,,s4k0t0,,",
+      "tray": [
+       null,
+       null,
+       "24:0:0"
+      ],
+      "bonus": null,
+      "rng": 936391079,
+      "score": 2552,
+      "combo": 1,
+      "bestCombo": 2,
+      "rows": 12,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 38,
+      "sets": 13,
+      "sand": 120,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 119,
+       "5": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      0
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s5k5t0,,,,,s0k0t0,,,,,s5k5t0,,,,,s5k0t0,s0k0t0,,,,,,,,,s7k0t0,s5k0t0,s0k0t0,s0k0t0,,s6k0t0,,s4k0t0,,",
+      "tray": [
+       "26:6:0",
+       "15:5:0",
+       "14:0:0"
+      ],
+      "bonus": null,
+      "rng": 240614212,
+      "score": 2556,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 12,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 39,
+      "sets": 14,
+      "sand": 120,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 119,
+       "5": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      8,
+      4
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s5k5t0,,,,,s0k0t0,,,,,s5k5t0,,,,,s5k0t0,s0k0t0,,,,s5k0t0,s5k0t0,,,,s7k0t0,s5k0t0,s0k0t0,s0k0t0,s5k0t0,s6k0t0,s5k0t0,s4k0t0,,",
+      "tray": [
+       "26:6:0",
+       null,
+       "14:0:0"
+      ],
+      "bonus": null,
+      "rng": 240614212,
+      "score": 2560,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 12,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 40,
+      "sets": 14,
+      "sand": 120,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 119,
+       "5": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    }
+   ]
+  },
+  {
+   "name": "endless",
+   "config": {
+    "seed": 77,
+    "layout": null,
+    "lockRows": 3,
+    "objectives": [],
+    "moveLimit": 0,
+    "weights": "default",
+    "palette": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "specials": {},
+    "schedule": "endless"
+   },
+   "start": {
+    "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,",
+    "tray": [
+     "7:0:0",
+     "19:3:0",
+     "2:6:0"
+    ],
+    "bonus": null,
+    "rng": 2399460363,
+    "score": 0,
+    "combo": 0,
+    "bestCombo": 0,
+    "rows": 0,
+    "multi": 0,
+    "bestWave": 0,
+    "moves": 0,
+    "sets": 1,
+    "sand": 0,
+    "obstacles": 0,
+    "golden": 0,
+    "perfect": 0,
+    "kinds": {},
+    "status": "playing",
+    "reason": ""
+   },
+   "turns": [
+    {
+     "move": [
+      2,
+      0,
+      0
+     ],
+     "points": 2,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s6k0t0,s6k0t0,,,,,,,,",
+      "tray": [
+       "7:0:0",
+       "19:3:0",
+       null
+      ],
+      "bonus": null,
+      "rng": 2399460363,
+      "score": 2,
+      "combo": 0,
+      "bestCombo": 0,
+      "rows": 0,
+      "multi": 0,
+      "bestWave": 0,
+      "moves": 1,
+      "sets": 1,
+      "sand": 0,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {},
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      3
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s6k0t0,s6k0t0,s0k0t0,s0k0t0,s0k0t0,s0k0t0,,,,",
+      "tray": [
+       null,
+       "19:3:0",
+       null
+      ],
+      "bonus": null,
+      "rng": 2399460363,
+      "score": 6,
+      "combo": 0,
+      "bestCombo": 0,
+      "rows": 0,
+      "multi": 0,
+      "bestWave": 0,
+      "moves": 2,
+      "sets": 1,
+      "sand": 0,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {},
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      3
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s3k0t0,s3k0t0,s3k0t0,,,,,s6k0t0,s6k0t0,s0k0t0,s0k0t0,s0k0t0,s0k0t0,s3k0t0,,,",
+      "tray": [
+       "25:6:0",
+       "1:1:0",
+       "26:4:0"
+      ],
+      "bonus": null,
+      "rng": 503953353,
+      "score": 10,
+      "combo": 0,
+      "bestCombo": 0,
+      "rows": 0,
+      "multi": 0,
+      "bestWave": 0,
+      "moves": 3,
+      "sets": 2,
+      "sand": 0,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {},
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      7
+     ],
+     "points": 204,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s3k0t0,s3k0t0,s3k0t0,,s6k0t0,,",
+      "tray": [
+       null,
+       "1:1:0",
+       "26:4:0"
+      ],
+      "bonus": null,
+      "rng": 503953353,
+      "score": 214,
+      "combo": 1,
+      "bestCombo": 1,
+      "rows": 1,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 4,
+      "sets": 2,
+      "sand": 10,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 10
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      0
+     ],
+     "points": 2,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s1k0t0,s1k0t0,,s3k0t0,s3k0t0,s3k0t0,,s6k0t0,,",
+      "tray": [
+       null,
+       null,
+       "26:4:0"
+      ],
+      "bonus": null,
+      "rng": 503953353,
+      "score": 216,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 1,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 5,
+      "sets": 2,
+      "sand": 10,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 10
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      0
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s4k0t0,s4k0t0,s4k0t0,,,,,,,,s1k0t0,s1k0t0,s4k0t0,s3k0t0,s3k0t0,s3k0t0,,s6k0t0,,",
+      "tray": [
+       "10:5:0",
+       "7:0:0",
+       "2:0:0"
+      ],
+      "bonus": null,
+      "rng": 2903413639,
+      "score": 220,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 1,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 6,
+      "sets": 3,
+      "sand": 10,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 10
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      7
+     ],
+     "points": 204,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s4k0t0,s4k0t0,s4k0t0,,,,,,s5k0t0,",
+      "tray": [
+       null,
+       "7:0:0",
+       "2:0:0"
+      ],
+      "bonus": null,
+      "rng": 2903413639,
+      "score": 424,
+      "combo": 1,
+      "bestCombo": 1,
+      "rows": 2,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 7,
+      "sets": 3,
+      "sand": 20,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 20
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      3
+     ],
+     "points": 2,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s4k0t0,s4k0t0,s4k0t0,s0k0t0,s0k0t0,,,,s5k0t0,",
+      "tray": [
+       null,
+       "7:0:0",
+       null
+      ],
+      "bonus": null,
+      "rng": 2903413639,
+      "score": 426,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 2,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 8,
+      "sets": 3,
+      "sand": 20,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 20
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      1
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s0k0t0,s0k0t0,s0k0t0,s0k0t0,,,,,,,s4k0t0,s4k0t0,s4k0t0,s0k0t0,s0k0t0,,,,s5k0t0,",
+      "tray": [
+       "7:4:0",
+       "28:0:0",
+       "4:1:0"
+      ],
+      "bonus": null,
+      "rng": 1007906629,
+      "score": 430,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 2,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 9,
+      "sets": 4,
+      "sand": 20,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 20
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      4
+     ],
+     "points": 205,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s0k0t0,s0k0t0,s0k0t0,s0k0t0,s0k0t0,,,,,",
+      "tray": [
+       "7:4:0",
+       null,
+       "4:1:0"
+      ],
+      "bonus": null,
+      "rng": 1007906629,
+      "score": 635,
+      "combo": 1,
+      "bestCombo": 1,
+      "rows": 3,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 10,
+      "sets": 4,
+      "sand": 30,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 30
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      6
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s0k0t0,s0k0t0,s0k0t0,s0k0t0,s0k0t0,s1k0t0,s1k0t0,s1k0t0,,",
+      "tray": [
+       "7:4:0",
+       null,
+       null
+      ],
+      "bonus": null,
+      "rng": 1007906629,
+      "score": 638,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 3,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 11,
+      "sets": 4,
+      "sand": 30,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 30
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      7
+     ],
+     "points": 204,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s4k0t0,s4k0t0,,",
+      "tray": [
+       "2:1:0",
+       "0:6:0",
+       "9:4:0"
+      ],
+      "bonus": null,
+      "rng": 312129762,
+      "score": 842,
+      "combo": 1,
+      "bestCombo": 1,
+      "rows": 4,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 12,
+      "sets": 5,
+      "sand": 40,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 40
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      0
+     ],
+     "points": 1,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s6k0t0,,,,,,s4k0t0,s4k0t0,,",
+      "tray": [
+       "2:1:0",
+       null,
+       "9:4:0"
+      ],
+      "bonus": null,
+      "rng": 312129762,
+      "score": 843,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 4,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 13,
+      "sets": 5,
+      "sand": 40,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 40
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      1
+     ],
+     "points": 2,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s6k0t0,s1k0t0,s1k0t0,,,,s4k0t0,s4k0t0,,",
+      "tray": [
+       null,
+       null,
+       "9:4:0"
+      ],
+      "bonus": null,
+      "rng": 312129762,
+      "score": 845,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 4,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 14,
+      "sets": 5,
+      "sand": 40,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 40
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      1
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s4k0t0,s4k0t0,s4k0t0,,,,,,,,s6k0t0,s1k0t0,s1k0t0,s4k0t0,,,s4k0t0,s4k0t0,,",
+      "tray": [
+       "4:4:0",
+       "20:3:0",
+       "14:3:0"
+      ],
+      "bonus": null,
+      "rng": 3911320191,
+      "score": 849,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 4,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 15,
+      "sets": 6,
+      "sand": 40,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 40
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      3
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s4k0t0,s4k0t0,s4k0t0,s4k0t0,,,,,,,s6k0t0,s1k0t0,s1k0t0,s4k0t0,s4k0t0,s4k0t0,s4k0t0,s4k0t0,,",
+      "tray": [
+       null,
+       "20:3:0",
+       "14:3:0"
+      ],
+      "bonus": null,
+      "rng": 3911320191,
+      "score": 852,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 4,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 16,
+      "sets": 6,
+      "sand": 40,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 40
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      7
+     ],
+     "points": 203,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s4k0t0,s4k0t0,s4k0t0,s4k0t0,,,,s3k0t0,,",
+      "tray": [
+       null,
+       null,
+       "14:3:0"
+      ],
+      "bonus": null,
+      "rng": 3911320191,
+      "score": 1055,
+      "combo": 1,
+      "bestCombo": 1,
+      "rows": 5,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 17,
+      "sets": 6,
+      "sand": 50,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 50
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      2
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s3k0t0,s3k0t0,s3k0t0,,,,,,,s4k0t0,s4k0t0,s4k0t0,s4k0t0,s3k0t0,,,s3k0t0,,",
+      "tray": [
+       "5:4:6",
+       "27:1:0",
+       "9:6:0"
+      ],
+      "bonus": null,
+      "rng": 3215543324,
+      "score": 1059,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 5,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 18,
+      "sets": 7,
+      "sand": 50,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 50
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      4
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s3k0t0,s3k0t0,s3k0t0,s4k6t0,,,,,,s4k0t0,s4k0t0,s4k0t0,s4k0t0,s3k0t0,s4k6t0,s4k6t0,s3k0t0,s4k6t0,",
+      "tray": [
+       null,
+       "27:1:0",
+       "9:6:0"
+      ],
+      "bonus": null,
+      "rng": 3215543324,
+      "score": 1063,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 5,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 19,
+      "sets": 7,
+      "sand": 50,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 50
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      6
+     ],
+     "points": 324,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s3k0t0,s3k0t0,s3k0t0,s4k6t0,s1k0t0,s1k0t0,s1k0t0,,",
+      "tray": [
+       null,
+       null,
+       "9:6:0"
+      ],
+      "bonus": null,
+      "rng": 3215543324,
+      "score": 1387,
+      "combo": 1,
+      "bestCombo": 1,
+      "rows": 6,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 20,
+      "sets": 7,
+      "sand": 60,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 57,
+       "6": 3
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      0
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s6k0t0,s6k0t0,s6k0t0,,,,,,,,s6k0t0,s3k0t0,s3k0t0,s3k0t0,s4k6t0,s1k0t0,s1k0t0,s1k0t0,,",
+      "tray": [
+       "6:2:0",
+       "24:3:0",
+       "13:2:0"
+      ],
+      "bonus": null,
+      "rng": 2519766457,
+      "score": 1391,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 6,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 21,
+      "sets": 8,
+      "sand": 60,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 57,
+       "6": 3
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      7
+     ],
+     "points": 244,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s6k0t0,s6k0t0,s6k0t0,,,,s2k0t0,s2k0t0,,",
+      "tray": [
+       null,
+       "24:3:0",
+       "13:2:0"
+      ],
+      "bonus": null,
+      "rng": 2519766457,
+      "score": 1635,
+      "combo": 1,
+      "bestCombo": 1,
+      "rows": 7,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 22,
+      "sets": 8,
+      "sand": 70,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 66,
+       "6": 4
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      0
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s3k0t0,s3k0t0,s3k0t0,,,,,,,,s6k0t0,s6k0t0,s6k0t0,s3k0t0,,,s2k0t0,s2k0t0,,",
+      "tray": [
+       null,
+       null,
+       "13:2:0"
+      ],
+      "bonus": null,
+      "rng": 2519766457,
+      "score": 1639,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 7,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 23,
+      "sets": 8,
+      "sand": 70,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 66,
+       "6": 4
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      3
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s3k0t0,s3k0t0,s3k0t0,s2k0t0,s2k0t0,,,,,,s6k0t0,s6k0t0,s6k0t0,s3k0t0,s2k0t0,s2k0t0,s2k0t0,s2k0t0,,",
+      "tray": [
+       "6:3:0",
+       "9:5:0",
+       "23:4:0"
+      ],
+      "bonus": null,
+      "rng": 1823989590,
+      "score": 1643,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 7,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 24,
+      "sets": 9,
+      "sand": 70,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 66,
+       "6": 4
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      7
+     ],
+     "points": 203,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s3k0t0,s3k0t0,s3k0t0,s2k0t0,s2k0t0,,,s4k0t0,,",
+      "tray": [
+       "6:3:0",
+       "9:5:0",
+       null
+      ],
+      "bonus": null,
+      "rng": 1823989590,
+      "score": 1846,
+      "combo": 1,
+      "bestCombo": 1,
+      "rows": 8,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 25,
+      "sets": 9,
+      "sand": 80,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 76,
+       "6": 4
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      3
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s3k0t0,s3k0t0,s3k0t0,,,,,,s3k0t0,s3k0t0,s3k0t0,s2k0t0,s2k0t0,s3k0t0,,s4k0t0,,",
+      "tray": [
+       null,
+       "9:5:0",
+       null
+      ],
+      "bonus": null,
+      "rng": 1823989590,
+      "score": 1850,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 8,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 26,
+      "sets": 9,
+      "sand": 80,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 76,
+       "6": 4
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      7
+     ],
+     "points": 204,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s3k0t0,s3k0t0,s3k0t0,,,s5k0t0,,",
+      "tray": [
+       "11:2:0",
+       "15:4:0",
+       "8:0:6"
+      ],
+      "bonus": null,
+      "rng": 1128212723,
+      "score": 2054,
+      "combo": 1,
+      "bestCombo": 1,
+      "rows": 9,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 27,
+      "sets": 10,
+      "sand": 90,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 86,
+       "6": 4
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      0
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s2k0t0,s2k0t0,,,,,,,,s2k0t0,s2k0t0,s3k0t0,s3k0t0,s3k0t0,,,s5k0t0,,",
+      "tray": [
+       null,
+       "15:4:0",
+       "8:0:6"
+      ],
+      "bonus": null,
+      "rng": 1128212723,
+      "score": 2058,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 9,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 28,
+      "sets": 10,
+      "sand": 90,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 86,
+       "6": 4
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      3
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s2k0t0,s2k0t0,s4k0t0,s4k0t0,,,,,,s2k0t0,s2k0t0,s3k0t0,s3k0t0,s3k0t0,s4k0t0,s4k0t0,s5k0t0,,",
+      "tray": [
+       null,
+       null,
+       "8:0:6"
+      ],
+      "bonus": null,
+      "rng": 1128212723,
+      "score": 2062,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 9,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 29,
+      "sets": 10,
+      "sand": 90,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 86,
+       "6": 4
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      7
+     ],
+     "points": 284,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s2k0t0,s2k0t0,s4k0t0,s4k0t0,,s0k6t0,s0k6t0,,",
+      "tray": [
+       "0:3:0",
+       "7:1:0",
+       "16:0:0"
+      ],
+      "bonus": null,
+      "rng": 432435856,
+      "score": 2346,
+      "combo": 1,
+      "bestCombo": 1,
+      "rows": 10,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 30,
+      "sets": 11,
+      "sand": 100,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 94,
+       "6": 6
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      0
+     ],
+     "points": 1,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s3k0t0,s2k0t0,s2k0t0,s4k0t0,s4k0t0,,s0k6t0,s0k6t0,,",
+      "tray": [
+       null,
+       "7:1:0",
+       "16:0:0"
+      ],
+      "bonus": null,
+      "rng": 432435856,
+      "score": 2347,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 10,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 31,
+      "sets": 11,
+      "sand": 100,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 94,
+       "6": 6
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      7
+     ],
+     "points": 284,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s1k0t0,,",
+      "tray": [
+       null,
+       null,
+       "16:0:0"
+      ],
+      "bonus": null,
+      "rng": 432435856,
+      "score": 2631,
+      "combo": 1,
+      "bestCombo": 1,
+      "rows": 11,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 32,
+      "sets": 11,
+      "sand": 110,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 102,
+       "6": 8
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      0
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s0k0t0,,,,,,,,,s0k0t0,s0k0t0,s0k0t0,,,,,s1k0t0,,",
+      "tray": [
+       "23:5:0",
+       "14:2:0",
+       "11:7:0"
+      ],
+      "bonus": null,
+      "rng": 4031626285,
+      "score": 2635,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 11,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 33,
+      "sets": 12,
+      "sand": 110,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 102,
+       "6": 8
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      1
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s5k0t0,s0k0t0,s5k0t0,,,,,,,,s0k0t0,s0k0t0,s0k0t0,s5k0t0,,,,s1k0t0,,",
+      "tray": [
+       null,
+       "14:2:0",
+       "11:7:0"
+      ],
+      "bonus": null,
+      "rng": 4031626285,
+      "score": 2638,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 11,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 34,
+      "sets": 12,
+      "sand": 110,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 102,
+       "6": 8
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      3
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s5k0t0,s0k0t0,s5k0t0,s2k0t0,s2k0t0,,,,,,s0k0t0,s0k0t0,s0k0t0,s5k0t0,s2k0t0,s2k0t0,,s1k0t0,,",
+      "tray": [
+       null,
+       null,
+       "11:7:0"
+      ],
+      "bonus": null,
+      "rng": 4031626285,
+      "score": 2642,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 11,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 35,
+      "sets": 12,
+      "sand": 110,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 102,
+       "6": 8
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      6
+     ],
+     "points": 204,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s5k0t0,s0k0t0,s5k0t0,s2k0t0,s2k0t0,,,s7k0t0,,",
+      "tray": [
+       "0:6:7",
+       "0:3:1",
+       "23:3:6"
+      ],
+      "bonus": null,
+      "rng": 3335849418,
+      "score": 2846,
+      "combo": 1,
+      "bestCombo": 1,
+      "rows": 12,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 36,
+      "sets": 13,
+      "sand": 120,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 112,
+       "6": 8
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      4
+     ],
+     "points": 1,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s5k0t0,s0k0t0,s5k0t0,s2k0t0,s2k0t0,s6k7t0,,s7k0t0,,",
+      "tray": [
+       null,
+       "0:3:1",
+       "23:3:6"
+      ],
+      "bonus": null,
+      "rng": 3335849418,
+      "score": 2847,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 12,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 37,
+      "sets": 13,
+      "sand": 120,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 112,
+       "6": 8
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      6
+     ],
+     "points": 1,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s5k0t0,s0k0t0,s5k0t0,s2k0t0,s2k0t0,s6k7t0,s3k1t0,s7k0t0,,",
+      "tray": [
+       null,
+       null,
+       "23:3:6"
+      ],
+      "bonus": null,
+      "rng": 3335849418,
+      "score": 2848,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 12,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 38,
+      "sets": 13,
+      "sand": 120,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 112,
+       "6": 8
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      7
+     ],
+     "points": 283,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s3k6t0,,",
+      "tray": [
+       "19:2:3",
+       "3:0:6",
+       "24:6:5"
+      ],
+      "bonus": null,
+      "rng": 2640072551,
+      "score": 3131,
+      "combo": 1,
+      "bestCombo": 1,
+      "rows": 13,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 39,
+      "sets": 14,
+      "sand": 130,
+      "obstacles": 0,
+      "golden": 1,
+      "perfect": 0,
+      "kinds": {
+       "0": 118,
+       "1": 1,
+       "6": 10,
+       "7": 1
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      0
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s0k6t0,s0k6t0,s0k6t0,,,,,s3k6t0,,",
+      "tray": [
+       "19:2:3",
+       null,
+       "24:6:5"
+      ],
+      "bonus": null,
+      "rng": 2640072551,
+      "score": 3134,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 13,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 40,
+      "sets": 14,
+      "sand": 130,
+      "obstacles": 0,
+      "golden": 1,
+      "perfect": 0,
+      "kinds": {
+       "0": 118,
+       "1": 1,
+       "6": 10,
+       "7": 1
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    }
+   ]
+  },
+  {
+   "name": "everything",
+   "config": {
+    "seed": 4242,
+    "layout": [
+     "..........",
+     "..........",
+     "..........",
+     "..........",
+     ".........I",
+     ".......U..",
+     "..NW..f8..",
+     "8....5999f",
+     "S4e.07LCS8",
+     ".k361726.4"
+    ],
+    "lockRows": 3,
+    "objectives": [
+     [
+      "rows",
+      40,
+      0
+     ]
+    ],
+    "moveLimit": 35,
+    "weights": "default",
+    "palette": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "specials": {
+     "1": 8,
+     "2": 8,
+     "3": 8,
+     "4": 8,
+     "5": 8,
+     "6": 8,
+     "7": 8,
+     "8": 8,
+     "9": 8,
+     "10": 8
+    },
+    "schedule": null
+   },
+   "start": {
+    "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,,,,,,,o4h0t0,,,,,o7h1t-1,o1h1t0,,,s8k5t0,s8k0t0,,,s8k0t0,,,,,s5k0t0,s9k0t0,s9k0t0,s9k0t0,s5k5t0,o0h2t0,s4k0t0,s2k3t0,,s0k0t0,s7k0t0,o3h3t0,o6h3t0,o0h2t0,s8k0t0,,s1k2t3,s3k0t0,s6k0t0,s1k0t0,s7k0t0,s2k0t0,s6k0t0,,s4k0t0",
+    "tray": [
+     "12:2:0",
+     "10:6:4",
+     "4:4:5"
+    ],
+    "bonus": null,
+    "rng": 3599194671,
+    "score": 0,
+    "combo": 0,
+    "bestCombo": 0,
+    "rows": 0,
+    "multi": 0,
+    "bestWave": 0,
+    "moves": 0,
+    "sets": 1,
+    "sand": 0,
+    "obstacles": 0,
+    "golden": 0,
+    "perfect": 0,
+    "kinds": {},
+    "status": "playing",
+    "reason": ""
+   },
+   "turns": [
+    {
+     "move": [
+      1,
+      0,
+      6
+     ],
+     "points": 209,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle",
+      "movers"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,,,,,,,o4h0t0,,,,o7h1t-1,,o1h1t0,,,s8k5t0,s8k0t0,s6k4t0,,,,,,,,s9k0t0,s9k0t0,s9k0t0,s6k4t0,o0h1t0,,,,,s5k0t0,o3h2t0,o6h2t0,o0h1t0,s5k0t0,,s8k0t0,,s6k4t0,s1k0t0,s7k0t0,s2k0t0,s6k0t0,,s4k0t0",
+      "tray": [
+       "12:2:0",
+       null,
+       "4:4:5"
+      ],
+      "bonus": null,
+      "rng": 3599194671,
+      "score": 209,
+      "combo": 1,
+      "bestCombo": 1,
+      "rows": 1,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 1,
+      "sets": 1,
+      "sand": 9,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 6,
+       "2": 1,
+       "3": 1,
+       "4": 1,
+       "5": 1
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      0
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle",
+      "movers"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,,,,,,,o4h0t0,,,o7h1t-1,,,o1h1t0,,,s8k5t0,s8k0t0,s6k4t0,,s2k0t0,,,,,,s9k0t0,s9k0t0,s9k0t0,s6k4t0,o0h1t0,s2k0t0,s2k0t0,,,s5k0t0,o3h2t0,o6h2t0,o0h1t0,s5k0t0,,s8k0t0,s2k0t0,s6k4t0,s1k0t0,s7k0t0,s2k0t0,s6k0t0,,s4k0t0",
+      "tray": [
+       null,
+       null,
+       "4:4:5"
+      ],
+      "bonus": null,
+      "rng": 3599194671,
+      "score": 213,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 1,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 2,
+      "sets": 1,
+      "sand": 9,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 6,
+       "2": 1,
+       "3": 1,
+       "4": 1,
+       "5": 1
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      5,
+      1
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,o7h1t1,s4k5t0,,o1h1t0,,,s8k5t0,s8k0t0,s6k4t0,,s2k0t0,s4k5t0,,,,,s9k0t0,s9k0t0,s9k0t0,s6k4t0,o0h1t0,s2k0t0,s2k0t0,,,s5k0t0,o3h2t0,o6h2t0,o0h1t0,s5k0t0,,s8k0t0,s2k0t0,s6k4t0,s1k0t0,s7k0t0,s2k0t0,s6k0t0,,s4k0t0",
+      "tray": [
+       "14:7:10",
+       "15:9:5",
+       "21:8:3"
+      ],
+      "bonus": null,
+      "rng": 2903417804,
+      "score": 216,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 1,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 3,
+      "sets": 2,
+      "sand": 9,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 6,
+       "2": 1,
+       "3": 1,
+       "4": 1,
+       "5": 1
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      6
+     ],
+     "points": 459,
+     "rows": 2,
+     "phases": [
+      "settle",
+      "wave",
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": 7,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,o7h1t-1,s4k5t0,,o1h1t0,,,s8k5t0,,,,,,,,,,,,,,,,,,,,s9k0t0,o6h1t0,s8k0t0,s7k7t0,,s4k0t0,,,,s7k7t0,s9k0t0,,s6k4t0,s6k4t0",
+      "tray": [
+       null,
+       "15:9:5",
+       "21:8:3"
+      ],
+      "bonus": null,
+      "rng": 440016321,
+      "score": 675,
+      "combo": 1,
+      "bestCombo": 1,
+      "rows": 3,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 4,
+      "sets": 2,
+      "sand": 25,
+      "obstacles": 3,
+      "golden": 2,
+      "perfect": 0,
+      "kinds": {
+       "0": 19,
+       "2": 1,
+       "3": 1,
+       "4": 2,
+       "5": 2,
+       "7": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      7,
+      0
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,o7h1t1,s4k5t0,,o1h1t0,,,s8k5t0,,,,,,,,,,,,,,,s8k3t0,,,,,s9k0t0,o6h1t0,s8k0t0,s7k7t0,s8k3t0,s4k0t0,s8k3t0,,,s7k7t0,s9k0t0,,s6k4t0,s6k4t0",
+      "tray": [
+       null,
+       "15:9:5",
+       null
+      ],
+      "bonus": null,
+      "rng": 440016321,
+      "score": 678,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 3,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 5,
+      "sets": 2,
+      "sand": 25,
+      "obstacles": 3,
+      "golden": 2,
+      "perfect": 0,
+      "kinds": {
+       "0": 19,
+       "2": 1,
+       "3": 1,
+       "4": 2,
+       "5": 2,
+       "7": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      7,
+      0
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,o7h1t-1,s4k5t0,,o1h1t0,,,s8k5t0,,,,s9k5t0,s9k5t0,s9k5t0,,,,,,,,,s8k3t0,s9k5t0,,,,s9k0t0,o6h1t0,s8k0t0,s7k7t0,s8k3t0,s4k0t0,s8k3t0,,,s7k7t0,s9k0t0,,s6k4t0,s6k4t0",
+      "tray": [
+       "2:1:3",
+       "2:2:2",
+       "3:4:6"
+      ],
+      "bonus": null,
+      "rng": 4039206750,
+      "score": 682,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 3,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 6,
+      "sets": 3,
+      "sand": 25,
+      "obstacles": 3,
+      "golden": 2,
+      "perfect": 0,
+      "kinds": {
+       "0": 19,
+       "2": 1,
+       "3": 1,
+       "4": 2,
+       "5": 2,
+       "7": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      8,
+      3
+     ],
+     "points": 2,
+     "rows": 0,
+     "phases": [],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,o7h1t1,s4k5t0,,o1h1t0,,,s8k5t0,,,,s9k5t0,s9k5t0,s9k5t0,,,,,,,,,s8k3t0,s9k5t0,s2k2t2,,,s9k0t0,o6h1t0,s8k0t0,s7k7t0,s8k3t0,s4k0t0,s8k3t0,s2k2t2,,s7k7t0,s9k0t0,,s6k4t0,s6k4t0",
+      "tray": [
+       "2:1:3",
+       null,
+       "3:4:6"
+      ],
+      "bonus": null,
+      "rng": 4039206750,
+      "score": 684,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 3,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 7,
+      "sets": 3,
+      "sand": 25,
+      "obstacles": 3,
+      "golden": 2,
+      "perfect": 0,
+      "kinds": {
+       "0": 19,
+       "2": 1,
+       "3": 1,
+       "4": 2,
+       "5": 2,
+       "7": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      7,
+      7
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,o7h1t-1,s4k5t0,,o1h1t0,,,s8k5t0,,,,s9k5t0,s9k5t0,s9k5t0,,,,,s4k6t0,s4k6t0,s4k6t0,,s8k3t0,s9k5t0,s2k2t1,,,s9k0t0,o6h1t0,s8k0t0,s7k7t0,s8k3t0,s4k0t0,s8k3t0,s2k2t1,,s7k7t0,s9k0t0,,s6k4t0,s6k4t0",
+      "tray": [
+       "2:1:3",
+       null,
+       null
+      ],
+      "bonus": null,
+      "rng": 4039206750,
+      "score": 687,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 3,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 8,
+      "sets": 3,
+      "sand": 25,
+      "obstacles": 3,
+      "golden": 2,
+      "perfect": 0,
+      "kinds": {
+       "0": 19,
+       "2": 1,
+       "3": 1,
+       "4": 2,
+       "5": 2,
+       "7": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      3
+     ],
+     "points": 2,
+     "rows": 0,
+     "phases": [
+      "settle",
+      "sticky",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,o7h1t1,s4k5t0,s1k3t0,o1h1t0,,,s8k5t0,,,,s9k5t0,s9k5t0,s9k5t0,,,,,s4k6t0,s4k6t0,s4k6t0,,s8k3t0,s9k5t0,s2k0t0,,,s9k0t0,o6h1t0,s8k0t0,s7k7t0,s8k3t0,s4k0t0,s8k3t0,s2k0t0,s1k3t0,s7k7t0,s9k0t0,,s6k4t0,s6k4t0",
+      "tray": [
+       "13:4:0",
+       "6:1:0",
+       "1:6:9"
+      ],
+      "bonus": null,
+      "rng": 3343429883,
+      "score": 689,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 3,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 9,
+      "sets": 4,
+      "sand": 25,
+      "obstacles": 3,
+      "golden": 2,
+      "perfect": 0,
+      "kinds": {
+       "0": 19,
+       "2": 1,
+       "3": 1,
+       "4": 2,
+       "5": 2,
+       "7": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      7,
+      3
+     ],
+     "points": 2,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,o7h1t-1,s4k5t0,s1k3t0,o1h1t0,,,s8k5t0,,,,s9k5t0,s9k5t0,s9k5t0,s6k9t0,,,,s4k6t0,s4k6t0,s4k6t0,,s8k3t0,s9k5t0,s2k0t0,s6k9t0,,s9k0t0,o6h1t0,s8k0t0,s7k7t0,s8k3t0,s4k0t0,s8k3t0,s2k0t0,s1k3t0,s7k7t0,s9k0t0,,s6k4t0,s6k4t0",
+      "tray": [
+       "13:4:0",
+       "6:1:0",
+       null
+      ],
+      "bonus": null,
+      "rng": 3343429883,
+      "score": 691,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 3,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 10,
+      "sets": 4,
+      "sand": 25,
+      "obstacles": 3,
+      "golden": 2,
+      "perfect": 0,
+      "kinds": {
+       "0": 19,
+       "2": 1,
+       "3": 1,
+       "4": 2,
+       "5": 2,
+       "7": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      6,
+      4
+     ],
+     "points": 354,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle",
+      "movers"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,,o7h1t1,,,,,,,,,,,,,,,s8k0t0,,,,s4k0t0,s8k3t0,s1k3t0,,s6k9t0,s4k0t0,s9k0t0,o6h1t0,s8k0t0,s7k7t0,s8k3t0,s4k0t0,s8k3t0,s9k0t0,s1k3t0,s7k7t0,s9k0t0,,s6k4t0,s6k4t0",
+      "tray": [
+       null,
+       "6:1:0",
+       null
+      ],
+      "bonus": null,
+      "rng": 3343429883,
+      "score": 1045,
+      "combo": 1,
+      "bestCombo": 1,
+      "rows": 4,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 11,
+      "sets": 4,
+      "sand": 37,
+      "obstacles": 4,
+      "golden": 2,
+      "perfect": 0,
+      "kinds": {
+       "0": 24,
+       "2": 1,
+       "3": 1,
+       "4": 2,
+       "5": 8,
+       "6": 3,
+       "7": 2,
+       "9": 1
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      2
+     ],
+     "points": 409,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle",
+      "movers"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,,,o7h1t1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s1k0t0,,,,s9k0t0,s8k0t0,s6k4t0,s6k4t0",
+      "tray": [
+       "5:8:1",
+       "29:1:7",
+       "15:7:6"
+      ],
+      "bonus": null,
+      "rng": 2647653016,
+      "score": 1454,
+      "combo": 2,
+      "bestCombo": 2,
+      "rows": 5,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 12,
+      "sets": 5,
+      "sand": 54,
+      "obstacles": 5,
+      "golden": 4,
+      "perfect": 0,
+      "kinds": {
+       "0": 33,
+       "2": 1,
+       "3": 6,
+       "4": 2,
+       "5": 8,
+       "6": 3,
+       "7": 4,
+       "9": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      7,
+      0
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle",
+      "movers"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,,,,o7h1t1,,,,,,,,,,,,,,,,,,s7k6t0,,,,,,,,,s7k6t0,s7k6t0,s1k0t0,s7k6t0,,,s9k0t0,s8k0t0,s6k4t0,s6k4t0",
+      "tray": [
+       "5:8:1",
+       "29:1:7",
+       null
+      ],
+      "bonus": null,
+      "rng": 2647653016,
+      "score": 1458,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 5,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 13,
+      "sets": 5,
+      "sand": 54,
+      "obstacles": 5,
+      "golden": 4,
+      "perfect": 0,
+      "kinds": {
+       "0": 33,
+       "2": 1,
+       "3": 6,
+       "4": 2,
+       "5": 8,
+       "6": 3,
+       "7": 4,
+       "9": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      8,
+      4
+     ],
+     "points": 354,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle",
+      "movers"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,,,,,o7h1t1,,,,,,,,,,,,,,,,,,,,,,,,,,,s7k6t0,,,,,s8k1t0,s8k1t0,,",
+      "tray": [
+       null,
+       "29:1:7",
+       null
+      ],
+      "bonus": null,
+      "rng": 2647653016,
+      "score": 1812,
+      "combo": 1,
+      "bestCombo": 2,
+      "rows": 6,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 14,
+      "sets": 5,
+      "sand": 64,
+      "obstacles": 5,
+      "golden": 4,
+      "perfect": 0,
+      "kinds": {
+       "0": 36,
+       "1": 2,
+       "2": 1,
+       "3": 6,
+       "4": 4,
+       "5": 8,
+       "6": 6,
+       "7": 4,
+       "9": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      8
+     ],
+     "points": 5,
+     "rows": 0,
+     "phases": [
+      "settle",
+      "movers"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,,,,,,o7h1t1,,,,,,,,,,,,,,,,,,,,,,s1k7t0,s1k7t0,s1k7t0,,s7k6t0,,,,,s8k1t0,s8k1t0,s1k7t0,s1k7t0",
+      "tray": [
+       "20:6:0",
+       "3:9:0",
+       "1:3:10"
+      ],
+      "bonus": null,
+      "rng": 1951876149,
+      "score": 1817,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 6,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 15,
+      "sets": 6,
+      "sand": 64,
+      "obstacles": 5,
+      "golden": 4,
+      "perfect": 0,
+      "kinds": {
+       "0": 36,
+       "1": 2,
+       "2": 1,
+       "3": 6,
+       "4": 4,
+       "5": 8,
+       "6": 6,
+       "7": 4,
+       "9": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      7,
+      6
+     ],
+     "points": 2,
+     "rows": 0,
+     "phases": [
+      "settle",
+      "movers"
+     ],
+     "revealed": 1,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,,,,,,,o7h1t1,,,,,,,,,,,s3k1t0,,,,,,,,,s3k1t0,s1k7t0,s1k7t0,s1k7t0,,s7k6t0,,,,,s8k1t0,s8k1t0,s1k7t0,s1k7t0",
+      "tray": [
+       "20:6:0",
+       "3:9:0",
+       null
+      ],
+      "bonus": null,
+      "rng": 3783441962,
+      "score": 1819,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 6,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 16,
+      "sets": 6,
+      "sand": 64,
+      "obstacles": 5,
+      "golden": 4,
+      "perfect": 0,
+      "kinds": {
+       "0": 36,
+       "1": 2,
+       "2": 1,
+       "3": 6,
+       "4": 4,
+       "5": 8,
+       "6": 6,
+       "7": 4,
+       "9": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      3,
+      7
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [
+      "settle",
+      "movers"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,,,,,,,,o7h1t1,,,,,,,,,,s3k1t0,s6k0t0,s6k0t0,,,,,,,s3k1t0,s1k7t0,s1k7t0,s1k7t0,,s7k6t0,,,,s6k0t0,s8k1t0,s8k1t0,s1k7t0,s1k7t0",
+      "tray": [
+       null,
+       "3:9:0",
+       null
+      ],
+      "bonus": null,
+      "rng": 3783441962,
+      "score": 1822,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 6,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 17,
+      "sets": 6,
+      "sand": 64,
+      "obstacles": 5,
+      "golden": 4,
+      "perfect": 0,
+      "kinds": {
+       "0": 36,
+       "1": 2,
+       "2": 1,
+       "3": 6,
+       "4": 4,
+       "5": 8,
+       "6": 6,
+       "7": 4,
+       "9": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      8,
+      0
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [
+      "settle",
+      "movers"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,,,,,,,,,o7h1t1,,,,,,,,,s3k1t0,s6k0t0,s6k0t0,,s9k0t0,,,,,s3k1t0,s1k7t0,s1k7t0,s1k7t0,s9k0t0,s7k6t0,s9k0t0,,,s6k0t0,s8k1t0,s8k1t0,s1k7t0,s1k7t0",
+      "tray": [
+       "27:6:8",
+       "3:8:0",
+       "21:7:2"
+      ],
+      "bonus": null,
+      "rng": 3087665095,
+      "score": 1825,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 6,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 18,
+      "sets": 7,
+      "sand": 64,
+      "obstacles": 5,
+      "golden": 4,
+      "perfect": 0,
+      "kinds": {
+       "0": 36,
+       "1": 2,
+       "2": 1,
+       "3": 6,
+       "4": 4,
+       "5": 8,
+       "6": 6,
+       "7": 4,
+       "9": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      5
+     ],
+     "points": 274,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle",
+      "movers"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,,,,,,,,,,o7h1t1,,,,,,,,,,,,,,,,,,s3k1t0,,s6k0t0,,s9k0t0,,,,,s3k1t0,s1k7t0,s1k7t0,s1k7t0",
+      "tray": [
+       null,
+       "3:8:0",
+       "21:7:2"
+      ],
+      "bonus": null,
+      "rng": 3087665095,
+      "score": 2099,
+      "combo": 1,
+      "bestCombo": 2,
+      "rows": 7,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 19,
+      "sets": 7,
+      "sand": 77,
+      "obstacles": 5,
+      "golden": 6,
+      "perfect": 0,
+      "kinds": {
+       "0": 40,
+       "1": 4,
+       "2": 1,
+       "3": 6,
+       "4": 4,
+       "5": 8,
+       "6": 7,
+       "7": 6,
+       "8": 4,
+       "9": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      7,
+      7
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [
+      "movers"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,,,,,,,,,o7h1t-1,,,,,,,,,s7k2t2,s7k2t2,,,,,,,,,s3k1t0,s7k2t2,s6k0t0,,s9k0t0,,,,,s3k1t0,s1k7t0,s1k7t0,s1k7t0",
+      "tray": [
+       null,
+       "3:8:0",
+       null
+      ],
+      "bonus": null,
+      "rng": 3087665095,
+      "score": 2102,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 7,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 20,
+      "sets": 7,
+      "sand": 77,
+      "obstacles": 5,
+      "golden": 6,
+      "perfect": 0,
+      "kinds": {
+       "0": 40,
+       "1": 4,
+       "2": 1,
+       "3": 6,
+       "4": 4,
+       "5": 8,
+       "6": 7,
+       "7": 6,
+       "8": 4,
+       "9": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      8,
+      0
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [
+      "settle",
+      "movers"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,,,,,,,,o7h1t-1,,,,,,,,,,s7k2t1,s7k2t1,,,s8k0t0,,,,,,s3k1t0,s7k2t1,s6k0t0,s8k0t0,s9k0t0,s8k0t0,,,,s3k1t0,s1k7t0,s1k7t0,s1k7t0",
+      "tray": [
+       "22:8:6",
+       "25:9:3",
+       "22:9:9"
+      ],
+      "bonus": null,
+      "rng": 2391888228,
+      "score": 2105,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 7,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 21,
+      "sets": 8,
+      "sand": 77,
+      "obstacles": 5,
+      "golden": 6,
+      "perfect": 0,
+      "kinds": {
+       "0": 40,
+       "1": 4,
+       "2": 1,
+       "3": 6,
+       "4": 4,
+       "5": 8,
+       "6": 7,
+       "7": 6,
+       "8": 4,
+       "9": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      3
+     ],
+     "points": 323,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle",
+      "sticky",
+      "settle",
+      "movers"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,,,,,,,o7h1t-1,,,,,,,,,,,,,,,,,,,,,,s7k0t0,,,s8k0t0,,,,,s7k0t0,s3k1t0,s7k0t0,s6k0t0",
+      "tray": [
+       null,
+       "25:9:3",
+       "22:9:9"
+      ],
+      "bonus": null,
+      "rng": 2391888228,
+      "score": 2428,
+      "combo": 1,
+      "bestCombo": 2,
+      "rows": 8,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 22,
+      "sets": 8,
+      "sand": 87,
+      "obstacles": 5,
+      "golden": 9,
+      "perfect": 0,
+      "kinds": {
+       "0": 43,
+       "1": 5,
+       "2": 1,
+       "3": 6,
+       "4": 4,
+       "5": 8,
+       "6": 10,
+       "7": 9,
+       "8": 4,
+       "9": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      6
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [
+      "settle",
+      "movers"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,,,,,,o7h1t-1,,,,,,,,,,,,,,,,,,,,,,s9k9t0,s7k0t0,s9k9t0,,s8k0t0,,,,s9k9t0,s7k0t0,s3k1t0,s7k0t0,s6k0t0",
+      "tray": [
+       null,
+       "25:9:3",
+       null
+      ],
+      "bonus": null,
+      "rng": 2391888228,
+      "score": 2431,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 8,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 23,
+      "sets": 8,
+      "sand": 87,
+      "obstacles": 5,
+      "golden": 9,
+      "perfect": 0,
+      "kinds": {
+       "0": 43,
+       "1": 5,
+       "2": 1,
+       "3": 6,
+       "4": 4,
+       "5": 8,
+       "6": 10,
+       "7": 9,
+       "8": 4,
+       "9": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      3
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle",
+      "movers"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,,,,,o7h1t-1,,,,,,,,,,,,,,,,,,,,s9k3t0,,,s9k9t0,s7k0t0,s9k9t0,,s8k0t0,s9k3t0,s9k3t0,s9k3t0,s9k9t0,s7k0t0,s3k1t0,s7k0t0,s6k0t0",
+      "tray": [
+       "21:6:6",
+       "23:0:5",
+       "18:7:3"
+      ],
+      "bonus": null,
+      "rng": 1696111361,
+      "score": 2435,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 8,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 24,
+      "sets": 9,
+      "sand": 87,
+      "obstacles": 5,
+      "golden": 9,
+      "perfect": 0,
+      "kinds": {
+       "0": 43,
+       "1": 5,
+       "2": 1,
+       "3": 6,
+       "4": 4,
+       "5": 8,
+       "6": 10,
+       "7": 9,
+       "8": 4,
+       "9": 2
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      1
+     ],
+     "points": 353,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle",
+      "movers"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,,,,o7h1t-1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s9k9t0,s7k0t0,s9k9t0",
+      "tray": [
+       null,
+       "23:0:5",
+       "18:7:3"
+      ],
+      "bonus": null,
+      "rng": 1696111361,
+      "score": 2788,
+      "combo": 1,
+      "bestCombo": 2,
+      "rows": 9,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 25,
+      "sets": 9,
+      "sand": 100,
+      "obstacles": 5,
+      "golden": 9,
+      "perfect": 0,
+      "kinds": {
+       "0": 47,
+       "1": 6,
+       "2": 1,
+       "3": 10,
+       "4": 4,
+       "5": 8,
+       "6": 13,
+       "7": 9,
+       "8": 4,
+       "9": 3
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      8,
+      1
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [
+      "movers"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,,,o7h1t-1,,,,,,,,,,,,,,,,,,,s0k5t0,,,,,,,,,,s0k5t0,s0k5t0,,,,,s9k9t0,s7k0t0,s9k9t0",
+      "tray": [
+       null,
+       null,
+       "18:7:3"
+      ],
+      "bonus": null,
+      "rng": 1696111361,
+      "score": 2791,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 9,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 26,
+      "sets": 9,
+      "sand": 100,
+      "obstacles": 5,
+      "golden": 9,
+      "perfect": 0,
+      "kinds": {
+       "0": 47,
+       "1": 6,
+       "2": 1,
+       "3": 10,
+       "4": 4,
+       "5": 8,
+       "6": 13,
+       "7": 9,
+       "8": 4,
+       "9": 3
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      7
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle",
+      "movers"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,,o7h1t-1,,,,,,,,,,,,,,,,,,,,s0k5t0,,,,,,s7k3t0,s7k3t0,s7k3t0,,s0k5t0,s0k5t0,,,,s7k3t0,s9k9t0,s7k0t0,s9k9t0",
+      "tray": [
+       "7:6:6",
+       "2:6:8",
+       "1:6:0"
+      ],
+      "bonus": null,
+      "rng": 1000334494,
+      "score": 2795,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 9,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 27,
+      "sets": 10,
+      "sand": 100,
+      "obstacles": 5,
+      "golden": 9,
+      "perfect": 0,
+      "kinds": {
+       "0": 47,
+       "1": 6,
+       "2": 1,
+       "3": 10,
+       "4": 4,
+       "5": 8,
+       "6": 13,
+       "7": 9,
+       "8": 4,
+       "9": 3
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      0
+     ],
+     "points": 2,
+     "rows": 0,
+     "phases": [
+      "settle",
+      "movers"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,o7h1t-1,,,,,,,,,,,,,,,,,,,,s6k8t0,s0k5t0,,,,,,s7k3t0,s7k3t0,s7k3t0,s6k8t0,s0k5t0,s0k5t0,,,,s7k3t0,s9k9t0,s7k0t0,s9k9t0",
+      "tray": [
+       "7:6:6",
+       null,
+       "1:6:0"
+      ],
+      "bonus": null,
+      "rng": 1000334494,
+      "score": 2797,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 9,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 28,
+      "sets": 10,
+      "sand": 100,
+      "obstacles": 5,
+      "golden": 9,
+      "perfect": 0,
+      "kinds": {
+       "0": 47,
+       "1": 6,
+       "2": 1,
+       "3": 10,
+       "4": 4,
+       "5": 8,
+       "6": 13,
+       "7": 9,
+       "8": 4,
+       "9": 3
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      4
+     ],
+     "points": 414,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle",
+      "movers"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,,o7h1t1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s0k0t0,,,,,,,,",
+      "tray": [
+       null,
+       null,
+       "1:6:0"
+      ],
+      "bonus": null,
+      "rng": 1000334494,
+      "score": 3211,
+      "combo": 1,
+      "bestCombo": 2,
+      "rows": 10,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 29,
+      "sets": 10,
+      "sand": 115,
+      "obstacles": 5,
+      "golden": 9,
+      "perfect": 0,
+      "kinds": {
+       "0": 48,
+       "1": 6,
+       "2": 1,
+       "3": 14,
+       "4": 4,
+       "5": 11,
+       "6": 17,
+       "7": 9,
+       "8": 6,
+       "9": 5
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      0
+     ],
+     "points": 2,
+     "rows": 0,
+     "phases": [
+      "settle",
+      "movers"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,,,o7h1t1,,,,,,,,,,,,,,,,,,,,,,,,,,,,s6k0t0,s0k0t0,s6k0t0,,,,,,,",
+      "tray": [
+       "4:5:0",
+       "16:0:8",
+       "5:7:1"
+      ],
+      "bonus": null,
+      "rng": 304557627,
+      "score": 3213,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 10,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 30,
+      "sets": 11,
+      "sand": 115,
+      "obstacles": 5,
+      "golden": 9,
+      "perfect": 0,
+      "kinds": {
+       "0": 48,
+       "1": 6,
+       "2": 1,
+       "3": 14,
+       "4": 4,
+       "5": 11,
+       "6": 17,
+       "7": 9,
+       "8": 6,
+       "9": 5
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      6,
+      1
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [
+      "settle",
+      "movers"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,,,,o7h1t1,,,,,,,,,,,,,,,,,s5k0t0,s5k0t0,,,,,,,,,s6k0t0,s0k0t0,s6k0t0,s5k0t0,,,,,,",
+      "tray": [
+       null,
+       "16:0:8",
+       "5:7:1"
+      ],
+      "bonus": null,
+      "rng": 304557627,
+      "score": 3216,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 10,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 31,
+      "sets": 11,
+      "sand": 115,
+      "obstacles": 5,
+      "golden": 9,
+      "perfect": 0,
+      "kinds": {
+       "0": 48,
+       "1": 6,
+       "2": 1,
+       "3": 14,
+       "4": 4,
+       "5": 11,
+       "6": 17,
+       "7": 9,
+       "8": 6,
+       "9": 5
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      6,
+      0
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle",
+      "movers"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,,,,,o7h1t1,,,,,,s0k8t0,s0k8t0,,,,,,,,,s5k0t0,s5k0t0,s0k8t0,,,,,,,,s6k0t0,s0k0t0,s6k0t0,s5k0t0,s0k8t0,,,,,",
+      "tray": [
+       null,
+       null,
+       "5:7:1"
+      ],
+      "bonus": null,
+      "rng": 304557627,
+      "score": 3220,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 10,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 32,
+      "sets": 11,
+      "sand": 115,
+      "obstacles": 5,
+      "golden": 9,
+      "perfect": 0,
+      "kinds": {
+       "0": 48,
+       "1": 6,
+       "2": 1,
+       "3": 14,
+       "4": 4,
+       "5": 11,
+       "6": 17,
+       "7": 9,
+       "8": 6,
+       "9": 5
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      8,
+      4
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle",
+      "movers"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,,,,,,o7h1t1,,,,,s0k8t0,s0k8t0,,,,,,,,,s5k0t0,s5k0t0,s0k8t0,,s7k1t0,,,,,,s6k0t0,s0k0t0,s6k0t0,s5k0t0,s0k8t0,s7k1t0,s7k1t0,s7k1t0,,",
+      "tray": [
+       "20:8:0",
+       "19:5:1",
+       "24:4:10"
+      ],
+      "bonus": null,
+      "rng": 3903748056,
+      "score": 3224,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 10,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 33,
+      "sets": 12,
+      "sand": 115,
+      "obstacles": 5,
+      "golden": 9,
+      "perfect": 0,
+      "kinds": {
+       "0": 48,
+       "1": 6,
+       "2": 1,
+       "3": 14,
+       "4": 4,
+       "5": 11,
+       "6": 17,
+       "7": 9,
+       "8": 6,
+       "9": 5
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      7,
+      6
+     ],
+     "points": 264,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle",
+      "movers"
+     ],
+     "revealed": 4,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,,,,,,,o7h1t1,,,,,,,,,,,,,,,,,,,,,,,,s5k0t0,s5k0t0,,,s7k1t0,,s4k4t0,s4k4t0,,",
+      "tray": [
+       "20:8:0",
+       "19:5:1",
+       null
+      ],
+      "bonus": null,
+      "rng": 1440346573,
+      "score": 3488,
+      "combo": 1,
+      "bestCombo": 2,
+      "rows": 11,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 34,
+      "sets": 12,
+      "sand": 128,
+      "obstacles": 5,
+      "golden": 9,
+      "perfect": 0,
+      "kinds": {
+       "0": 52,
+       "1": 9,
+       "2": 1,
+       "3": 14,
+       "4": 6,
+       "5": 11,
+       "6": 17,
+       "7": 9,
+       "8": 10,
+       "9": 5
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      0
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [
+      "settle",
+      "movers"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,s4k5t0,,,,,,o4h0t0,,,,,,,,,,o7h1t1,,,,,,,,,,,,,s8k0t0,s8k0t0,,,,,,,,,s5k0t0,s5k0t0,s8k0t0,,s7k1t0,,s4k4t0,s4k4t0,,",
+      "tray": [
+       null,
+       "19:5:1",
+       null
+      ],
+      "bonus": null,
+      "rng": 1440346573,
+      "score": 3491,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 11,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 35,
+      "sets": 12,
+      "sand": 128,
+      "obstacles": 5,
+      "golden": 9,
+      "perfect": 0,
+      "kinds": {
+       "0": 52,
+       "1": 9,
+       "2": 1,
+       "3": 14,
+       "4": 6,
+       "5": 11,
+       "6": 17,
+       "7": 9,
+       "8": 10,
+       "9": 5
+      },
+      "status": "lost",
+      "reason": "moves"
+     }
+    }
+   ]
+  },
+  {
+   "name": "gentle",
+   "config": {
+    "seed": 5,
+    "layout": null,
+    "lockRows": 3,
+    "objectives": [
+     [
+      "multi",
+      3,
+      0
+     ]
+    ],
+    "moveLimit": 0,
+    "weights": "gentle",
+    "palette": [
+     6,
+     9,
+     2
+    ],
+    "specials": {},
+    "schedule": null
+   },
+   "start": {
+    "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,",
+    "tray": [
+     "11:2:0",
+     "2:9:0",
+     "1:9:0"
+    ],
+    "bonus": null,
+    "rng": 2399460291,
+    "score": 0,
+    "combo": 0,
+    "bestCombo": 0,
+    "rows": 0,
+    "multi": 0,
+    "bestWave": 0,
+    "moves": 0,
+    "sets": 1,
+    "sand": 0,
+    "obstacles": 0,
+    "golden": 0,
+    "perfect": 0,
+    "kinds": {},
+    "status": "playing",
+    "reason": ""
+   },
+   "turns": [
+    {
+     "move": [
+      0,
+      0,
+      0
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s2k0t0,s2k0t0,s2k0t0,s2k0t0,,,,,,",
+      "tray": [
+       null,
+       "2:9:0",
+       "1:9:0"
+      ],
+      "bonus": null,
+      "rng": 2399460291,
+      "score": 4,
+      "combo": 0,
+      "bestCombo": 0,
+      "rows": 0,
+      "multi": 0,
+      "bestWave": 0,
+      "moves": 1,
+      "sets": 1,
+      "sand": 0,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {},
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      4
+     ],
+     "points": 2,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s2k0t0,s2k0t0,s2k0t0,s2k0t0,s9k0t0,s9k0t0,,,,",
+      "tray": [
+       null,
+       null,
+       "1:9:0"
+      ],
+      "bonus": null,
+      "rng": 2399460291,
+      "score": 6,
+      "combo": 0,
+      "bestCombo": 0,
+      "rows": 0,
+      "multi": 0,
+      "bestWave": 0,
+      "moves": 2,
+      "sets": 1,
+      "sand": 0,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {},
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      6
+     ],
+     "points": 2,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s2k0t0,s2k0t0,s2k0t0,s2k0t0,s9k0t0,s9k0t0,s9k0t0,s9k0t0,,",
+      "tray": [
+       "13:9:0",
+       "22:6:0",
+       "18:2:0"
+      ],
+      "bonus": null,
+      "rng": 503953281,
+      "score": 8,
+      "combo": 0,
+      "bestCombo": 0,
+      "rows": 0,
+      "multi": 0,
+      "bestWave": 0,
+      "moves": 3,
+      "sets": 2,
+      "sand": 0,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {},
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      5
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s9k0t0,s9k0t0,s9k0t0,,,,s2k0t0,s2k0t0,s2k0t0,s2k0t0,s9k0t0,s9k0t0,s9k0t0,s9k0t0,s9k0t0,",
+      "tray": [
+       null,
+       "22:6:0",
+       "18:2:0"
+      ],
+      "bonus": null,
+      "rng": 503953281,
+      "score": 12,
+      "combo": 0,
+      "bestCombo": 0,
+      "rows": 0,
+      "multi": 0,
+      "bestWave": 0,
+      "moves": 4,
+      "sets": 2,
+      "sand": 0,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {},
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      0
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s6k0t0,s6k0t0,s6k0t0,,s9k0t0,s9k0t0,s9k0t0,,,,s2k0t0,s2k0t0,s2k0t0,s2k0t0,s9k0t0,s9k0t0,s9k0t0,s9k0t0,s9k0t0,",
+      "tray": [
+       null,
+       null,
+       "18:2:0"
+      ],
+      "bonus": null,
+      "rng": 503953281,
+      "score": 15,
+      "combo": 0,
+      "bestCombo": 0,
+      "rows": 0,
+      "multi": 0,
+      "bestWave": 0,
+      "moves": 5,
+      "sets": 2,
+      "sand": 0,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {},
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      7
+     ],
+     "points": 204,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s6k0t0,s6k0t0,s6k0t0,,s9k0t0,s9k0t0,s9k0t0,s2k0t0,s2k0t0,s2k0t0",
+      "tray": [
+       "8:6:0",
+       "4:6:0",
+       "22:6:0"
+      ],
+      "bonus": null,
+      "rng": 2903413567,
+      "score": 219,
+      "combo": 1,
+      "bestCombo": 1,
+      "rows": 1,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 6,
+      "sets": 3,
+      "sand": 10,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 10
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      6
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s6k0t0,s6k0t0,s6k0t0,,,s6k0t0,s6k0t0,s6k0t0,,s9k0t0,s9k0t0,s9k0t0,s2k0t0,s2k0t0,s2k0t0",
+      "tray": [
+       "8:6:0",
+       null,
+       "22:6:0"
+      ],
+      "bonus": null,
+      "rng": 2903413567,
+      "score": 222,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 1,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 7,
+      "sets": 3,
+      "sand": 10,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 10
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      1
+     ],
+     "points": 204,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s6k0t0,s6k0t0,s6k0t0,,,s6k0t0,s6k0t0,s6k0t0,,",
+      "tray": [
+       null,
+       null,
+       "22:6:0"
+      ],
+      "bonus": null,
+      "rng": 2903413567,
+      "score": 426,
+      "combo": 1,
+      "bestCombo": 1,
+      "rows": 2,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 8,
+      "sets": 3,
+      "sand": 20,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 20
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      2
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s6k0t0,,,,,,,,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,,",
+      "tray": [
+       "16:2:0",
+       "2:6:0",
+       "19:6:0"
+      ],
+      "bonus": null,
+      "rng": 1007906557,
+      "score": 429,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 2,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 9,
+      "sets": 4,
+      "sand": 20,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 20
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      5
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s6k0t0,,,s2k0t0,s2k0t0,s2k0t0,,,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s2k0t0,",
+      "tray": [
+       null,
+       "2:6:0",
+       "19:6:0"
+      ],
+      "bonus": null,
+      "rng": 1007906557,
+      "score": 433,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 2,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 10,
+      "sets": 4,
+      "sand": 20,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 20
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      0
+     ],
+     "points": 2,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s6k0t0,s6k0t0,s6k0t0,,,s2k0t0,s2k0t0,s2k0t0,,,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s2k0t0,",
+      "tray": [
+       null,
+       null,
+       "19:6:0"
+      ],
+      "bonus": null,
+      "rng": 1007906557,
+      "score": 435,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 2,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 11,
+      "sets": 4,
+      "sand": 20,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 20
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      1
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s6k0t0,s6k0t0,,,,,,,,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s2k0t0,s2k0t0,s2k0t0,,,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s2k0t0,",
+      "tray": [
+       "2:6:0",
+       "4:2:0",
+       "2:6:0"
+      ],
+      "bonus": null,
+      "rng": 3407366843,
+      "score": 439,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 2,
+      "multi": 0,
+      "bestWave": 1,
+      "moves": 12,
+      "sets": 5,
+      "sand": 20,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 20
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      8
+     ],
+     "points": 453,
+     "rows": 2,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s6k0t0,s6k0t0,,,,,,,",
+      "tray": [
+       "2:6:0",
+       null,
+       "2:6:0"
+      ],
+      "bonus": null,
+      "rng": 3407366843,
+      "score": 892,
+      "combo": 1,
+      "bestCombo": 1,
+      "rows": 4,
+      "multi": 1,
+      "bestWave": 2,
+      "moves": 13,
+      "sets": 5,
+      "sand": 40,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 40
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      3
+     ],
+     "points": 2,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s6k0t0,s6k0t0,s6k0t0,s6k0t0,,,,,",
+      "tray": [
+       null,
+       null,
+       "2:6:0"
+      ],
+      "bonus": null,
+      "rng": 3407366843,
+      "score": 894,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 4,
+      "multi": 1,
+      "bestWave": 2,
+      "moves": 14,
+      "sets": 5,
+      "sand": 40,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 40
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      5
+     ],
+     "points": 2,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,,,",
+      "tray": [
+       "21:6:0",
+       "4:2:0",
+       "2:9:0"
+      ],
+      "bonus": null,
+      "rng": 1511859833,
+      "score": 896,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 4,
+      "multi": 1,
+      "bestWave": 2,
+      "moves": 15,
+      "sets": 6,
+      "sand": 40,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 40
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      7
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0",
+      "tray": [
+       null,
+       "4:2:0",
+       "2:9:0"
+      ],
+      "bonus": null,
+      "rng": 1511859833,
+      "score": 899,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 4,
+      "multi": 1,
+      "bestWave": 2,
+      "moves": 16,
+      "sets": 6,
+      "sand": 40,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 40
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      3
+     ],
+     "points": 3,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s2k0t0,s2k0t0,s2k0t0,,,,,,,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0",
+      "tray": [
+       null,
+       null,
+       "2:9:0"
+      ],
+      "bonus": null,
+      "rng": 1511859833,
+      "score": 902,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 4,
+      "multi": 1,
+      "bestWave": 2,
+      "moves": 17,
+      "sets": 6,
+      "sand": 40,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 40
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      5
+     ],
+     "points": 2,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s2k0t0,s2k0t0,s2k0t0,s9k0t0,s9k0t0,,,,,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0",
+      "tray": [
+       "2:2:0",
+       "13:2:0",
+       "5:2:0"
+      ],
+      "bonus": null,
+      "rng": 3911320119,
+      "score": 904,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 4,
+      "multi": 1,
+      "bestWave": 2,
+      "moves": 18,
+      "sets": 7,
+      "sand": 40,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 40
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      7
+     ],
+     "points": 2,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s2k0t0,s2k0t0,s2k0t0,s9k0t0,s9k0t0,s2k0t0,s2k0t0,,,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0",
+      "tray": [
+       null,
+       "13:2:0",
+       "5:2:0"
+      ],
+      "bonus": null,
+      "rng": 3911320119,
+      "score": 906,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 4,
+      "multi": 1,
+      "bestWave": 2,
+      "moves": 19,
+      "sets": 7,
+      "sand": 40,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 40
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      6
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s2k0t0,s2k0t0,s2k0t0,,,,,s2k0t0,s2k0t0,s2k0t0,s9k0t0,s9k0t0,s2k0t0,s2k0t0,s2k0t0,,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0,s6k0t0",
+      "tray": [
+       null,
+       null,
+       "5:2:0"
+      ],
+      "bonus": null,
+      "rng": 3911320119,
+      "score": 910,
+      "combo": 0,
+      "bestCombo": 1,
+      "rows": 4,
+      "multi": 1,
+      "bestWave": 2,
+      "moves": 20,
+      "sets": 7,
+      "sand": 40,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 40
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      0
+     ],
+     "points": 204,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s2k0t0,s2k0t0,,s2k0t0,s2k0t0,s2k0t0,,,,s2k0t0,s2k0t0,s2k0t0,s2k0t0,s9k0t0,s9k0t0,s2k0t0,s2k0t0,s2k0t0",
+      "tray": [
+       "7:6:0",
+       "7:9:0",
+       "3:2:0"
+      ],
+      "bonus": null,
+      "rng": 2015813109,
+      "score": 1114,
+      "combo": 1,
+      "bestCombo": 1,
+      "rows": 5,
+      "multi": 1,
+      "bestWave": 2,
+      "moves": 21,
+      "sets": 8,
+      "sand": 50,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 50
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      2,
+      0,
+      1
+     ],
+     "points": 228,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s2k0t0,s2k0t0,s2k0t0,s2k0t0,s2k0t0,s2k0t0,s2k0t0,,",
+      "tray": [
+       "7:6:0",
+       "7:9:0",
+       null
+      ],
+      "bonus": null,
+      "rng": 2015813109,
+      "score": 1342,
+      "combo": 2,
+      "bestCombo": 2,
+      "rows": 6,
+      "multi": 1,
+      "bestWave": 2,
+      "moves": 22,
+      "sets": 8,
+      "sand": 60,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 60
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      0,
+      0,
+      7
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s6k0t0,s6k0t0,,,,s2k0t0,s2k0t0,s2k0t0,s2k0t0,s2k0t0,s2k0t0,s2k0t0,s6k0t0,s6k0t0",
+      "tray": [
+       null,
+       "7:9:0",
+       null
+      ],
+      "bonus": null,
+      "rng": 2015813109,
+      "score": 1346,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 6,
+      "multi": 1,
+      "bestWave": 2,
+      "moves": 23,
+      "sets": 8,
+      "sand": 60,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 60
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      3
+     ],
+     "points": 4,
+     "rows": 0,
+     "phases": [
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s9k0t0,s9k0t0,s9k0t0,s9k0t0,s6k0t0,s6k0t0,,,,s2k0t0,s2k0t0,s2k0t0,s2k0t0,s2k0t0,s2k0t0,s2k0t0,s6k0t0,s6k0t0",
+      "tray": [
+       "7:6:0",
+       "23:9:0",
+       "3:2:0"
+      ],
+      "bonus": null,
+      "rng": 120306099,
+      "score": 1350,
+      "combo": 0,
+      "bestCombo": 2,
+      "rows": 6,
+      "multi": 1,
+      "bestWave": 2,
+      "moves": 24,
+      "sets": 9,
+      "sand": 60,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 60
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    },
+    {
+     "move": [
+      1,
+      0,
+      0
+     ],
+     "points": 203,
+     "rows": 1,
+     "phases": [
+      "settle",
+      "wave",
+      "settle"
+     ],
+     "revealed": null,
+     "state": {
+      "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s9k0t0,s9k0t0,s9k0t0,s9k0t0,s9k0t0,s9k0t0,s6k0t0,s6k0t0,,",
+      "tray": [
+       "7:6:0",
+       null,
+       "3:2:0"
+      ],
+      "bonus": null,
+      "rng": 120306099,
+      "score": 1553,
+      "combo": 1,
+      "bestCombo": 2,
+      "rows": 7,
+      "multi": 1,
+      "bestWave": 2,
+      "moves": 25,
+      "sets": 9,
+      "sand": 70,
+      "obstacles": 0,
+      "golden": 0,
+      "perfect": 0,
+      "kinds": {
+       "0": 70
+      },
+      "status": "playing",
+      "reason": ""
+     }
+    }
+   ]
+  }
+ ],
+ "powers": {
+  "config": {
+   "seed": 99,
+   "layout": [
+    "..........",
+    "..........",
+    "..........",
+    "..........",
+    ".........I",
+    ".......U..",
+    "..NW..f8..",
+    "8....5999f",
+    "S4e.07LCS8",
+    ".k361726.4"
+   ],
+   "lockRows": 3,
+   "objectives": [
+    [
+     "rows",
+     99,
+     0
+    ]
+   ],
+   "moveLimit": 0,
+   "weights": "default",
+   "palette": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "specials": {
+    "1": 8,
+    "2": 8,
+    "3": 8,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 8,
+    "8": 8,
+    "9": 8,
+    "10": 8
+   },
+   "schedule": null
+  },
+  "moves": 6,
+  "before": {
+   "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,,,,,,,o4h0t0,,,o7h1t-1,,,o1h1t0,,,s8k5t0,,,,,,,,,,,,,,,,,,,,,s4k6t0,,,,,,,,s4k6t0,s4k6t0,s9k0t0,s8k0t0,s0k0t0",
+   "tray": [
+    "4:5:10",
+    "6:7:0",
+    "11:2:0"
+   ],
+   "bonus": null,
+   "rng": 4039202607,
+   "score": 1124,
+   "combo": 0,
+   "bestCombo": 1,
+   "rows": 4,
+   "multi": 1,
+   "bestWave": 2,
+   "moves": 6,
+   "sets": 3,
+   "sand": 33,
+   "obstacles": 4,
+   "golden": 3,
+   "perfect": 0,
+   "kinds": {
+    "0": 20,
+    "1": 4,
+    "2": 1,
+    "3": 1,
+    "4": 4,
+    "5": 2,
+    "7": 3
+   },
+   "status": "playing",
+   "reason": ""
+  },
+  "results": [
+   {
+    "kind": "sweep",
+    "arg": 9,
+    "ok": true,
+    "points": 50,
+    "state": {
+     "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,,,,,,,o4h0t0,,,o7h1t-1,,,o1h1t0,,,s8k5t0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s4k6t0,,",
+     "tray": [
+      "4:5:10",
+      "6:7:0",
+      "11:2:0"
+     ],
+     "bonus": null,
+     "rng": 4039202607,
+     "score": 1174,
+     "combo": 0,
+     "bestCombo": 1,
+     "rows": 4,
+     "multi": 1,
+     "bestWave": 2,
+     "moves": 6,
+     "sets": 3,
+     "sand": 38,
+     "obstacles": 4,
+     "golden": 3,
+     "perfect": 0,
+     "kinds": {
+      "0": 23,
+      "1": 4,
+      "2": 1,
+      "3": 1,
+      "4": 4,
+      "5": 2,
+      "6": 2,
+      "7": 3
+     },
+     "status": "playing",
+     "reason": ""
+    }
+   },
+   {
+    "kind": "sweep",
+    "arg": 0,
+    "ok": false,
+    "points": null,
+    "state": {
+     "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,,,,,,,o4h0t0,,,o7h1t-1,,,o1h1t0,,,s8k5t0,,,,,,,,,,,,,,,,,,,,,s4k6t0,,,,,,,,s4k6t0,s4k6t0,s9k0t0,s8k0t0,s0k0t0",
+     "tray": [
+      "4:5:10",
+      "6:7:0",
+      "11:2:0"
+     ],
+     "bonus": null,
+     "rng": 4039202607,
+     "score": 1124,
+     "combo": 0,
+     "bestCombo": 1,
+     "rows": 4,
+     "multi": 1,
+     "bestWave": 2,
+     "moves": 6,
+     "sets": 3,
+     "sand": 33,
+     "obstacles": 4,
+     "golden": 3,
+     "perfect": 0,
+     "kinds": {
+      "0": 20,
+      "1": 4,
+      "2": 1,
+      "3": 1,
+      "4": 4,
+      "5": 2,
+      "7": 3
+     },
+     "status": "playing",
+     "reason": ""
+    }
+   },
+   {
+    "kind": "blast",
+    "arg": 8,
+    "ok": true,
+    "points": 20,
+    "state": {
+     "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,,,,,,,o4h0t0,,,o7h1t-1,,,o1h1t0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s4k6t0,s4k6t0,s9k0t0,s4k6t0,s0k0t0",
+     "tray": [
+      "4:5:10",
+      "6:7:0",
+      "11:2:0"
+     ],
+     "bonus": null,
+     "rng": 4039202607,
+     "score": 1144,
+     "combo": 0,
+     "bestCombo": 1,
+     "rows": 4,
+     "multi": 1,
+     "bestWave": 2,
+     "moves": 6,
+     "sets": 3,
+     "sand": 35,
+     "obstacles": 4,
+     "golden": 3,
+     "perfect": 0,
+     "kinds": {
+      "0": 21,
+      "1": 4,
+      "2": 1,
+      "3": 1,
+      "4": 4,
+      "5": 3,
+      "7": 3
+     },
+     "status": "playing",
+     "reason": ""
+    }
+   },
+   {
+    "kind": "blast",
+    "arg": 10,
+    "ok": false,
+    "points": null,
+    "state": {
+     "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,,,,,,,o4h0t0,,,o7h1t-1,,,o1h1t0,,,s8k5t0,,,,,,,,,,,,,,,,,,,,,s4k6t0,,,,,,,,s4k6t0,s4k6t0,s9k0t0,s8k0t0,s0k0t0",
+     "tray": [
+      "4:5:10",
+      "6:7:0",
+      "11:2:0"
+     ],
+     "bonus": null,
+     "rng": 4039202607,
+     "score": 1124,
+     "combo": 0,
+     "bestCombo": 1,
+     "rows": 4,
+     "multi": 1,
+     "bestWave": 2,
+     "moves": 6,
+     "sets": 3,
+     "sand": 33,
+     "obstacles": 4,
+     "golden": 3,
+     "perfect": 0,
+     "kinds": {
+      "0": 20,
+      "1": 4,
+      "2": 1,
+      "3": 1,
+      "4": 4,
+      "5": 2,
+      "7": 3
+     },
+     "status": "playing",
+     "reason": ""
+    }
+   },
+   {
+    "kind": "shaker",
+    "arg": 85,
+    "ok": true,
+    "points": 0,
+    "state": {
+     "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,,,,,,,o4h0t0,,,o7h1t-1,,,o1h1t0,,,s8k5t0,,,,,,,,,,,,,,,,,,,,,s4k6t0,,,,,,,,s4k6t0,s4k6t0,s9k0t0,s8k0t0,s0k0t0",
+     "tray": [
+      "4:5:10",
+      "6:7:0",
+      "11:2:0"
+     ],
+     "bonus": null,
+     "rng": 1575801124,
+     "score": 1124,
+     "combo": 0,
+     "bestCombo": 1,
+     "rows": 4,
+     "multi": 1,
+     "bestWave": 2,
+     "moves": 6,
+     "sets": 3,
+     "sand": 33,
+     "obstacles": 4,
+     "golden": 3,
+     "perfect": 0,
+     "kinds": {
+      "0": 20,
+      "1": 4,
+      "2": 1,
+      "3": 1,
+      "4": 4,
+      "5": 2,
+      "7": 3
+     },
+     "status": "playing",
+     "reason": ""
+    }
+   },
+   {
+    "kind": "rowclear",
+    "arg": 9,
+    "ok": false,
+    "points": null,
+    "state": {
+     "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,,,,,,,o4h0t0,,,o7h1t-1,,,o1h1t0,,,s8k5t0,,,,,,,,,,,,,,,,,,,,,s4k6t0,,,,,,,,s4k6t0,s4k6t0,s9k0t0,s8k0t0,s0k0t0",
+     "tray": [
+      "4:5:10",
+      "6:7:0",
+      "11:2:0"
+     ],
+     "bonus": null,
+     "rng": 4039202607,
+     "score": 1124,
+     "combo": 0,
+     "bestCombo": 1,
+     "rows": 4,
+     "multi": 1,
+     "bestWave": 2,
+     "moves": 6,
+     "sets": 3,
+     "sand": 33,
+     "obstacles": 4,
+     "golden": 3,
+     "perfect": 0,
+     "kinds": {
+      "0": 20,
+      "1": 4,
+      "2": 1,
+      "3": 1,
+      "4": 4,
+      "5": 2,
+      "7": 3
+     },
+     "status": "playing",
+     "reason": ""
+    }
+   },
+   {
+    "kind": "rowclear",
+    "arg": 0,
+    "ok": false,
+    "points": null,
+    "state": {
+     "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,,,,,,,o4h0t0,,,o7h1t-1,,,o1h1t0,,,s8k5t0,,,,,,,,,,,,,,,,,,,,,s4k6t0,,,,,,,,s4k6t0,s4k6t0,s9k0t0,s8k0t0,s0k0t0",
+     "tray": [
+      "4:5:10",
+      "6:7:0",
+      "11:2:0"
+     ],
+     "bonus": null,
+     "rng": 4039202607,
+     "score": 1124,
+     "combo": 0,
+     "bestCombo": 1,
+     "rows": 4,
+     "multi": 1,
+     "bestWave": 2,
+     "moves": 6,
+     "sets": 3,
+     "sand": 33,
+     "obstacles": 4,
+     "golden": 3,
+     "perfect": 0,
+     "kinds": {
+      "0": 20,
+      "1": 4,
+      "2": 1,
+      "3": 1,
+      "4": 4,
+      "5": 2,
+      "7": 3
+     },
+     "status": "playing",
+     "reason": ""
+    }
+   },
+   {
+    "kind": "crusher",
+    "arg": 95,
+    "ok": true,
+    "points": 20,
+    "state": {
+     "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,,,,,,,o4h0t0,,,o7h1t-1,,,o1h1t0,,,s8k5t0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,s4k6t0,s9k0t0,s8k0t0,s0k0t0",
+     "tray": [
+      "4:5:10",
+      "6:7:0",
+      "11:2:0"
+     ],
+     "bonus": null,
+     "rng": 4039202607,
+     "score": 1144,
+     "combo": 0,
+     "bestCombo": 1,
+     "rows": 4,
+     "multi": 1,
+     "bestWave": 2,
+     "moves": 6,
+     "sets": 3,
+     "sand": 35,
+     "obstacles": 4,
+     "golden": 3,
+     "perfect": 0,
+     "kinds": {
+      "0": 20,
+      "1": 4,
+      "2": 1,
+      "3": 1,
+      "4": 4,
+      "5": 2,
+      "6": 2,
+      "7": 3
+     },
+     "status": "playing",
+     "reason": ""
+    }
+   },
+   {
+    "kind": "gravity",
+    "arg": -1,
+    "ok": true,
+    "points": 0,
+    "state": {
+     "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,,,,,,,o4h0t0,,,o7h1t-1,,,o1h1t0,,,s8k5t0,,,,,,,,,,,,,,s4k6t0,,,,,,,,,,s4k6t0,s4k6t0,s9k0t0,s8k0t0,s0k0t0,,,,,",
+     "tray": [
+      "4:5:10",
+      "6:7:0",
+      "11:2:0"
+     ],
+     "bonus": null,
+     "rng": 4039202607,
+     "score": 1124,
+     "combo": 0,
+     "bestCombo": 1,
+     "rows": 4,
+     "multi": 1,
+     "bestWave": 2,
+     "moves": 6,
+     "sets": 3,
+     "sand": 33,
+     "obstacles": 4,
+     "golden": 3,
+     "perfect": 0,
+     "kinds": {
+      "0": 20,
+      "1": 4,
+      "2": 1,
+      "3": 1,
+      "4": 4,
+      "5": 2,
+      "7": 3
+     },
+     "status": "playing",
+     "reason": ""
+    }
+   },
+   {
+    "kind": "gravity",
+    "arg": 1,
+    "ok": true,
+    "points": 0,
+    "state": {
+     "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,,,,,,,o4h0t0,,,o7h1t-1,,,o1h1t0,,,s8k5t0,,,,,,,,,,,,,,,,,,,,,,,s4k6t0,,,,,,s4k6t0,s4k6t0,s9k0t0,s8k0t0,s0k0t0",
+     "tray": [
+      "4:5:10",
+      "6:7:0",
+      "11:2:0"
+     ],
+     "bonus": null,
+     "rng": 4039202607,
+     "score": 1124,
+     "combo": 0,
+     "bestCombo": 1,
+     "rows": 4,
+     "multi": 1,
+     "bestWave": 2,
+     "moves": 6,
+     "sets": 3,
+     "sand": 33,
+     "obstacles": 4,
+     "golden": 3,
+     "perfect": 0,
+     "kinds": {
+      "0": 20,
+      "1": 4,
+      "2": 1,
+      "3": 1,
+      "4": 4,
+      "5": 2,
+      "7": 3
+     },
+     "status": "playing",
+     "reason": ""
+    }
+   },
+   {
+    "kind": "bomb",
+    "arg": 84,
+    "ok": true,
+    "points": 10,
+    "state": {
+     "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,,,,,,,o4h0t0,,,o7h1t-1,,,o1h1t0,,,s8k5t0,,,,,,,,,,,,,,,,,,,,,s4k6t0,,,,,,,,,s4k6t0,s9k0t0,s8k0t0,s0k0t0",
+     "tray": [
+      "4:5:10",
+      "6:7:0",
+      "11:2:0"
+     ],
+     "bonus": null,
+     "rng": 4039202607,
+     "score": 1134,
+     "combo": 0,
+     "bestCombo": 1,
+     "rows": 4,
+     "multi": 1,
+     "bestWave": 2,
+     "moves": 6,
+     "sets": 3,
+     "sand": 34,
+     "obstacles": 4,
+     "golden": 3,
+     "perfect": 0,
+     "kinds": {
+      "0": 20,
+      "1": 4,
+      "2": 1,
+      "3": 1,
+      "4": 4,
+      "5": 2,
+      "6": 1,
+      "7": 3
+     },
+     "status": "playing",
+     "reason": ""
+    }
+   },
+   {
+    "kind": "extra",
+    "arg": null,
+    "ok": true,
+    "points": 0,
+    "state": {
+     "board": ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,o2h1t0,,,,,,,,o4h0t0,,,o7h1t-1,,,o1h1t0,,,s8k5t0,,,,,,,,,,,,,,,,,,,,,s4k6t0,,,,,,,,s4k6t0,s4k6t0,s9k0t0,s8k0t0,s0k0t0",
+     "tray": [
+      "4:5:10",
+      "6:7:0",
+      "11:2:0"
+     ],
+     "bonus": "0:0:0",
+     "rng": 4039202607,
+     "score": 1124,
+     "combo": 0,
+     "bestCombo": 1,
+     "rows": 4,
+     "multi": 1,
+     "bestWave": 2,
+     "moves": 6,
+     "sets": 3,
+     "sand": 33,
+     "obstacles": 4,
+     "golden": 3,
+     "perfect": 0,
+     "kinds": {
+      "0": 20,
+      "1": 4,
+      "2": 1,
+      "3": 1,
+      "4": 4,
+      "5": 2,
+      "7": 3
+     },
+     "status": "playing",
+     "reason": ""
+    }
+   }
+  ]
+ },
+ "kindNames": [
+  "normal",
+  "heavy",
+  "sticky",
+  "explosive",
+  "rainbow",
+  "frozen",
+  "crystal",
+  "golden",
+  "magnetic",
+  "volcanic",
+  "mystery"
+ ]
+}

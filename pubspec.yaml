@@ -1,0 +1,65 @@
+name: sand_burst_magic
+description: "Sand Burst Magic - an original, offline-first block and sand puzzle game by Magivix Studio."
+publish_to: 'none'
+
+# version: <user-visible version>+<build number>. The build number becomes the
+# Android versionCode and must increase with every Play Store upload.
+# Keep lib/app_info.dart in sync (a unit test checks this).
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+  flutter: ">=3.41.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Local key-value storage (Android DataStore / iOS NSUserDefaults).
+  shared_preferences: ^2.5.6
+  # Official Google Mobile Ads plugin, including the UMP consent SDK.
+  google_mobile_ads: ^9.1.0
+  # Sound effects and music.
+  audioplayers: ^6.8.1
+  # Android share sheet (result card, daily result, app link).
+  share_plus: ^13.3.1
+  # Google Play in-app review card and store page.
+  in_app_review: ^2.0.12
+  # Opt-in daily puzzle reminder (local notification, no server).
+  flutter_local_notifications: ^22.3.2
+  timezone: ^0.11.0
+  # Opens the studio website and the contact email outside the app.
+  url_launcher: ^6.3.2
+  # Google Play Billing: the one-time "Remove ads" purchase.
+  in_app_purchase: ^3.2.0
+  # Brand logos for the studio's social pages in Settings.
+  font_awesome_flutter: ^11.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/fonts/OFL.txt
+    - assets/images/launch_icon.png
+    - assets/audio/sfx/
+    - assets/audio/music/
+
+  fonts:
+    - family: Outfit
+      fonts:
+        - asset: assets/fonts/Outfit-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Outfit-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Outfit-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Outfit-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Outfit-ExtraBold.ttf
+          weight: 800

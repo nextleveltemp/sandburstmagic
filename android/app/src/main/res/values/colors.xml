@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Launch background (matches the game's midnight navy). -->
+    <color name="sbm_midnight">#0D1433</color>
+    <color name="sbm_icon_background">#03104A</color>
+</resources>

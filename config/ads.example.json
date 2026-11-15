@@ -1,0 +1,14 @@
+{
+  "ADMOB_ANDROID_BANNER": "ca-app-pub-XXXXXXXXXXXXXXXX/1111111111",
+  "ADMOB_ANDROID_INTERSTITIAL": "ca-app-pub-XXXXXXXXXXXXXXXX/2222222222",
+  "ADMOB_ANDROID_REWARDED": "ca-app-pub-XXXXXXXXXXXXXXXX/3333333333",
+  "SBM_STORE_LISTED": "true",
+  "SBM_CONTACT_EMAIL": "support@magivix.com",
+  "SBM_PRIVACY_POLICY_URL": "https://magivix.com/privacy-policy/",
+  "SBM_TERMS_URL": "https://magivix.com/terms-of-use/",
+  "SBM_FACEBOOK_URL": "https://www.facebook.com/magivix",
+  "SBM_TIKTOK_URL": "https://www.tiktok.com/@magivix",
+  "SBM_INSTAGRAM_URL": "https://www.instagram.com/magivixstudio",
+  "SBM_YOUTUBE_URL": "https://www.youtube.com/@magivix",
+  "SBM_X_URL": "https://x.com/magivixstudio"
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 11 and lower: include the game's preferences (progress and
+     settings) in the user's device backup so a restore keeps their progress. -->
+<full-backup-content>
+    <include domain="sharedpref" path="."/>
+    <include domain="file" path="datastore/"/>
+</full-backup-content>
