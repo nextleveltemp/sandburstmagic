@@ -55,7 +55,7 @@ void main() {
     await wait(t, 3000);
     await shot(t, 'S1-home');
 
-    await tapKey(t, 'home-campaign');
+    await tapKey(t, 'home-levels');
     await t.scrollUntilVisible(
       find.byKey(const ValueKey('level-45')),
       300,
@@ -65,7 +65,7 @@ void main() {
     await shot(t, 'S4-campaign');
     await t.pageBack();
     await wait(t, 900);
-    await tapKey(t, 'home-campaign');
+    await tapKey(t, 'home-levels');
     await tapKey(t, 'level-23', settle: 1500);
     final c = controllerOf(t);
     final sol = LevelCatalog.level(23).solution;
@@ -89,10 +89,16 @@ void main() {
     await shot(t, 'S3-daily-sheet');
     await t.tapAt(const Offset(20, 80));
     await wait(t, 900);
-    await tapKey(t, 'home-modes');
+    // "More ways to play" on the home screen.
+    await t.scrollUntilVisible(
+      find.byKey(const ValueKey('home-shop')),
+      300,
+      scrollable: find.byType(Scrollable).first,
+    );
+    await wait(t, 600);
     await shot(t, 'S5-modes');
-    await t.pageBack();
-    await wait(t, 900);
+    await t.drag(find.byType(Scrollable).first, const Offset(0, 3000));
+    await wait(t, 600);
     await tapKey(t, 'home-themes');
     await shot(t, 'S6-shop');
     await t.pageBack();

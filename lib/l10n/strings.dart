@@ -103,6 +103,13 @@ class Strings {
   // ---------------------------------------------------------------- Home
   String get play => 'Play';
   String get continueGame => 'Continue';
+  String continueSubtitle(int score) => 'Score ${formatNumber(score)}';
+  String get levels => 'Levels';
+  String get modesHeading => 'More ways to play';
+  String playerCard(int level, String world) => '${levelN(level)} · $world';
+  String playerCardSub(int stars, int coins) =>
+      '${starsTotal(stars)} · ${coinsLabel(coins)}';
+  String shopBlurb(int coins) => '${coinsLabel(coins)} · power-ups and looks';
   String get classicBlurb => 'Endless puzzle. Fill rows, chase your best.';
   String levelN(int n) => 'Level $n';
   String playLevelLabel(int n) => 'Play level $n';
@@ -423,12 +430,12 @@ class Strings {
   String get dailyDoneAgain => 'Play again (no extra reward)';
 
   // ---------------------------------------------------------------- Missions
-  String get missions => "Today's missions";
+  String get missions => "Today's goals";
   String get missionsHint =>
       'Each mission gives 30 coins. Finish all three for 50 more.';
   String get missionsAllDone => 'All done for today. New missions tomorrow!';
-  String get showMissions => 'Show missions';
-  String get showMissionsHint => "Today's missions on the home screen";
+  String get showMissions => "Show today's goals";
+  String get showMissionsHint => "Today's goals on the home screen";
   String missionText(MissionDef m) => switch (m.metric) {
     MissionMetric.rows => 'Clear ${m.target} rows',
     MissionMetric.multi =>

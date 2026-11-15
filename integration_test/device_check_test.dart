@@ -42,8 +42,7 @@ void main() {
     expect(find.byType(AdWidget), findsNothing, reason: 'no banner on home');
 
     for (final key in [
-      'home-campaign',
-      'home-modes',
+      'home-levels',
       'home-shop',
       'home-themes',
       'home-stats',
@@ -160,7 +159,7 @@ void main() {
     // Two finished games are needed before the first interstitial.
     s.ads.onGameFinished();
     step('campaign level 1 with its intro card');
-    await tapKey(t, 'home-campaign');
+    await tapKey(t, 'home-levels');
     await tapKey(t, 'level-1', settle: 1500);
     expect(find.text('Got it'), findsOneWidget);
     await shot(t, 'level1-intro');
@@ -252,7 +251,6 @@ void main() {
     await backToHome(t);
     for (final m in ['time', 'moves', 'endless']) {
       step('mode $m');
-      await tapKey(t, 'home-modes');
       await tapKey(t, 'mode-$m', settle: 1500);
       c = controllerOf(t);
       for (var i = 0; i < 4 && c.state.isPlaying; i++) {

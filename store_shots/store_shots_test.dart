@@ -189,7 +189,7 @@ Future<void> _leave(WidgetTester t) async {
 
 /// Opens campaign level [n] and plays the first [moves] moves of its proof.
 Future<GameController> _playLevel(WidgetTester t, int n, int moves) async {
-  await _tapKey(t, 'home-campaign');
+  await _tapKey(t, 'home-levels');
   await t.scrollUntilVisible(
     find.byKey(ValueKey('level-$n')),
     300,
@@ -254,7 +254,7 @@ void main() {
 
   testWidgets('S4 campaign', (t) async {
     await _open(t, await _player());
-    await _tapKey(t, 'home-campaign');
+    await _tapKey(t, 'home-levels');
     await t.scrollUntilVisible(
       find.byKey(const ValueKey('level-45')),
       300,
@@ -267,7 +267,12 @@ void main() {
 
   testWidgets('S5 modes', (t) async {
     await _open(t, await _player());
-    await _tapKey(t, 'home-modes');
+    // "More ways to play" on the home screen.
+    await t.scrollUntilVisible(
+      find.byKey(const ValueKey('home-shop')),
+      300,
+      scrollable: find.byType(Scrollable).first,
+    );
     await _shot(t, 'S5-modes');
     await _settle(t, 3000);
   });

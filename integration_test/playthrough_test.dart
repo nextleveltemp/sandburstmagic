@@ -51,7 +51,7 @@ void main() {
 
     step('campaign levels 1-3');
     for (var n = 1; n <= 3; n++) {
-      await tapKey(t, 'home-campaign');
+      await tapKey(t, 'home-levels');
       await tapKey(t, 'level-$n', settle: 1500);
       if (find.text('Got it').evaluate().isNotEmpty) {
         await t.tap(find.text('Got it'));
@@ -72,7 +72,6 @@ void main() {
     expect(s.progress.unlockedLevel, 4);
 
     step('Time Challenge for a few moves');
-    await tapKey(t, 'home-modes');
     await tapKey(t, 'mode-time', settle: 1500);
     c = controllerOf(t);
     for (var i = 0; i < 6 && c.state.isPlaying; i++) {

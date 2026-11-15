@@ -119,7 +119,7 @@ void main() {
     usePhoneSize(tester);
     final s = await testServices();
     await startApp(tester, s);
-    await tester.tap(find.byKey(const ValueKey('home-campaign')));
+    await tester.tap(find.byKey(const ValueKey('home-levels')));
     await settle(tester, 800);
     await tester.tap(find.byKey(const ValueKey('level-1')));
     await settle(tester, 800);
@@ -131,10 +131,39 @@ void main() {
     expect(LevelCatalog.count, 100);
   });
 
+  testWidgets('home is laid out like Block Burst Magic', (tester) async {
+    usePhoneSize(tester);
+    final s = await testServices();
+    await startApp(tester, s);
+    // Top row: player card (Statistics), Themes, Settings.
+    expect(find.byKey(const ValueKey('home-stats')), findsOneWidget);
+    expect(find.byKey(const ValueKey('home-themes')), findsOneWidget);
+    expect(find.byKey(const ValueKey('home-settings')), findsOneWidget);
+    // Play, with Levels right under it.
+    final play = tester.getRect(find.byKey(const ValueKey('play-classic')));
+    final levels = tester.getRect(find.byKey(const ValueKey('home-levels')));
+    expect(levels.top > play.bottom, isTrue);
+    expect(find.text("Today's goals"), findsOneWidget);
+    expect(find.text('More ways to play'), findsOneWidget);
+    // No banner anywhere on the home screen.
+    expect(find.byKey(const ValueKey('game-banner-slot')), findsNothing);
+    await tester.tap(find.byKey(const ValueKey('home-stats')));
+    await settle(tester, 800);
+    expect(find.text('Stats'), findsOneWidget);
+    expect(find.text('Achievements'), findsOneWidget);
+    await settle(tester, 3000);
+  });
+
   testWidgets('shop sells power-ups and looks', (tester) async {
     usePhoneSize(tester);
     final s = await testServices();
     await startApp(tester, s);
+    await tester.scrollUntilVisible(
+      find.byKey(const ValueKey('home-shop')),
+      300,
+      scrollable: find.byType(Scrollable).first,
+    );
+    await settle(tester, 300);
     await tester.tap(find.byKey(const ValueKey('home-shop')));
     await settle(tester, 800);
     expect(find.byType(ShopScreen), findsOneWidget);
