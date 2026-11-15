@@ -1,0 +1,86 @@
+00:00 +0: loading /home/runner/work/sandburstmagic/sandburstmagic/test/data/persistence_test.dart
+00:00 +0: /home/runner/work/sandburstmagic/sandburstmagic/test/data/persistence_test.dart: progress round-trips through JSON
+00:00 +1: /home/runner/work/sandburstmagic/sandburstmagic/test/data/persistence_test.dart: bad progress data falls back to safe defaults
+00:00 +2: /home/runner/work/sandburstmagic/sandburstmagic/test/data/persistence_test.dart: a saved game restores to the same position
+00:00 +3: /home/runner/work/sandburstmagic/sandburstmagic/test/data/persistence_test.dart: settings tolerate unknown and broken values
+00:00 +4: /home/runner/work/sandburstmagic/sandburstmagic/test/app_info_test.dart: AppInfo matches pubspec.yaml version
+00:00 +5: /home/runner/work/sandburstmagic/sandburstmagic/test/app_info_test.dart: application ID and name are the same everywhere
+00:00 +6: /home/runner/work/sandburstmagic/sandburstmagic/test/app_info_test.dart: every declared asset exists
+00:00 +7: /home/runner/work/sandburstmagic/sandburstmagic/test/app_info_test.dart: the Play icon is 512 x 512
+00:01 +8: /home/runner/work/sandburstmagic/sandburstmagic/test/core/progression_test.dart: coin rules
+00:01 +9: /home/runner/work/sandburstmagic/sandburstmagic/test/core/progression_test.dart: every power-up has a price; cosmetics have unique keys
+00:01 +10: /home/runner/work/sandburstmagic/sandburstmagic/test/core/progression_test.dart: missions: three a day, deterministic, different metrics
+00:01 +11: /home/runner/work/sandburstmagic/sandburstmagic/test/core/progression_test.dart: daily streak and clock protection
+00:01 +12: /home/runner/work/sandburstmagic/sandburstmagic/test/core/progression_test.dart: achievements unlock from statistics
+00:01 +13: /home/runner/work/sandburstmagic/sandburstmagic/test/core/progression_test.dart: stars per level
+00:01 +14: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: placement a placed block becomes sand and falls to the floor
+00:01 +15: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: placement invalid placements are rejected and change nothing
+00:01 +16: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: placement pieces cannot be placed on restricted cells
+00:01 +17: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: placement a new set is dealt only after all three pieces are used
+00:01 +18: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: sand grains fall, then slide diagonally
+00:01 +19: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: sand heavy sand never slides
+00:01 +20: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: sand frozen sand does not move
+00:01 +21: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: sand sticky sand holds its neighbours
+00:01 +22: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: sand a sand trap swallows three grains, then fills
+00:01 +23: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: sand sand never leaves the board and is never lost
+00:01 +24: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: rows row detection needs every cell, and an open trap blocks it
+00:01 +25: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: rows a single row clears and scores
+00:01 +26: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: rows two rows at once clear together for more points
+00:01 +27: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: rows remaining sand settles after a clear; combo resets on a miss
+00:01 +28: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: rows an incomplete row never clears
+00:01 +29: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: rows combo bonus grows with consecutive clears
+00:01 +30: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: special sand and obstacles explosive sand clears its neighbours
+00:01 +31: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: special sand and obstacles stone takes two bursts
+00:01 +32: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: special sand and obstacles ice breaks next to a burst row
+00:01 +33: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: special sand and obstacles a lock counts down cleared rows
+00:01 +34: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: game end no room for any piece ends the game
+00:01 +35: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: game end a move limit ends the game
+00:01 +36: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: game end meeting the objectives wins
+00:01 +37: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: game end the Time Challenge clock ends a game
+00:01 +38: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: game end keep playing clears the bottom three rows
+00:01 +39: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: power-ups Sand Sweep, Colour Blast, Bomb, Crusher and Gravity
+00:01 +40: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: power-ups Row Clear fills a nearly full row so it bursts
+00:01 +41: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: power-ups Extra Move gives a bonus block and one more move
+00:01 +42: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: power-ups a power-up with nothing to do changes nothing
+00:01 +43: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: dealing a set always contains a piece that fits when one could
+00:01 +44: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: dealing the same seed deals the same pieces
+00:01 +45: /home/runner/work/sandburstmagic/sandburstmagic/test/core/rules_test.dart: game state survives a save and restore
+00:05 +46: /home/runner/work/sandburstmagic/sandburstmagic/test/core/reference_test.dart: random numbers and string hash match
+00:05 +47: /home/runner/work/sandburstmagic/sandburstmagic/test/core/reference_test.dart: generated layouts match
+00:05 +48: /home/runner/work/sandburstmagic/sandburstmagic/test/core/reference_test.dart: bot game "classic" matches turn by turn
+00:05 +49: /home/runner/work/sandburstmagic/sandburstmagic/test/core/reference_test.dart: bot game "endless" matches turn by turn
+00:06 +50: /home/runner/work/sandburstmagic/sandburstmagic/test/core/reference_test.dart: bot game "everything" matches turn by turn
+00:06 +51: /home/runner/work/sandburstmagic/sandburstmagic/test/core/reference_test.dart: bot game "gentle" matches turn by turn
+00:06 +52: /home/runner/work/sandburstmagic/sandburstmagic/test/core/reference_test.dart: power-ups match
+00:06 +53: /home/runner/work/sandburstmagic/sandburstmagic/test/core/engagement_test.dart: rating prompt only at happy moments
+00:06 +54: /home/runner/work/sandburstmagic/sandburstmagic/test/core/engagement_test.dart: rating prompt not before the player has solved a few puzzles
+00:06 +55: /home/runner/work/sandburstmagic/sandburstmagic/test/core/engagement_test.dart: rating prompt rarely, and never more than three times
+00:06 +56: /home/runner/work/sandburstmagic/sandburstmagic/test/core/engagement_test.dart: reminders seven days ahead starting today when not solved yet
+00:06 +57: /home/runner/work/sandburstmagic/sandburstmagic/test/core/engagement_test.dart: reminders skips today when solved or the time has passed
+00:06 +58: /home/runner/work/sandburstmagic/sandburstmagic/test/core/engagement_test.dart: share texts star line
+00:06 +59: /home/runner/work/sandburstmagic/sandburstmagic/test/core/engagement_test.dart: share texts pour bar is spoiler-free and bounded
+00:06 +60: /home/runner/work/sandburstmagic/sandburstmagic/test/core/engagement_test.dart: interstitial frequency the first one after the 2nd puzzle
+00:06 +61: /home/runner/work/sandburstmagic/sandburstmagic/test/core/engagement_test.dart: interstitial frequency then after every 2nd finished puzzle, never twice for one
+00:06 +62: /home/runner/work/sandburstmagic/sandburstmagic/test/core/engagement_test.dart: interstitial frequency at least 60 seconds between interstitials
+00:06 +63: /home/runner/work/sandburstmagic/sandburstmagic/test/core/levels_test.dart: 100 levels in six worlds, in order
+00:06 +64: /home/runner/work/sandburstmagic/sandburstmagic/test/core/levels_test.dart: every starting board is settled and has no complete row
+00:06 +65: /home/runner/work/sandburstmagic/sandburstmagic/test/core/levels_test.dart: every level has goals, sane stars and a fair first deal
+00:06 +66: /home/runner/work/sandburstmagic/sandburstmagic/test/core/levels_test.dart: every level is winnable: its stored solution wins
+00:06 +67: /home/runner/work/sandburstmagic/sandburstmagic/test/core/levels_test.dart: mechanics are introduced gradually
+00:06 +68: /home/runner/work/sandburstmagic/sandburstmagic/test/core/levels_test.dart: daily puzzles are the same for a date and the bot can win them
+00:07 +69: /home/runner/work/sandburstmagic/sandburstmagic/test/state/game_controller_test.dart: winning level 1 pays coins, records stars and unlocks level 2
+00:07 +70: /home/runner/work/sandburstmagic/sandburstmagic/test/state/game_controller_test.dart: moves are saved and resumed
+00:07 +71: /home/runner/work/sandburstmagic/sandburstmagic/test/state/game_controller_test.dart: one free undo and one free hint, then rewarded ads
+00:07 +72: /home/runner/work/sandburstmagic/sandburstmagic/test/state/game_controller_test.dart: power-ups come from the inventory
+00:07 +73: /home/runner/work/sandburstmagic/sandburstmagic/test/state/game_controller_test.dart: Time Challenge ends when the clock runs out
+00:07 +74: /home/runner/work/sandburstmagic/sandburstmagic/test/state/game_controller_test.dart: keep playing is offered once after running out of room
+00:07 +75: /home/runner/work/sandburstmagic/sandburstmagic/test/state/game_controller_test.dart: double reward adds the game coins once
+00:07 +76: /home/runner/work/sandburstmagic/sandburstmagic/test/state/game_controller_test.dart: cosmetics: buy, select, and world themes unlock by playing
+00:07 +77: /home/runner/work/sandburstmagic/sandburstmagic/test/state/game_controller_test.dart: daily puzzle win records the streak
+00:08 +78: /home/runner/work/sandburstmagic/sandburstmagic/test/widget/app_flow_test.dart: first launch shows the welcome card
+00:09 +79: /home/runner/work/sandburstmagic/sandburstmagic/test/widget/app_flow_test.dart: the tutorial plays a live demo and leads home
+00:09 +80: /home/runner/work/sandburstmagic/sandburstmagic/test/widget/app_flow_test.dart: play Classic: tap a piece, preview, confirm, pause, home
+00:10 +81: /home/runner/work/sandburstmagic/sandburstmagic/test/widget/app_flow_test.dart: drag a piece onto the board
+00:10 +82: /home/runner/work/sandburstmagic/sandburstmagic/test/widget/app_flow_test.dart: campaign level 1 shows its introduction card
+00:11 +83: /home/runner/work/sandburstmagic/sandburstmagic/test/widget/app_flow_test.dart: shop sells power-ups and looks
+00:11 +84: All tests passed!
