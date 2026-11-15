@@ -1,0 +1,442 @@
+00:00 +0: loading /home/runner/work/sandburstmagic/sandburstmagic/store_shots/store_shots_test.dart
+00:00 +0: (setUpAll)
+00:00 +0: S1 home
+00:01 +1: S2 gameplay, S7 results, S8 share card
+00:05 +2: S3 daily sheet
+00:05 +3: S4 campaign
+00:06 +4: S5 modes
+00:06 +5: S6 shop
+00:06 +6: S9 statistics
+00:07 +7: board midnight
+Pending timers:
+Timer (duration: 0:00:00.400000, periodic: false), created:
+#0      new FakeTimer._ (package:fake_async/fake_async.dart:342:62)
+#1      FakeAsync._createTimer (package:fake_async/fake_async.dart:260:29)
+#2      FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:185:15)
+#5      ProgressController._scheduleSave (package:sand_burst_magic/state/progress_controller.dart:368:18)
+#6      ProgressController._changed (package:sand_burst_magic/state/progress_controller.dart:352:5)
+#7      ProgressController.addPlaySeconds (package:sand_burst_magic/state/progress_controller.dart:198:5)
+#8      GameController.tick (package:sand_burst_magic/state/game_controller.dart:243:16)
+#9      GameScreenState._onTick (package:sand_burst_magic/ui/screens/game_screen.dart:186:56)
+#10     Ticker._tick (package:flutter/src/scheduler/ticker.dart:278:12)
+#11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#12     SchedulerBinding.handleBeginFrame.<anonymous closure> (package:flutter/src/scheduler/binding.dart:1263:11)
+#13     _LinkedHashMapMixin.forEach (dart:_compact_hash:721:13)
+#14     SchedulerBinding.handleBeginFrame (package:flutter/src/scheduler/binding.dart:1261:17)
+#15     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:2259:9)
+#18     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#19     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:2250:27)
+#20     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#23     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#24     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#25     _settle (file:///home/runner/work/sandburstmagic/sandburstmagic/store_shots/store_shots_test.dart:138:13)
+<asynchronous suspension>
+#26     main.<anonymous closure> (file:///home/runner/work/sandburstmagic/sandburstmagic/store_shots/store_shots_test.dart:282:7)
+<asynchronous suspension>
+#27     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#28     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 7 frames from dart:async and package:stack_trace)
+
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+A Timer is still pending even after the widget tree was disposed.
+'package:flutter_test/src/binding.dart':
+Failed assertion: line 2543 pos 12: '!timersPending'
+
+When the exception was thrown, this was the stack:
+#2      AutomatedTestWidgetsFlutterBinding._verifyInvariants (package:flutter_test/src/binding.dart:2543:12)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1974:7)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 3 frames from class _AssertionError and package:stack_trace)
+
+The test description was:
+  board midnight
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:08 +7 -1: board midnight [E]
+  Test failed. See exception logs above.
+  The test description was: board midnight
+  
+00:08 +7 -1: board candy
+Pending timers:
+Timer (duration: 0:00:00.400000, periodic: false), created:
+#0      new FakeTimer._ (package:fake_async/fake_async.dart:342:62)
+#1      FakeAsync._createTimer (package:fake_async/fake_async.dart:260:29)
+#2      FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:185:15)
+#5      ProgressController._scheduleSave (package:sand_burst_magic/state/progress_controller.dart:368:18)
+#6      ProgressController._changed (package:sand_burst_magic/state/progress_controller.dart:352:5)
+#7      ProgressController.addPlaySeconds (package:sand_burst_magic/state/progress_controller.dart:198:5)
+#8      GameController.tick (package:sand_burst_magic/state/game_controller.dart:243:16)
+#9      GameScreenState._onTick (package:sand_burst_magic/ui/screens/game_screen.dart:186:56)
+#10     Ticker._tick (package:flutter/src/scheduler/ticker.dart:278:12)
+#11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#12     SchedulerBinding.handleBeginFrame.<anonymous closure> (package:flutter/src/scheduler/binding.dart:1263:11)
+#13     _LinkedHashMapMixin.forEach (dart:_compact_hash:721:13)
+#14     SchedulerBinding.handleBeginFrame (package:flutter/src/scheduler/binding.dart:1261:17)
+#15     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:2259:9)
+#18     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#19     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:2250:27)
+#20     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#23     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#24     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#25     _settle (file:///home/runner/work/sandburstmagic/sandburstmagic/store_shots/store_shots_test.dart:138:13)
+<asynchronous suspension>
+#26     main.<anonymous closure> (file:///home/runner/work/sandburstmagic/sandburstmagic/store_shots/store_shots_test.dart:282:7)
+<asynchronous suspension>
+#27     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#28     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 7 frames from dart:async and package:stack_trace)
+
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+A Timer is still pending even after the widget tree was disposed.
+'package:flutter_test/src/binding.dart':
+Failed assertion: line 2543 pos 12: '!timersPending'
+
+When the exception was thrown, this was the stack:
+#2      AutomatedTestWidgetsFlutterBinding._verifyInvariants (package:flutter_test/src/binding.dart:2543:12)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1974:7)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 3 frames from class _AssertionError and package:stack_trace)
+
+The test description was:
+  board candy
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:09 +7 -2: board candy [E]
+  Test failed. See exception logs above.
+  The test description was: board candy
+  
+00:09 +7 -2: board crystal
+Pending timers:
+Timer (duration: 0:00:00.400000, periodic: false), created:
+#0      new FakeTimer._ (package:fake_async/fake_async.dart:342:62)
+#1      FakeAsync._createTimer (package:fake_async/fake_async.dart:260:29)
+#2      FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:185:15)
+#5      ProgressController._scheduleSave (package:sand_burst_magic/state/progress_controller.dart:368:18)
+#6      ProgressController._changed (package:sand_burst_magic/state/progress_controller.dart:352:5)
+#7      ProgressController.addPlaySeconds (package:sand_burst_magic/state/progress_controller.dart:198:5)
+#8      GameController.tick (package:sand_burst_magic/state/game_controller.dart:243:16)
+#9      GameScreenState._onTick (package:sand_burst_magic/ui/screens/game_screen.dart:186:56)
+#10     Ticker._tick (package:flutter/src/scheduler/ticker.dart:278:12)
+#11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#12     SchedulerBinding.handleBeginFrame.<anonymous closure> (package:flutter/src/scheduler/binding.dart:1263:11)
+#13     _LinkedHashMapMixin.forEach (dart:_compact_hash:721:13)
+#14     SchedulerBinding.handleBeginFrame (package:flutter/src/scheduler/binding.dart:1261:17)
+#15     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:2259:9)
+#18     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#19     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:2250:27)
+#20     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#23     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#24     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#25     _settle (file:///home/runner/work/sandburstmagic/sandburstmagic/store_shots/store_shots_test.dart:138:13)
+<asynchronous suspension>
+#26     main.<anonymous closure> (file:///home/runner/work/sandburstmagic/sandburstmagic/store_shots/store_shots_test.dart:282:7)
+<asynchronous suspension>
+#27     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#28     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 7 frames from dart:async and package:stack_trace)
+
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+A Timer is still pending even after the widget tree was disposed.
+'package:flutter_test/src/binding.dart':
+Failed assertion: line 2543 pos 12: '!timersPending'
+
+When the exception was thrown, this was the stack:
+#2      AutomatedTestWidgetsFlutterBinding._verifyInvariants (package:flutter_test/src/binding.dart:2543:12)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1974:7)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 3 frames from class _AssertionError and package:stack_trace)
+
+The test description was:
+  board crystal
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:10 +7 -3: board crystal [E]
+  Test failed. See exception logs above.
+  The test description was: board crystal
+  
+00:10 +7 -3: board ocean
+Pending timers:
+Timer (duration: 0:00:00.400000, periodic: false), created:
+#0      new FakeTimer._ (package:fake_async/fake_async.dart:342:62)
+#1      FakeAsync._createTimer (package:fake_async/fake_async.dart:260:29)
+#2      FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:185:15)
+#5      ProgressController._scheduleSave (package:sand_burst_magic/state/progress_controller.dart:368:18)
+#6      ProgressController._changed (package:sand_burst_magic/state/progress_controller.dart:352:5)
+#7      ProgressController.addPlaySeconds (package:sand_burst_magic/state/progress_controller.dart:198:5)
+#8      GameController.tick (package:sand_burst_magic/state/game_controller.dart:243:16)
+#9      GameScreenState._onTick (package:sand_burst_magic/ui/screens/game_screen.dart:186:56)
+#10     Ticker._tick (package:flutter/src/scheduler/ticker.dart:278:12)
+#11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#12     SchedulerBinding.handleBeginFrame.<anonymous closure> (package:flutter/src/scheduler/binding.dart:1263:11)
+#13     _LinkedHashMapMixin.forEach (dart:_compact_hash:721:13)
+#14     SchedulerBinding.handleBeginFrame (package:flutter/src/scheduler/binding.dart:1261:17)
+#15     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:2259:9)
+#18     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#19     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:2250:27)
+#20     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#23     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#24     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#25     _settle (file:///home/runner/work/sandburstmagic/sandburstmagic/store_shots/store_shots_test.dart:138:13)
+<asynchronous suspension>
+#26     main.<anonymous closure> (file:///home/runner/work/sandburstmagic/sandburstmagic/store_shots/store_shots_test.dart:282:7)
+<asynchronous suspension>
+#27     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#28     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 7 frames from dart:async and package:stack_trace)
+
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+A Timer is still pending even after the widget tree was disposed.
+'package:flutter_test/src/binding.dart':
+Failed assertion: line 2543 pos 12: '!timersPending'
+
+When the exception was thrown, this was the stack:
+#2      AutomatedTestWidgetsFlutterBinding._verifyInvariants (package:flutter_test/src/binding.dart:2543:12)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1974:7)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 3 frames from class _AssertionError and package:stack_trace)
+
+The test description was:
+  board ocean
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:10 +7 -4: board ocean [E]
+  Test failed. See exception logs above.
+  The test description was: board ocean
+  
+00:10 +7 -4: board sunset
+Pending timers:
+Timer (duration: 0:00:00.400000, periodic: false), created:
+#0      new FakeTimer._ (package:fake_async/fake_async.dart:342:62)
+#1      FakeAsync._createTimer (package:fake_async/fake_async.dart:260:29)
+#2      FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:185:15)
+#5      ProgressController._scheduleSave (package:sand_burst_magic/state/progress_controller.dart:368:18)
+#6      ProgressController._changed (package:sand_burst_magic/state/progress_controller.dart:352:5)
+#7      ProgressController.addPlaySeconds (package:sand_burst_magic/state/progress_controller.dart:198:5)
+#8      GameController.tick (package:sand_burst_magic/state/game_controller.dart:243:16)
+#9      GameScreenState._onTick (package:sand_burst_magic/ui/screens/game_screen.dart:186:56)
+#10     Ticker._tick (package:flutter/src/scheduler/ticker.dart:278:12)
+#11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#12     SchedulerBinding.handleBeginFrame.<anonymous closure> (package:flutter/src/scheduler/binding.dart:1263:11)
+#13     _LinkedHashMapMixin.forEach (dart:_compact_hash:721:13)
+#14     SchedulerBinding.handleBeginFrame (package:flutter/src/scheduler/binding.dart:1261:17)
+#15     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:2259:9)
+#18     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#19     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:2250:27)
+#20     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#23     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#24     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#25     _settle (file:///home/runner/work/sandburstmagic/sandburstmagic/store_shots/store_shots_test.dart:138:13)
+<asynchronous suspension>
+#26     main.<anonymous closure> (file:///home/runner/work/sandburstmagic/sandburstmagic/store_shots/store_shots_test.dart:282:7)
+<asynchronous suspension>
+#27     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#28     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 7 frames from dart:async and package:stack_trace)
+
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+A Timer is still pending even after the widget tree was disposed.
+'package:flutter_test/src/binding.dart':
+Failed assertion: line 2543 pos 12: '!timersPending'
+
+When the exception was thrown, this was the stack:
+#2      AutomatedTestWidgetsFlutterBinding._verifyInvariants (package:flutter_test/src/binding.dart:2543:12)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1974:7)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 3 frames from class _AssertionError and package:stack_trace)
+
+The test description was:
+  board sunset
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:11 +7 -5: board sunset [E]
+  Test failed. See exception logs above.
+  The test description was: board sunset
+  
+00:11 +7 -5: board forest
+Pending timers:
+Timer (duration: 0:00:00.400000, periodic: false), created:
+#0      new FakeTimer._ (package:fake_async/fake_async.dart:342:62)
+#1      FakeAsync._createTimer (package:fake_async/fake_async.dart:260:29)
+#2      FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:185:15)
+#5      ProgressController._scheduleSave (package:sand_burst_magic/state/progress_controller.dart:368:18)
+#6      ProgressController._changed (package:sand_burst_magic/state/progress_controller.dart:352:5)
+#7      ProgressController.addPlaySeconds (package:sand_burst_magic/state/progress_controller.dart:198:5)
+#8      GameController.tick (package:sand_burst_magic/state/game_controller.dart:243:16)
+#9      GameScreenState._onTick (package:sand_burst_magic/ui/screens/game_screen.dart:186:56)
+#10     Ticker._tick (package:flutter/src/scheduler/ticker.dart:278:12)
+#11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#12     SchedulerBinding.handleBeginFrame.<anonymous closure> (package:flutter/src/scheduler/binding.dart:1263:11)
+#13     _LinkedHashMapMixin.forEach (dart:_compact_hash:721:13)
+#14     SchedulerBinding.handleBeginFrame (package:flutter/src/scheduler/binding.dart:1261:17)
+#15     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:2259:9)
+#18     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#19     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:2250:27)
+#20     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#23     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#24     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#25     _settle (file:///home/runner/work/sandburstmagic/sandburstmagic/store_shots/store_shots_test.dart:138:13)
+<asynchronous suspension>
+#26     main.<anonymous closure> (file:///home/runner/work/sandburstmagic/sandburstmagic/store_shots/store_shots_test.dart:282:7)
+<asynchronous suspension>
+#27     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#28     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 7 frames from dart:async and package:stack_trace)
+
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+A Timer is still pending even after the widget tree was disposed.
+'package:flutter_test/src/binding.dart':
+Failed assertion: line 2543 pos 12: '!timersPending'
+
+When the exception was thrown, this was the stack:
+#2      AutomatedTestWidgetsFlutterBinding._verifyInvariants (package:flutter_test/src/binding.dart:2543:12)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1974:7)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 3 frames from class _AssertionError and package:stack_trace)
+
+The test description was:
+  board forest
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:12 +7 -6: board forest [E]
+  Test failed. See exception logs above.
+  The test description was: board forest
+  
+00:12 +7 -6: board cosmic
+Pending timers:
+Timer (duration: 0:00:00.400000, periodic: false), created:
+#0      new FakeTimer._ (package:fake_async/fake_async.dart:342:62)
+#1      FakeAsync._createTimer (package:fake_async/fake_async.dart:260:29)
+#2      FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:185:15)
+#5      ProgressController._scheduleSave (package:sand_burst_magic/state/progress_controller.dart:368:18)
+#6      ProgressController._changed (package:sand_burst_magic/state/progress_controller.dart:352:5)
+#7      ProgressController.addPlaySeconds (package:sand_burst_magic/state/progress_controller.dart:198:5)
+#8      GameController.tick (package:sand_burst_magic/state/game_controller.dart:243:16)
+#9      GameScreenState._onTick (package:sand_burst_magic/ui/screens/game_screen.dart:186:56)
+#10     Ticker._tick (package:flutter/src/scheduler/ticker.dart:278:12)
+#11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#12     SchedulerBinding.handleBeginFrame.<anonymous closure> (package:flutter/src/scheduler/binding.dart:1263:11)
+#13     _LinkedHashMapMixin.forEach (dart:_compact_hash:721:13)
+#14     SchedulerBinding.handleBeginFrame (package:flutter/src/scheduler/binding.dart:1261:17)
+#15     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:2259:9)
+#18     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#19     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:2250:27)
+#20     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#23     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#24     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#25     _settle (file:///home/runner/work/sandburstmagic/sandburstmagic/store_shots/store_shots_test.dart:138:13)
+<asynchronous suspension>
+#26     main.<anonymous closure> (file:///home/runner/work/sandburstmagic/sandburstmagic/store_shots/store_shots_test.dart:282:7)
+<asynchronous suspension>
+#27     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#28     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 7 frames from dart:async and package:stack_trace)
+
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+A Timer is still pending even after the widget tree was disposed.
+'package:flutter_test/src/binding.dart':
+Failed assertion: line 2543 pos 12: '!timersPending'
+
+When the exception was thrown, this was the stack:
+#2      AutomatedTestWidgetsFlutterBinding._verifyInvariants (package:flutter_test/src/binding.dart:2543:12)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1974:7)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 3 frames from class _AssertionError and package:stack_trace)
+
+The test description was:
+  board cosmic
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:12 +7 -7: board cosmic [E]
+  Test failed. See exception logs above.
+  The test description was: board cosmic
+  
+00:12 +7 -7: board daylight
+Pending timers:
+Timer (duration: 0:00:00.400000, periodic: false), created:
+#0      new FakeTimer._ (package:fake_async/fake_async.dart:342:62)
+#1      FakeAsync._createTimer (package:fake_async/fake_async.dart:260:29)
+#2      FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:185:15)
+#5      ProgressController._scheduleSave (package:sand_burst_magic/state/progress_controller.dart:368:18)
+#6      ProgressController._changed (package:sand_burst_magic/state/progress_controller.dart:352:5)
+#7      ProgressController.addPlaySeconds (package:sand_burst_magic/state/progress_controller.dart:198:5)
+#8      GameController.tick (package:sand_burst_magic/state/game_controller.dart:243:16)
+#9      GameScreenState._onTick (package:sand_burst_magic/ui/screens/game_screen.dart:186:56)
+#10     Ticker._tick (package:flutter/src/scheduler/ticker.dart:278:12)
+#11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#12     SchedulerBinding.handleBeginFrame.<anonymous closure> (package:flutter/src/scheduler/binding.dart:1263:11)
+#13     _LinkedHashMapMixin.forEach (dart:_compact_hash:721:13)
+#14     SchedulerBinding.handleBeginFrame (package:flutter/src/scheduler/binding.dart:1261:17)
+#15     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:2259:9)
+#18     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#19     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:2250:27)
+#20     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#23     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#24     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#25     _settle (file:///home/runner/work/sandburstmagic/sandburstmagic/store_shots/store_shots_test.dart:138:13)
+<asynchronous suspension>
+#26     main.<anonymous closure> (file:///home/runner/work/sandburstmagic/sandburstmagic/store_shots/store_shots_test.dart:282:7)
+<asynchronous suspension>
+#27     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#28     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 7 frames from dart:async and package:stack_trace)
+
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+A Timer is still pending even after the widget tree was disposed.
+'package:flutter_test/src/binding.dart':
+Failed assertion: line 2543 pos 12: '!timersPending'
+
+When the exception was thrown, this was the stack:
+#2      AutomatedTestWidgetsFlutterBinding._verifyInvariants (package:flutter_test/src/binding.dart:2543:12)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1974:7)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 3 frames from class _AssertionError and package:stack_trace)
+
+The test description was:
+  board daylight
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:13 +7 -8: board daylight [E]
+  Test failed. See exception logs above.
+  The test description was: board daylight
+  
+00:13 +7 -8: (tearDownAll)
+00:13 +7 -8: Some tests failed.
+
+Failing tests:
+  /home/runner/work/sandburstmagic/sandburstmagic/store_shots/store_shots_test.dart: board candy
+  /home/runner/work/sandburstmagic/sandburstmagic/store_shots/store_shots_test.dart: board cosmic
+  /home/runner/work/sandburstmagic/sandburstmagic/store_shots/store_shots_test.dart: board crystal
+  /home/runner/work/sandburstmagic/sandburstmagic/store_shots/store_shots_test.dart: board daylight
+  ... and 4 more

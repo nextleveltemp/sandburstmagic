@@ -1,0 +1,8 @@
+ci-out/screenshots/01-gameplay.png
+ci-out/screenshots/02-results.png
+ci-out/screenshots/03-campaign.png
+ci-out/screenshots/04-daily-sheet.png
+ci-out/screenshots/05-modes.png
+ci-out/screenshots/06-shop.png
+ci-out/screenshots/07-home.png
+ci-out/screenshots/08-share-card.png
