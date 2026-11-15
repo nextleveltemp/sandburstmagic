@@ -15,7 +15,9 @@ void main() {
     final schedule = c['schedule'];
     return GameConfig(
       seed: c['seed'] as int,
-      layout: layout == null ? null : [for (final r in layout as List) r as String],
+      layout: layout == null
+          ? null
+          : [for (final r in layout as List) r as String],
       lockRows: c['lockRows'] as int,
       objectives: [
         for (final o in c['objectives'] as List)
@@ -91,12 +93,7 @@ void main() {
         palette: pal == null ? null : [for (final p in pal as List) p as int],
         obstacles: [
           for (final o in m['obstacles'] as List)
-            (
-              (o as List)[0] as int,
-              o[1] as int,
-              o[2] as int,
-              o[3] as int,
-            ),
+            ((o as List)[0] as int, o[1] as int, o[2] as int, o[3] as int),
         ],
         specials: [
           for (final s in m['specials'] as List)

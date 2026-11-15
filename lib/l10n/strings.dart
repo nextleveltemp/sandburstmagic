@@ -193,7 +193,8 @@ class Strings {
   String get noHint => 'No piece fits anywhere.';
   String get hintShown => 'Try the glowing spot.';
   String get placeRejected => 'That piece doesn’t fit there.';
-  String get tapPieceFirst => 'Drag a piece onto the board, or tap it and then tap a cell.';
+  String get tapPieceFirst =>
+      'Drag a piece onto the board, or tap it and then tap a cell.';
   String combo(int n) => 'Combo ×$n';
   String rowsBurst(int n) => switch (n) {
     2 => 'Double Burst!',
@@ -214,7 +215,8 @@ class Strings {
       o.target == 1
           ? 'Clear 2+ rows at once'
           : 'Clear 2+ rows at once, ${o.target} times',
-    ObjectiveType.special => 'Clear ${o.target} ${kindName(o.kind).toLowerCase()}',
+    ObjectiveType.special =>
+      'Clear ${o.target} ${kindName(o.kind).toLowerCase()}',
     ObjectiveType.obstacles => 'Break ${o.target} obstacles',
   };
   String objectiveProgress(int v, int target) =>
@@ -308,17 +310,19 @@ class Strings {
       'When a whole row is full of sand, it bursts and disappears. Colours don’t need to match.',
     'score' => 'Every grain and every burst scores. Combos score more.',
     'multi' => 'Finish two rows with one piece for a bigger burst.',
-    'limit' => 'This level counts your pieces. Reach the goal before they run out.',
+    'limit' =>
+      'This level counts your pieces. Reach the goal before they run out.',
     'nopower' => 'No power-ups here. Just you and the sand.',
-    'crystal' => 'Crystal sand sparkles and gives 40 extra points when it bursts.',
+    'crystal' =>
+      'Crystal sand sparkles and gives 40 extra points when it bursts.',
     'golden' => 'Golden sand gives 5 coins for every grain you clear.',
     'stone' => 'Stone fills its cell. Burst its row twice to break it.',
     'crystalWall' =>
       'Crystal walls take three bursts to break and give 100 points.',
     'heavy' => 'Heavy sand only falls straight down. It never slides.',
-    'frozen' =>
-      'Frozen sand doesn’t move. Burst a row next to it to thaw it.',
-    'ice' => 'Frozen cells break when their row, or a row next to them, bursts.',
+    'frozen' => 'Frozen sand doesn’t move. Burst a row next to it to thaw it.',
+    'ice' =>
+      'Frozen cells break when their row, or a row next to them, bursts.',
     'wood' => 'Wooden barriers break when their row bursts.',
     'explosive' =>
       'When explosive sand bursts, it also clears the 8 cells around it.',
@@ -330,7 +334,8 @@ class Strings {
       'A sand trap swallows 3 grains, then fills up. A row with an open trap can’t burst.',
     'magnetic' =>
       'When magnetic sand bursts, it pulls in nearby sand of its own colour.',
-    'mystery' => 'Mystery sand becomes a random special sand when you place it.',
+    'mystery' =>
+      'Mystery sand becomes a random special sand when you place it.',
     'rainbow' =>
       'Rainbow sand shimmers through every colour and counts for any Colour Blast.',
     'locked' =>
@@ -427,7 +432,9 @@ class Strings {
   String missionText(MissionDef m) => switch (m.metric) {
     MissionMetric.rows => 'Clear ${m.target} rows',
     MissionMetric.multi =>
-      m.target == 1 ? 'Clear 2+ rows at once' : 'Clear 2+ rows at once ${m.target} times',
+      m.target == 1
+          ? 'Clear 2+ rows at once'
+          : 'Clear 2+ rows at once ${m.target} times',
     MissionMetric.pieces => 'Place ${m.target} pieces',
     MissionMetric.games => 'Play ${m.target} games',
     MissionMetric.special => 'Clear ${m.target} special grains',
@@ -600,7 +607,6 @@ class Strings {
   String get reduceMotion => 'Reduce motion';
   String get reduceMotionHint => 'Faster sand, smaller bursts, no screen shake';
   String get help => 'Help';
-  String get howToPlay => 'How to play';
   String get privacy => 'Privacy';
   String get privacyPolicy => 'Privacy policy';
   String get privacyChoices => 'Ad privacy choices';

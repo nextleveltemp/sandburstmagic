@@ -31,8 +31,9 @@ class Objective {
   }
 
   @override
-  String toString() =>
-      type == ObjectiveType.special ? 'special:$target:$kind' : '${type.name}:$target';
+  String toString() => type == ObjectiveType.special
+      ? 'special:$target:$kind'
+      : '${type.name}:$target';
 }
 
 enum Schedule { none, classic, endless }
@@ -71,7 +72,8 @@ class GameConfig {
     'lockRows': lockRows,
     'objectives': [for (final o in objectives) o.toString()],
     'moveLimit': moveLimit,
-    'gentle': identical(weights, gentleWeights) || _same(weights, gentleWeights),
+    'gentle':
+        identical(weights, gentleWeights) || _same(weights, gentleWeights),
     'palette': palette,
     'specials': {for (final e in specials.entries) '${e.key}': e.value},
     'schedule': schedule.name,
@@ -171,7 +173,9 @@ const _endlessSteps = <(int, Map<int, int>)>[
 
 Map<int, int> specialsFor(GameConfig cfg, int score) {
   if (cfg.schedule == Schedule.none) return cfg.specials;
-  final steps = cfg.schedule == Schedule.classic ? _classicSteps : _endlessSteps;
+  final steps = cfg.schedule == Schedule.classic
+      ? _classicSteps
+      : _endlessSteps;
   var out = const <int, int>{};
   for (final (min, table) in steps) {
     if (score >= min) out = table;
@@ -390,7 +394,7 @@ void deal(GameState s, GameConfig cfg) {
     }
   }
   s.rng = rng.state;
-  s.tray = pieces;
+  s.tray = List<Piece?>.of(pieces);
   s.sets++;
 }
 
@@ -788,7 +792,12 @@ Turn? power(GameState s, GameConfig cfg, PowerUp p, int? arg) {
         group.add(i);
         final r = i ~/ boardW;
         final c = i % boardW;
-        for (final (nr, nc) in [(r - 1, c), (r + 1, c), (r, c - 1), (r, c + 1)]) {
+        for (final (nr, nc) in [
+          (r - 1, c),
+          (r + 1, c),
+          (r, c - 1),
+          (r, c + 1),
+        ]) {
           final j = nr * boardW + nc;
           if (nr >= 0 &&
               nr < boardH &&
@@ -868,9 +877,12 @@ Turn? continueGame(GameState s, GameConfig cfg) {
   s.status = Status.playing;
   s.reason = '';
   final turn = Turn();
-  _removeCells(s, [
-    for (var i = (boardH - 3) * boardW; i < boardN; i++) i,
-  ], turn, scored: false);
+  _removeCells(
+    s,
+    [for (var i = (boardH - 3) * boardW; i < boardN; i++) i],
+    turn,
+    scored: false,
+  );
   deal(s, cfg);
   turn.dealt = true;
   _resolve(s, cfg, turn, 0);

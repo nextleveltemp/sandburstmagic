@@ -9,10 +9,8 @@ import '../widgets/common.dart';
 import 'home_screen.dart';
 
 /// Today's Daily Puzzle: date, streak and a play button.
-Future<void> showDailySheet(BuildContext context) => showAppSheet<void>(
-  context: context,
-  builder: (ctx) => const _DailySheet(),
-);
+Future<void> showDailySheet(BuildContext context) =>
+    showAppSheet<void>(context: context, builder: (ctx) => const _DailySheet());
 
 class _DailySheet extends StatefulWidget {
   const _DailySheet();

@@ -405,9 +405,7 @@ class CachedDaily {
     if (date is! String || DateKey.parse(date) == null) {
       throw const FormatException('Invalid cached daily');
     }
-    return CachedDaily(
-      DailyPuzzle(date, GameConfig.fromJson(json['config'])),
-    );
+    return CachedDaily(DailyPuzzle(date, GameConfig.fromJson(json['config'])));
   }
 }
 

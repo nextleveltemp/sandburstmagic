@@ -29,9 +29,8 @@ class StatsScreen extends StatelessWidget {
         ),
         body: ListenableBuilder(
           listenable: services.progress,
-          builder: (context, _) => TabBarView(
-            children: [_StatsTab(), _AchievementsTab()],
-          ),
+          builder: (context, _) =>
+              TabBarView(children: [_StatsTab(), _AchievementsTab()]),
         ),
       ),
     );

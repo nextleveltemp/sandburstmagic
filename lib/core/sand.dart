@@ -721,8 +721,7 @@ int rowBase(int k) {
 int wavePoints(Wave w, int combo, int index) {
   final base = rowBase(w.rows.length);
   var pts =
-      base * (4 + (combo < 8 ? combo : 8)) * (2 + (index < 6 ? index : 6)) ~/
-      8;
+      base * (4 + (combo < 8 ? combo : 8)) * (2 + (index < 6 ? index : 6)) ~/ 8;
   pts += 10 * w.sand + 10 * w.obstacles;
   pts +=
       40 * (w.kinds[SandKind.crystal] ?? 0) +
@@ -803,9 +802,7 @@ Board makeLayout(
         final i = r * boardW + c;
         if (b.cells[i] == null && !b.noPlace[i]) {
           final hp = o == Obstacle.locked ? lockRows : Obstacle.hp(o);
-          final ttl = o == Obstacle.mover
-              ? (rng.nextInt(2) == 0 ? 1 : -1)
-              : 0;
+          final ttl = o == Obstacle.mover ? (rng.nextInt(2) == 0 ? 1 : -1) : 0;
           b.cells[i] = Cell(b.newId(), 0, obstacle: o, hp: hp, ttl: ttl);
           break;
         }
@@ -815,9 +812,7 @@ Board makeLayout(
   for (var r = boardH - 1; r > boardH - 1 - fill; r--) {
     for (var c = 0; c < boardW; c++) {
       final i = r * boardW + c;
-      if (b.cells[i] == null &&
-          !b.noPlace[i] &&
-          rng.nextInt(100) < density) {
+      if (b.cells[i] == null && !b.noPlace[i] && rng.nextInt(100) < density) {
         b.cells[i] = Cell(b.newId(), pal[rng.nextInt(pal.length)]);
       }
     }

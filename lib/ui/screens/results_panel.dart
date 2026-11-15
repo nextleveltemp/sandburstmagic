@@ -45,8 +45,7 @@ class ResultsPanel extends StatelessWidget {
       _ when won => s.targetReached,
       _ => s.endTitle(st.reason),
     };
-    final canNext =
-        c.isCampaign && won && c.spec.level < LevelCatalog.count;
+    final canNext = c.isCampaign && won && c.spec.level < LevelCatalog.count;
     return Positioned.fill(
       child: ColoredBox(
         color: Colors.black.withValues(alpha: 0.6),

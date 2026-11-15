@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 
@@ -44,7 +43,9 @@ class _TutorialScreenState extends State<TutorialScreen>
   void _reset() {
     _cfg = GameConfig(
       seed: 4 + _page,
-      layout: _page >= 2 ? layoutText(makeLayout(11 + _page, 3, density: 92)) : null,
+      layout: _page >= 2
+          ? layoutText(makeLayout(11 + _page, 3, density: 92))
+          : null,
       weights: gentleWeights,
       palette: const [6, 9, 2, 7, 0, 1],
     );
@@ -179,4 +180,3 @@ class _TutorialScreenState extends State<TutorialScreen>
     );
   }
 }
-

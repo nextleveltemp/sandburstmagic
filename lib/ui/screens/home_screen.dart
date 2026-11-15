@@ -20,10 +20,9 @@ import 'shop_screen.dart';
 import 'stats_screen.dart';
 
 /// Opens [c] on the game screen.
-Future<void> openGame(BuildContext context, GameController c) =>
-    Navigator.of(context).push(
-      FadeScaleRoute<void>(builder: (_) => GameScreen(controller: c)),
-    );
+Future<void> openGame(BuildContext context, GameController c) => Navigator.of(
+  context,
+).push(FadeScaleRoute<void>(builder: (_) => GameScreen(controller: c)));
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -47,9 +46,8 @@ class _HomeBody extends StatelessWidget {
 
   final AppServices services;
 
-  void _push(BuildContext context, Widget screen) => Navigator.of(
-    context,
-  ).push(FadeScaleRoute<void>(builder: (_) => screen));
+  void _push(BuildContext context, Widget screen) =>
+      Navigator.of(context).push(FadeScaleRoute<void>(builder: (_) => screen));
 
   @override
   Widget build(BuildContext context) {
@@ -102,7 +100,8 @@ class _HomeBody extends StatelessWidget {
               _BigPlay(
                 key: const ValueKey('play-classic'),
                 label: classicSaved ? s.continueGame : s.play,
-                sub: '${s.modeName(GameMode.classic)} · '
+                sub:
+                    '${s.modeName(GameMode.classic)} · '
                     '${s.bestScore(p.stats.best(GameMode.classic))}',
                 onTap: () => openGame(
                   context,
@@ -262,7 +261,11 @@ class _BigPlay extends StatelessWidget {
             child: Ink(
               decoration: const BoxDecoration(
                 gradient: LinearGradient(
-                  colors: [Color(0xFFB45CFF), Color(0xFFFF6FC8), Color(0xFFFF8A1F)],
+                  colors: [
+                    Color(0xFFB45CFF),
+                    Color(0xFFFF6FC8),
+                    Color(0xFFFF8A1F),
+                  ],
                 ),
               ),
               padding: const EdgeInsets.symmetric(vertical: Space.lg),

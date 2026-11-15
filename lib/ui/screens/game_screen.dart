@@ -323,7 +323,10 @@ class GameScreenState extends State<GameScreen>
     final p = _piece(slot)!;
     final shape = shapes[p.shape];
     final inside =
-        r >= -1 && c >= -1 && r + shape.rows <= boardH + 1 && c + shape.cols <= boardW + 1;
+        r >= -1 &&
+        c >= -1 &&
+        r + shape.rows <= boardH + 1 &&
+        c + shape.cols <= boardW + 1;
     setState(() {
       _anchorR = inside ? r.clamp(0, boardH - shape.rows) : null;
       _anchorC = inside ? c.clamp(0, boardW - shape.cols) : null;
@@ -427,10 +430,7 @@ class GameScreenState extends State<GameScreen>
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Text(
-                  s.powerName(p),
-                  style: Theme.of(ctx).textTheme.titleLarge,
-                ),
+                Text(s.powerName(p), style: Theme.of(ctx).textTheme.titleLarge),
                 const SizedBox(height: Space.xs),
                 Text(s.powerDesc(p), style: TextStyle(color: pal.textMuted)),
                 const SizedBox(height: Space.lg),
@@ -607,84 +607,84 @@ class GameScreenState extends State<GameScreen>
         body: ThemedBackground(
           theme: look.board,
           child: Column(
-              children: [
-                Expanded(
-                  child: Stack(
-                    children: [
-                      SafeArea(
-                        bottom: bannerH == 0,
-                        child: Column(
-                          children: [
-                            _TopBar(
-                              controller: _c,
-                              onPause: _pause,
-                              light: look.board.light,
-                            ),
-                            _GoalBar(controller: _c, light: look.board.light),
-                            Expanded(child: _boardArea(look)),
-                            _TrayRow(
-                              tray: _tray,
-                              bonus: _bonus,
-                              look: look,
-                              selected: _dragging ? null : _selected,
-                              dragging: _dragging ? _selected : null,
-                              onTap: _selectSlot,
-                              onDragStart: _dragStart,
-                              onDragUpdate: _dragUpdate,
-                              onDragEnd: _dragEnd,
-                              fits: (slot) {
-                                final p = _piece(slot);
-                                return p != null &&
-                                    fitsAnywhere(_c.state.board, p.shape);
-                              },
-                            ),
-                            _PowerBar(
-                              controller: _c,
-                              active: _power,
-                              onPower: _tapPower,
-                              onHint: _hint,
-                              onUndo: _undo,
-                            ),
-                            // Keep a gap between the controls and the
-                            // banner, so nobody taps the ad by accident.
-                            SizedBox(height: bannerH > 0 ? Space.lg : Space.xs),
-                          ],
-                        ),
-                      ),
-                      if (_dragging) _floatingPiece(look),
-                      if (_intro != null) _introCard(_intro!, pal),
-                      if (_c.offerContinue)
-                        _ContinuePanel(
-                          adReady: ads.rewardedReady,
-                          onWatch: _continueWithAd,
-                          onDecline: _c.declineContinue,
-                        ),
-                      if (_c.finished && !_fx.busy)
-                        ResultsPanel(
-                          controller: _c,
-                          onNext: _nextLevel,
-                          onAgain: _restart,
-                          onHome: () => Navigator.of(context).pop(),
-                          onDouble: _doubleCoins,
-                        ),
-                    ],
-                  ),
-                ),
-                if (bannerH > 0)
-                  ColoredBox(
-                    color: look.board.bottom,
-                    child: SafeArea(
-                      top: false,
-                      child: SizedBox(
-                        key: const ValueKey('game-banner-slot'),
-                        height: bannerH,
-                        width: double.infinity,
-                        child: Center(child: ads.buildBanner(context)),
+            children: [
+              Expanded(
+                child: Stack(
+                  children: [
+                    SafeArea(
+                      bottom: bannerH == 0,
+                      child: Column(
+                        children: [
+                          _TopBar(
+                            controller: _c,
+                            onPause: _pause,
+                            light: look.board.light,
+                          ),
+                          _GoalBar(controller: _c, light: look.board.light),
+                          Expanded(child: _boardArea(look)),
+                          _TrayRow(
+                            tray: _tray,
+                            bonus: _bonus,
+                            look: look,
+                            selected: _dragging ? null : _selected,
+                            dragging: _dragging ? _selected : null,
+                            onTap: _selectSlot,
+                            onDragStart: _dragStart,
+                            onDragUpdate: _dragUpdate,
+                            onDragEnd: _dragEnd,
+                            fits: (slot) {
+                              final p = _piece(slot);
+                              return p != null &&
+                                  fitsAnywhere(_c.state.board, p.shape);
+                            },
+                          ),
+                          _PowerBar(
+                            controller: _c,
+                            active: _power,
+                            onPower: _tapPower,
+                            onHint: _hint,
+                            onUndo: _undo,
+                          ),
+                          // Keep a gap between the controls and the
+                          // banner, so nobody taps the ad by accident.
+                          SizedBox(height: bannerH > 0 ? Space.lg : Space.xs),
+                        ],
                       ),
                     ),
+                    if (_dragging) _floatingPiece(look),
+                    if (_intro != null) _introCard(_intro!, pal),
+                    if (_c.offerContinue)
+                      _ContinuePanel(
+                        adReady: ads.rewardedReady,
+                        onWatch: _continueWithAd,
+                        onDecline: _c.declineContinue,
+                      ),
+                    if (_c.finished && !_fx.busy)
+                      ResultsPanel(
+                        controller: _c,
+                        onNext: _nextLevel,
+                        onAgain: _restart,
+                        onHome: () => Navigator.of(context).pop(),
+                        onDouble: _doubleCoins,
+                      ),
+                  ],
+                ),
+              ),
+              if (bannerH > 0)
+                ColoredBox(
+                  color: look.board.bottom,
+                  child: SafeArea(
+                    top: false,
+                    child: SizedBox(
+                      key: const ValueKey('game-banner-slot'),
+                      height: bannerH,
+                      width: double.infinity,
+                      child: Center(child: ads.buildBanner(context)),
+                    ),
                   ),
-              ],
-            ),
+                ),
+            ],
+          ),
         ),
       ),
     );
@@ -1155,7 +1155,9 @@ class _PowerBar extends StatelessWidget {
                         : Colors.white.withValues(alpha: 0.1),
                     borderRadius: BorderRadius.circular(Radii.md),
                     border: Border.all(
-                      color: on ? pal.gold : Colors.white.withValues(alpha: 0.2),
+                      color: on
+                          ? pal.gold
+                          : Colors.white.withValues(alpha: 0.2),
                     ),
                   ),
                   child: Stack(
@@ -1262,7 +1264,11 @@ class _ContinuePanel extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Icon(Icons.hourglass_bottom_rounded, size: 44, color: pal.cyan),
+                    Icon(
+                      Icons.hourglass_bottom_rounded,
+                      size: 44,
+                      color: pal.cyan,
+                    ),
                     const SizedBox(height: Space.md),
                     Text(
                       s.continueTitle,

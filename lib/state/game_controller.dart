@@ -158,10 +158,7 @@ class GameController extends ChangeNotifier {
 
   /// Whether [p] can be used now (inventory, level rules).
   bool canUsePowerUp(PowerUp p) =>
-      state.isPlaying &&
-      !finished &&
-      powerUpsAllowed &&
-      progress.count(p) > 0;
+      state.isPlaying && !finished && powerUpsAllowed && progress.count(p) > 0;
 
   /// Uses [p] at [arg] from the inventory. [free]: earned with a rewarded
   /// ad, not taken from the inventory.

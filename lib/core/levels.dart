@@ -121,11 +121,7 @@ class LevelDef {
       intro: f[12],
       solution: [
         for (var i = 0; i + 2 < sol.length; i += 3)
-          (
-            int.parse(sol[i]),
-            int.parse(sol[i + 1]),
-            int.parse(sol[i + 2]),
-          ),
+          (int.parse(sol[i]), int.parse(sol[i + 1]), int.parse(sol[i + 2])),
       ],
     );
   }
@@ -150,11 +146,17 @@ abstract final class Modes {
   static const int timePerRow = 4;
   static const int limitedMoves = 30;
 
-  static GameConfig classic(int seed) =>
-      GameConfig(seed: seed, palette: classicPalette, schedule: Schedule.classic);
+  static GameConfig classic(int seed) => GameConfig(
+    seed: seed,
+    palette: classicPalette,
+    schedule: Schedule.classic,
+  );
 
-  static GameConfig endless(int seed) =>
-      GameConfig(seed: seed, palette: classicPalette, schedule: Schedule.endless);
+  static GameConfig endless(int seed) => GameConfig(
+    seed: seed,
+    palette: classicPalette,
+    schedule: Schedule.endless,
+  );
 
   static GameConfig time(int seed) =>
       GameConfig(seed: seed, palette: classicPalette);

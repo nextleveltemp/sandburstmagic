@@ -76,8 +76,12 @@ class _MarkPainter extends CustomPainter {
       );
       canvas.drawRRect(
         RRect.fromRectAndRadius(
-          Rect.fromLTWH(r.left + cell * 0.12, r.top + cell * 0.1,
-              cell * 0.5, cell * 0.18),
+          Rect.fromLTWH(
+            r.left + cell * 0.12,
+            r.top + cell * 0.1,
+            cell * 0.5,
+            cell * 0.18,
+          ),
           Radius.circular(cell * 0.1),
         ),
         hi,

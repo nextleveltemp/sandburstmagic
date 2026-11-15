@@ -386,7 +386,9 @@ class SandBoardPainter extends CustomPainter {
           center,
           cell * 0.3,
           Paint()
-            ..color = const Color(0xFFFF5500).withValues(alpha: 0.35 + 0.3 * glow)
+            ..color = const Color(
+              0xFFFF5500,
+            ).withValues(alpha: 0.35 + 0.3 * glow)
             ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 4),
         );
         final tri = Path()
@@ -512,7 +514,12 @@ class SandBoardPainter extends CustomPainter {
         _label(canvas, center, '${c.hp}', cell * 0.32, const Color(0xFFC9A27A));
       case Obstacle.crystalWall:
         canvas.drawRRect(rr, Paint()..color = const Color(0xCC5FD3F3));
-        _diamond(canvas, center, cell * 0.28, Colors.white.withValues(alpha: 0.7));
+        _diamond(
+          canvas,
+          center,
+          cell * 0.28,
+          Colors.white.withValues(alpha: 0.7),
+        );
         _label(canvas, center, '${c.hp}', cell * 0.26, const Color(0xFF0B3550));
       case Obstacle.mover:
         canvas.drawRRect(rr, Paint()..color = const Color(0xFFE05A9C));

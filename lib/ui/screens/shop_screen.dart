@@ -243,10 +243,7 @@ class _CosmeticCard extends StatelessWidget {
                       aspectRatio: 1,
                       child: cosmetic.kind == CosmeticKind.piece
                           ? CustomPaint(
-                              painter: PiecePainter(
-                                const Piece(18, 5),
-                                look,
-                              ),
+                              painter: PiecePainter(const Piece(18, 5), look),
                             )
                           : _MiniBoard(look: look),
                     ),

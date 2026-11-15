@@ -97,11 +97,10 @@ abstract final class ResultCard {
     canvas.drawRect(
       const Rect.fromLTWH(0, 0, width, height),
       Paint()
-        ..shader = ui.Gradient.linear(
-          Offset.zero,
-          const Offset(0, height),
-          [theme.top, theme.bottom],
-        ),
+        ..shader = ui.Gradient.linear(Offset.zero, const Offset(0, height), [
+          theme.top,
+          theme.bottom,
+        ]),
     );
     const white = Color(0xFFF3F5FF);
     const muted = Color(0xFFA6B0DA);
@@ -129,13 +128,25 @@ abstract final class ResultCard {
     );
     var y = 500.0;
     if (d.stars > 0) {
-      _text(canvas, '★' * d.stars + '☆' * (3 - d.stars), 64, FontWeight.w800,
-          gold, y);
+      _text(
+        canvas,
+        '★' * d.stars + '☆' * (3 - d.stars),
+        64,
+        FontWeight.w800,
+        gold,
+        y,
+      );
       y += 80;
     }
     final badge = d.badgeText;
-    _text(canvas, badge ?? d.taglineText, 36, FontWeight.w700,
-        badge != null ? gold : muted, y);
+    _text(
+      canvas,
+      badge ?? d.taglineText,
+      36,
+      FontWeight.w700,
+      badge != null ? gold : muted,
+      y,
+    );
     // The final board.
     const side = 520.0;
     const top = 650.0;

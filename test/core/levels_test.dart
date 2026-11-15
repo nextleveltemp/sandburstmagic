@@ -80,8 +80,10 @@ void main() {
       final a = DailyPuzzle.generate(date);
       final b = DailyPuzzle.generate(date);
       expect(a.config.layout, b.config.layout);
-      expect(a.config.objectives.first.toString(),
-          b.config.objectives.first.toString());
+      expect(
+        a.config.objectives.first.toString(),
+        b.config.objectives.first.toString(),
+      );
       final (s, _) = playBot(a.config, maxMoves: DailyPuzzle.moves);
       expect(s.status, Status.won, reason: date);
     }

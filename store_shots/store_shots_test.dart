@@ -83,8 +83,16 @@ Future<AppServices> _player() async {
     p.daily.recordCompletion(DateKey.addDays(today, -d), rewardsAllowed: true);
   }
   final now = _clock().millisecondsSinceEpoch;
-  for (final id in ['firstRow', 'rows100', 'double', 'triple', 'combo5',
-      'level10', 'world1', 'streak3']) {
+  for (final id in [
+    'firstRow',
+    'rows100',
+    'double',
+    'triple',
+    'combo5',
+    'level10',
+    'world1',
+    'streak3',
+  ]) {
     p.achievements[id] = now;
   }
   p.stats

@@ -1,5 +1,4 @@
 import 'dart:math' as math;
-import 'dart:typed_data';
 
 import 'package:flutter/foundation.dart';
 
@@ -92,33 +91,44 @@ class BoardFx extends ChangeNotifier {
         case BlastPhase(:final wave):
           _queue.add(_WaveStage(wave, 120 * sp, 0, 0, true));
         case StickyPhase(:final expired):
-          _queue.add(_ApplyStage(60 * sp, (b) {
-            for (final i in expired) {
-              final c = b.cells[i];
-              if (c != null) {
-                b.cells[i] = c.copyWith(kind: SandKind.normal, ttl: 0);
+          _queue.add(
+            _ApplyStage(60 * sp, (b) {
+              for (final i in expired) {
+                final c = b.cells[i];
+                if (c != null) {
+                  b.cells[i] = c.copyWith(kind: SandKind.normal, ttl: 0);
+                }
               }
-            }
-          }));
+            }),
+          );
         case MoversPhase(:final moved):
           _queue.add(
-            _MoveStage([
-              for (final (id, from, to) in moved) GrainMove(id, from, to, false),
-            ], const [], 140 * sp),
+            _MoveStage(
+              [
+                for (final (id, from, to) in moved)
+                  GrainMove(id, from, to, false),
+              ],
+              const [],
+              140 * sp,
+            ),
           );
         case ShufflePhase(:final indices, :final cells):
-          _queue.add(_ApplyStage(160 * sp, (b) {
-            for (var n = 0; n < indices.length; n++) {
-              b.cells[indices[n]] = cells[n];
-            }
-          }));
+          _queue.add(
+            _ApplyStage(160 * sp, (b) {
+              for (var n = 0; n < indices.length; n++) {
+                b.cells[indices[n]] = cells[n];
+              }
+            }),
+          );
         case FillPhase(:final filled):
-          _queue.add(_ApplyStage(140 * sp, (b) {
-            for (final (id, i) in filled) {
-              b.cells[i] = Cell(id, greyColour, kind: SandKind.frozen);
-              fresh[i] = 0;
-            }
-          }));
+          _queue.add(
+            _ApplyStage(140 * sp, (b) {
+              for (final (id, i) in filled) {
+                b.cells[i] = Cell(id, greyColour, kind: SandKind.frozen);
+                fresh[i] = 0;
+              }
+            }),
+          );
       }
     }
     _queue.add(_ApplyStage(0, (_) {}));

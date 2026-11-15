@@ -147,7 +147,10 @@ Future<AppServices> freshServices({bool reset = true}) async {
 Future<void> startApp(WidgetTester t, AppServices s) async {
   await t.pumpWidget(SandBurstMagicApp(services: s));
   expect(
-    await waitFor(t, () => find.byKey(const ValueKey('play-classic')).evaluate().isNotEmpty),
+    await waitFor(
+      t,
+      () => find.byKey(const ValueKey('play-classic')).evaluate().isNotEmpty,
+    ),
     isTrue,
     reason: 'home screen should appear',
   );
@@ -231,7 +234,10 @@ Future<void> backToHome(WidgetTester t) async {
       await t.tap(pause);
       await wait(t, 700);
       await t.tap(find.byKey(const ValueKey('pause-home')));
-    } else if (find.byKey(const ValueKey('continue-decline')).evaluate().isNotEmpty) {
+    } else if (find
+        .byKey(const ValueKey('continue-decline'))
+        .evaluate()
+        .isNotEmpty) {
       await t.tap(find.byKey(const ValueKey('continue-decline')));
     } else {
       await t.pageBack();

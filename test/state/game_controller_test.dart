@@ -3,7 +3,6 @@ import 'package:sand_burst_magic/core/engine.dart';
 import 'package:sand_burst_magic/core/levels.dart';
 import 'package:sand_burst_magic/core/progression.dart';
 import 'package:sand_burst_magic/data/models.dart';
-import 'package:sand_burst_magic/state/game_controller.dart';
 import 'package:sand_burst_magic/state/launcher.dart';
 
 import '../helpers.dart';
@@ -11,22 +10,25 @@ import '../helpers.dart';
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
-  test('winning level 1 pays coins, records stars and unlocks level 2', () async {
-    final s = await testServices();
-    final c = Launcher.level(s, 1)!;
-    final def = LevelCatalog.level(1);
-    final coins = s.progress.coins;
-    for (final (slot, r, col) in def.solution) {
-      expect(c.placePiece(slot, r, col), isTrue);
-    }
-    expect(c.finished, isTrue);
-    expect(c.report!.won, isTrue);
-    expect(c.report!.stars, 3);
-    expect(s.progress.coins, greaterThan(coins));
-    expect(s.progress.isLevelUnlocked(2), isTrue);
-    expect(Launcher.level(s, 3), isNull, reason: 'level 3 still locked');
-    expect(s.saves.has(GameMode.campaign), isFalse);
-  });
+  test(
+    'winning level 1 pays coins, records stars and unlocks level 2',
+    () async {
+      final s = await testServices();
+      final c = Launcher.level(s, 1)!;
+      final def = LevelCatalog.level(1);
+      final coins = s.progress.coins;
+      for (final (slot, r, col) in def.solution) {
+        expect(c.placePiece(slot, r, col), isTrue);
+      }
+      expect(c.finished, isTrue);
+      expect(c.report!.won, isTrue);
+      expect(c.report!.stars, 3);
+      expect(s.progress.coins, greaterThan(coins));
+      expect(s.progress.isLevelUnlocked(2), isTrue);
+      expect(Launcher.level(s, 3), isNull, reason: 'level 3 still locked');
+      expect(s.saves.has(GameMode.campaign), isFalse);
+    },
+  );
 
   test('moves are saved and resumed', () async {
     final s = await testServices();

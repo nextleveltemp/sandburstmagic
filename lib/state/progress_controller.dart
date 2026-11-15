@@ -243,7 +243,8 @@ class ProgressController extends ChangeNotifier {
       final worldBefore = worldOf(unlockedLevel).number;
       _p.levels[spec.level] = LevelRecord(
         stars: stars > oldStars ? stars : oldStars,
-        bestMoves: old == null || old.bestMoves == 0 || state.moves < old.bestMoves
+        bestMoves:
+            old == null || old.bestMoves == 0 || state.moves < old.bestMoves
             ? state.moves
             : old.bestMoves,
         bestScore: old == null || state.score > old.bestScore

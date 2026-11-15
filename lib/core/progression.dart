@@ -385,7 +385,16 @@ class LifetimeStats {
 // Daily missions
 // ===========================================================================
 
-enum MissionMetric { rows, multi, pieces, games, special, powerUp, level, score }
+enum MissionMetric {
+  rows,
+  multi,
+  pieces,
+  games,
+  special,
+  powerUp,
+  level,
+  score,
+}
 
 class MissionDef {
   const MissionDef(this.id, this.metric, this.target);
@@ -562,7 +571,6 @@ abstract final class Stars {
       levels.values.fold(0, (a, r) => a + r.stars);
 
   /// A world is done when its last level is won.
-  static int worldsDone(Map<int, LevelRecord> levels) => worlds
-      .where((w) => (levels[w.last]?.stars ?? 0) > 0)
-      .length;
+  static int worldsDone(Map<int, LevelRecord> levels) =>
+      worlds.where((w) => (levels[w.last]?.stars ?? 0) > 0).length;
 }

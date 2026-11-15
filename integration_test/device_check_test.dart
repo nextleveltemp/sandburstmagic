@@ -86,7 +86,10 @@ void main() {
       expect(
         await waitFor(
           t,
-          () => find.byKey(const ValueKey('game-banner-slot')).evaluate().isNotEmpty,
+          () => find
+              .byKey(const ValueKey('game-banner-slot'))
+              .evaluate()
+              .isNotEmpty,
           seconds: 40,
         ),
         isTrue,

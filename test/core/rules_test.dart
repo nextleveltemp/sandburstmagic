@@ -13,8 +13,7 @@ void main() {
   GameState game(GameConfig c, List<Piece?> tray) =>
       newGame(c)..tray = List<Piece?>.of(tray);
 
-  List<String> rows(GameState s, int from) =>
-      layoutText(s.board).sublist(from);
+  List<String> rows(GameState s, int from) => layoutText(s.board).sublist(from);
 
   group('placement', () {
     test('a placed block becomes sand and falls to the floor', () {
@@ -60,18 +59,33 @@ void main() {
 
   group('sand', () {
     test('grains fall, then slide diagonally', () {
-      final b = boardFromLayout([...List.filled(8, e), '1.........', '2.........']);
+      final b = boardFromLayout([
+        ...List.filled(8, e),
+        '1.........',
+        '2.........',
+      ]);
       settle(b);
       expect(layoutText(b).sublist(8), [e, '21........']);
     });
 
     test('heavy sand never slides', () {
-      final b = boardFromLayout([...List.filled(8, e), 'h.........', '2.........']);
+      final b = boardFromLayout([
+        ...List.filled(8, e),
+        'h.........',
+        '2.........',
+      ]);
       expect(settle(b), isEmpty);
     });
 
     test('frozen sand does not move', () {
-      final b = boardFromLayout([...List.filled(5, e), 'f.........', e, e, e, e]);
+      final b = boardFromLayout([
+        ...List.filled(5, e),
+        'f.........',
+        e,
+        e,
+        e,
+        e,
+      ]);
       expect(settle(b), isEmpty);
       expect(layoutText(b)[5], 'f.........');
     });
@@ -195,7 +209,11 @@ void main() {
     });
 
     test('a lock counts down cleared rows', () {
-      final c = cfg([...List.filled(8, e), 'L.........', '01234567.9'], lockRows: 2);
+      final c = cfg([
+        ...List.filled(8, e),
+        'L.........',
+        '01234567.9',
+      ], lockRows: 2);
       final s = game(c, const [Piece(0, 3), null, null]);
       place(s, c, 0, 0, 8);
       expect(s.board.cells[80]?.obstacle, Obstacle.locked);
@@ -208,10 +226,13 @@ void main() {
       final b = Board();
       for (var r = 0; r < boardH; r++) {
         for (var c = 0; c < boardW; c++) {
-          if (c != (r * 3) % boardW) b.cells[r * boardW + c] = Cell(b.newId(), 1);
+          if (c != (r * 3) % boardW) {
+            b.cells[r * boardW + c] = Cell(b.newId(), 1);
+          }
         }
       }
-      final s = GameState(b)..tray = const [Piece(1, 2), Piece(7, 3), Piece(3, 4)];
+      final s = GameState(b)
+        ..tray = const [Piece(1, 2), Piece(7, 3), Piece(3, 4)];
       updateStatus(s, GameConfig(seed: 1));
       expect(s.status, Status.lost);
       expect(s.reason, 'space');
@@ -270,7 +291,12 @@ void main() {
   });
 
   group('power-ups', () {
-    final c = cfg([...List.filled(7, e), '0.........', '01........', '0123......']);
+    final c = cfg([
+      ...List.filled(7, e),
+      '0.........',
+      '01........',
+      '0123......',
+    ]);
 
     test('Sand Sweep, Colour Blast, Bomb, Crusher and Gravity', () {
       var s = newGame(c);
@@ -335,7 +361,10 @@ void main() {
     test('the same seed deals the same pieces', () {
       final a = newGame(GameConfig(seed: 42));
       final b = newGame(GameConfig(seed: 42));
-      expect([for (final p in a.tray) p!.code], [for (final p in b.tray) p!.code]);
+      expect(
+        [for (final p in a.tray) p!.code],
+        [for (final p in b.tray) p!.code],
+      );
     });
   });
 
@@ -348,7 +377,10 @@ void main() {
     expect(back.board.encode(), s.board.encode());
     expect(back.score, s.score);
     expect(back.rng, s.rng);
-    expect([for (final p in back.tray) p?.code], [for (final p in s.tray) p?.code]);
+    expect(
+      [for (final p in back.tray) p?.code],
+      [for (final p in s.tray) p?.code],
+    );
     final c2 = GameConfig.fromJson(c.toJson());
     expect(c2.layout, c.layout);
     expect(c2.seed, c.seed);
