@@ -1,0 +1,16 @@
+apk_release=0 aab_release=0
+build/app/outputs/bundle/release:
+total 64064
+drwxr-xr-x 2 runner runner     4096 Nov 15 12:15 .
+drwxr-xr-x 3 runner runner     4096 Nov 15 12:15 ..
+-rw-r--r-- 1 runner runner 65590409 Nov 15 12:15 app-release.aab
+
+build/app/outputs/flutter-apk:
+total 66612
+drwxr-xr-x 2 runner runner     4096 Nov 15 12:14 .
+drwxr-xr-x 8 runner runner     4096 Nov 15 12:15 ..
+-rw-r--r-- 1 runner runner 68192632 Nov 15 12:14 app-release.apk
+-rw-r--r-- 1 runner runner       40 Nov 15 12:14 app-release.apk.sha1
+apk package: name='com.sandburstmagic' versionCode='1' versionName='1.0.0' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'
+apk targetSdkVersion:'36'
+apk application-label:'Sand Burst Magic'

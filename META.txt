@@ -1,0 +1,4 @@
+run: https://github.com/nextleveltemp/sandburstmagic/actions/runs/43712078985
+commit: 439829f229d6e10aaeac036aa4bc85439614d57c
+job: build-android
+Sun Nov 15 12:15:33 UTC 2026
