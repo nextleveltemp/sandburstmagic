@@ -35,10 +35,10 @@ class BoardOverlay {
   static const none = BoardOverlay();
 }
 
-/// Grain positions inside a cell: 4 x 4 grains with a small jitter that
+/// Grain positions inside a cell: 5 x 5 overlapping grains with a small jitter that
 /// depends on the cell's id, so a cluster keeps its look while it falls.
 abstract final class Grains {
-  static const int perSide = 4;
+  static const int perSide = 5;
   static const int perCell = perSide * perSide;
 
   /// Offsets in cell units (0..1) for [id], flattened x,y pairs.
@@ -47,8 +47,8 @@ abstract final class Grains {
     var h = (id * 2654435761) & 0xFFFFFFFF;
     for (var k = 0; k < perCell; k++) {
       h = (h * 1103515245 + 12345) & 0x7FFFFFFF;
-      final jx = ((h & 0xFF) / 255 - 0.5) * 0.09;
-      final jy = (((h >> 8) & 0xFF) / 255 - 0.5) * 0.09;
+      final jx = ((h & 0xFF) / 255 - 0.5) * 0.14;
+      final jy = (((h >> 8) & 0xFF) / 255 - 0.5) * 0.14;
       out[k * 2] = ((k % perSide) + 0.5) / perSide + jx;
       out[k * 2 + 1] = ((k ~/ perSide) + 0.5) / perSide + jy;
     }
@@ -196,7 +196,9 @@ class SandBoardPainter extends CustomPainter {
     }
 
     // Sand and obstacles.
-    final grain = cell / Grains.perSide * 0.98;
+    // Slightly larger than their spacing, so neighbouring cells' grains
+    // touch and the sand reads as one granular mass.
+    final grain = cell / Grains.perSide * 1.22;
     final specials = <(int, Cell, Offset)>[];
     for (var i = 0; i < boardN; i++) {
       final c = b.cells[i];

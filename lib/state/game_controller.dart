@@ -326,7 +326,10 @@ class GameController extends ChangeNotifier {
   }
 
   /// Saves now (the screen is closing or the app goes to the background).
-  void saveNow() => _save();
+  void saveNow() {
+    _save();
+    unawaited(progress.flush());
+  }
 
   @override
   void dispose() {

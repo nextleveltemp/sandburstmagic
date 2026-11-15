@@ -139,8 +139,8 @@ Future<void> _settle(WidgetTester t, [int ms = 1200]) async {
   }
 }
 
-Future<void> _shot(WidgetTester t, String name) async {
-  await _settle(t, 400);
+Future<void> _shot(WidgetTester t, String name, {int settleMs = 400}) async {
+  if (settleMs > 0) await _settle(t, settleMs);
   final boundary = t.renderObject<RenderRepaintBoundary>(find.byKey(_shotKey));
   final png = await t.runAsync(() async {
     final image = await boundary.toImage(pixelRatio: _ratio);
@@ -174,6 +174,19 @@ Future<void> _tapKey(WidgetTester t, String key) async {
 GameController _game(WidgetTester t) =>
     t.state<GameScreenState>(find.byType(GameScreen)).controller;
 
+/// Leaves the game screen and lets pending timers finish.
+Future<void> _leave(WidgetTester t) async {
+  final home = find.byKey(const ValueKey('results-home'));
+  if (home.evaluate().isNotEmpty) {
+    await t.tap(home);
+  } else {
+    await t.tap(find.byKey(const ValueKey('pause-button')));
+    await _settle(t, 600);
+    await t.tap(find.byKey(const ValueKey('pause-home')));
+  }
+  await _settle(t, 3000);
+}
+
 /// Opens campaign level [n] and plays the first [moves] moves of its proof.
 Future<GameController> _playLevel(WidgetTester t, int n, int moves) async {
   await _tapKey(t, 'home-campaign');
@@ -205,13 +218,18 @@ void main() {
 
   testWidgets('S2 gameplay, S7 results, S8 share card', (t) async {
     await _open(t, await _player());
-    final c = await _playLevel(t, 45, 6);
-    // A piece lifted from the tray, with its preview on the board.
-    await t.tap(find.byKey(const ValueKey('tray-0')), warnIfMissed: false);
-    await _settle(t, 300);
-    await _shot(t, 'S2-gameplay');
-    final sol = LevelCatalog.level(45).solution;
-    for (final (slot, r, col) in sol.skip(6)) {
+    // Level 23: its 10th move bursts three rows at once with plenty of
+    // sand on the board (found with the reference model).
+    final c = await _playLevel(t, 23, 9);
+    final sol = LevelCatalog.level(23).solution;
+    final (slot, r, col) = sol[9];
+    c.placePiece(slot, r, col);
+    // Catch the burst while its grains fly.
+    for (var i = 0; i < 9; i++) {
+      await t.pump(const Duration(milliseconds: 50));
+    }
+    await _shot(t, 'S2-gameplay', settleMs: 0);
+    for (final (slot, r, col) in sol.skip(10)) {
       c.placePiece(slot, r, col);
       await _settle(t, 1500);
     }
@@ -223,7 +241,7 @@ void main() {
     File('$_out/store-S8-share-card.png')
       ..createSync(recursive: true)
       ..writeAsBytesSync(card!);
-    await _settle(t, 3000);
+    await _leave(t);
   });
 
   testWidgets('S3 daily sheet', (t) async {
@@ -277,9 +295,9 @@ void main() {
       s.progress.progress.owned.add(c.key);
       s.progress.progress.selected['board'] = c.id;
       await _open(t, s);
-      await _playLevel(t, 45, 4);
+      await _playLevel(t, 23, 9);
       await _shot(t, 'board-${c.id}');
-      await _settle(t, 3000);
+      await _leave(t);
     });
   }
 }

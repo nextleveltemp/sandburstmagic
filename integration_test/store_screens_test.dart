@@ -63,16 +63,20 @@ void main() {
     );
     await wait(t, 800);
     await shot(t, 'S4-campaign');
-    await tapKey(t, 'level-45', settle: 1500);
+    await t.pageBack();
+    await wait(t, 900);
+    await tapKey(t, 'home-campaign');
+    await tapKey(t, 'level-23', settle: 1500);
     final c = controllerOf(t);
-    final sol = LevelCatalog.level(45).solution;
-    for (final (slot, r, col) in sol.take(6)) {
+    final sol = LevelCatalog.level(23).solution;
+    for (final (slot, r, col) in sol.take(9)) {
       await tapPlace(t, slot, r, col);
     }
-    await t.tap(find.byKey(const ValueKey('tray-0')), warnIfMissed: false);
-    await wait(t, 400);
+    // The board at its fullest, just before a triple burst. (The device
+    // screenshot comes too late to catch flying grains; the host-rendered
+    // store image does.)
     await shot(t, 'S2-gameplay');
-    for (final (slot, r, col) in sol.skip(6)) {
+    for (final (slot, r, col) in sol.skip(9)) {
       c.placePiece(slot, r, col);
       await wait(t, 1300);
     }

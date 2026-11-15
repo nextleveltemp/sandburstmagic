@@ -192,10 +192,11 @@ class ProgressController extends ChangeNotifier {
     _changed();
   }
 
+  /// Counts play time. Not saved on its own (that would write to storage
+  /// every second): it goes out with the next real change or flush.
   void addPlaySeconds(int s) {
     if (s <= 0) return;
     _p.stats.playSeconds += s;
-    _changed();
   }
 
   bool introSeen(String id) => _p.seenIntros.contains(id);

@@ -152,13 +152,16 @@ class ResultsPanel extends StatelessWidget {
                       if (r.missions.isNotEmpty) ...[
                         _Note(s.missionsDone),
                         for (final m in r.missions)
-                          Text('✓ ${s.missionText(m)}'),
+                          _IconLine(Icons.check_rounded, s.missionText(m)),
                         if (r.allMissions) Text(s.allMissionsBonus),
                       ],
                       if (r.achievements.isNotEmpty) ...[
                         _Note(s.achievementsUnlocked),
                         for (final a in r.achievements)
-                          Text('🏆 ${s.achievementTitle(a.id)}'),
+                          _IconLine(
+                            Icons.emoji_events_rounded,
+                            s.achievementTitle(a.id),
+                          ),
                       ],
                       const SizedBox(height: Space.lg),
                       if (canNext)
@@ -249,5 +252,21 @@ class _Note extends StatelessWidget {
         fontWeight: FontWeight.w700,
       ),
     ),
+  );
+}
+
+class _IconLine extends StatelessWidget {
+  const _IconLine(this.icon, this.text);
+  final IconData icon;
+  final String text;
+
+  @override
+  Widget build(BuildContext context) => Row(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+      Icon(icon, size: 18, color: AppPalette.of(context).gold),
+      const SizedBox(width: 6),
+      Flexible(child: Text(text)),
+    ],
   );
 }
